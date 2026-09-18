@@ -141,5 +141,6 @@ if __name__ == "__main__":
     print("==================================================================")
     print("      HYDERABAD MULTI-MODAL ROUTE PLANNER API SERVER")
     print("==================================================================")
-    print("Starting Flask API server on http://localhost:5000 ...\n")
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    print(f"Starting Flask API server on port {port} ...\n")
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
