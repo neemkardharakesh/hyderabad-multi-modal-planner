@@ -1,0 +1,21 @@
+# Environments
+venv/
+env/
+ENV/
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pickle
+
+# Heavy binary/GTFS archives (optional, keep code clean)
+hmrl_gtfs.zip
+tgsrtc_gtfs.zip
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
