@@ -13,6 +13,10 @@
   <!-- Leaflet Map CSS & JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet MarkerCluster CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <!-- Firebase Auth SDK (Compat) -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
@@ -4147,10 +4151,11 @@
         if (modal) modal.classList.remove('active');
       }
 
-      // 9b. Dedicated All Bus Stops Reference Modal System
+      // 9b. Dedicated All Bus Stops Reference Modal System (Optimized for 60fps Performance)
       let allBusStopsData = [];
       let allStopsMapInstance = null;
-      let allStopsMarkersLayer = null;
+      let allStopsClusterGroup = null;
+      let allStopsDisplayLimit = 40;
 
       async function loadAllBusStopsData() {
         if (allBusStopsData.length > 0) return;
@@ -4176,6 +4181,7 @@
         modal.classList.add('active');
         await loadAllBusStopsData();
         initAllStopsBrowseMap();
+        allStopsDisplayLimit = 40;
         renderAllBusStopsList();
       }
 
@@ -4187,7 +4193,10 @@
       function initAllStopsBrowseMap() {
         if (allStopsMapInstance) {
           setTimeout(() => {
-            if (allStopsMapInstance) allStopsMapInstance.invalidateSize();
+            if (allStopsMapInstance) {
+              allStopsMapInstance.invalidateSize();
+              updateMapMarkersForVisibleBounds();
+            }
           }, 300);
           return;
         }
@@ -4205,21 +4214,62 @@
           maxZoom: 18
         }).addTo(allStopsMapInstance);
 
-        allStopsMarkersLayer = L.layerGroup().addTo(allStopsMapInstance);
+        // Marker clustering plugin group or fallback canvas layer
+        if (typeof L.markerClusterGroup === 'function') {
+          allStopsClusterGroup = L.markerClusterGroup({
+            chunkedLoading: true,
+            maxClusterRadius: 45,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+            disableClusteringAtZoom: 16
+          });
+          allStopsMapInstance.addLayer(allStopsClusterGroup);
+        } else {
+          allStopsClusterGroup = L.layerGroup().addTo(allStopsMapInstance);
+        }
 
-        if (allBusStopsData.length > 0) {
-          allBusStopsData.forEach(s => {
+        // Lazy load markers based on visible map viewport bounds
+        allStopsMapInstance.on('moveend zoomend', () => {
+          updateMapMarkersForVisibleBounds();
+        });
+
+        updateMapMarkersForVisibleBounds();
+
+        setTimeout(() => {
+          if (allStopsMapInstance) {
+            allStopsMapInstance.invalidateSize();
+            updateMapMarkersForVisibleBounds();
+          }
+        }, 300);
+      }
+
+      function updateMapMarkersForVisibleBounds() {
+        if (!allStopsMapInstance || allBusStopsData.length === 0) return;
+
+        const bounds = allStopsMapInstance.getBounds();
+        if (!bounds) return;
+
+        if (allStopsClusterGroup) {
+          allStopsClusterGroup.clearLayers();
+        }
+
+        const markersToAdd = [];
+
+        allBusStopsData.forEach(s => {
+          // Check if stop lat/lng falls within current visible map bounds
+          if (bounds.contains([s.lat, s.lng])) {
             const isScoped = !!stopsGeoMap[s.stop_name];
             const circle = L.circleMarker([s.lat, s.lng], {
-              radius: isScoped ? 4 : 2.5,
+              radius: isScoped ? 4.5 : 3,
               fillColor: isScoped ? '#06b6d4' : '#ef4444',
               color: isScoped ? '#0284c7' : '#991b1b',
-              weight: 1,
-              fillOpacity: 0.75
+              weight: 1.5,
+              fillOpacity: 0.85
             });
 
             let popupHtml = `
-              <div style="font-family: sans-serif; padding: 2px;">
+              <div style="font-family: sans-serif; padding: 3px; max-width: 220px;">
                 <strong style="color: #0f172a; font-size: 0.9rem;">🚏 ${s.stop_name}</strong>
                 ${s.zone ? `<div style="font-size: 0.75rem; color: #475569;">Zone: ${s.zone}</div>` : ''}
                 ${s.desc ? `<div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">${s.desc}</div>` : ''}
@@ -4228,7 +4278,7 @@
 
             if (isScoped) {
               popupHtml += `
-                <button onclick="selectStopForRouteSearch('${s.stop_name.replace(/'/g, "\\'")}')" style="margin-top: 6px; padding: 4px 8px; background: #06b6d4; color: #fff; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; width: 100%;">
+                <button onclick="selectStopForRouteSearch('${s.stop_name.replace(/'/g, "\\'")}')" style="margin-top: 6px; padding: 5px 8px; background: #06b6d4; color: #fff; border: none; border-radius: 4px; font-size: 0.75rem; font-weight: bold; cursor: pointer; width: 100%;">
                   📍 Search routes from here
                 </button>
               `;
@@ -4238,16 +4288,28 @@
 
             popupHtml += `</div>`;
             circle.bindPopup(popupHtml);
-            allStopsMarkersLayer.addLayer(circle);
-          });
-        }
+            markersToAdd.push(circle);
+          }
+        });
 
-        setTimeout(() => {
-          if (allStopsMapInstance) allStopsMapInstance.invalidateSize();
-        }, 300);
+        if (allStopsClusterGroup) {
+          if (typeof allStopsClusterGroup.addLayers === 'function') {
+            allStopsClusterGroup.addLayers(markersToAdd);
+          } else if (typeof allStopsClusterGroup.addLayer === 'function') {
+            markersToAdd.forEach(m => allStopsClusterGroup.addLayer(m));
+          }
+        }
       }
 
       function filterAllBusStopsList() {
+        allStopsDisplayLimit = 40;
+        const input = document.getElementById('all-stops-search-input');
+        const query = input ? input.value.trim().toLowerCase() : '';
+        renderAllBusStopsList(query);
+      }
+
+      function loadMoreBusStopsInList() {
+        allStopsDisplayLimit += 40;
         const input = document.getElementById('all-stops-search-input');
         const query = input ? input.value.trim().toLowerCase() : '';
         renderAllBusStopsList(query);
@@ -4262,23 +4324,36 @@
           return;
         }
 
-        const filtered = query
-          ? allBusStopsData.filter(s =>
+        const isQueryShort = query.length < 2;
+
+        const filtered = isQueryShort
+          ? allBusStopsData
+          : allBusStopsData.filter(s =>
               s.stop_name.toLowerCase().includes(query) ||
               (s.zone && s.zone.toLowerCase().includes(query)) ||
               (s.desc && s.desc.toLowerCase().includes(query)) ||
               s.stop_id.toLowerCase().includes(query)
-            )
-          : allBusStopsData;
+            );
 
-        const displayList = filtered.slice(0, 80);
+        const displayList = filtered.slice(0, allStopsDisplayLimit);
 
         if (displayList.length === 0) {
           container.innerHTML = `<div style="padding: 1.5rem; text-align: center; color: var(--text-muted);">No official TSRTC stops match "${query}"</div>`;
           return;
         }
 
-        let html = displayList.map(s => {
+        let html = '';
+
+        if (isQueryShort) {
+          html += `
+            <div style="padding: 0.55rem 0.75rem; background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: 0.65rem; font-size: 0.76rem; color: #a5f3fc; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+              <span>💡</span>
+              <span>Type 2+ letters (e.g. <strong>Charminar</strong>, <strong>HITEC</strong>, <strong>Secunderabad</strong>) to filter all 4,939 bus stops.</span>
+            </div>
+          `;
+        }
+
+        html += displayList.map(s => {
           const isScoped = !!stopsGeoMap[s.stop_name];
           return `
             <div class="all-stop-item-card" onclick="panToAllStopOnMap(${s.lat}, ${s.lng}, '${s.stop_name.replace(/'/g, "\\'")}')">
@@ -4304,8 +4379,15 @@
           `;
         }).join('');
 
-        if (filtered.length > 80) {
-          html += `<div style="font-size: 0.72rem; color: var(--text-muted); text-align: center; padding: 0.5rem;">Showing top 80 of ${filtered.length.toLocaleString()} matching stops. Type to refine search.</div>`;
+        if (filtered.length > allStopsDisplayLimit) {
+          const remaining = filtered.length - allStopsDisplayLimit;
+          html += `
+            <div style="margin-top: 0.5rem; text-align: center;">
+              <button onclick="loadMoreBusStopsInList()" style="width: 100%; padding: 0.6rem; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; color: var(--accent-cyan); font-size: 0.8rem; font-weight: 700; cursor: pointer;">
+                Load More Stops (${remaining.toLocaleString()} remaining)
+              </button>
+            </div>
+          `;
         }
 
         container.innerHTML = html;
@@ -4314,6 +4396,7 @@
       function panToAllStopOnMap(lat, lng, name) {
         if (allStopsMapInstance) {
           allStopsMapInstance.setView([lat, lng], 15);
+          updateMapMarkersForVisibleBounds();
           showToast(`📍 Centered map on ${name}`);
         }
       }
