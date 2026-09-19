@@ -1,7 +1,7 @@
 {
-  "name": "Hyderabad One",
-  "short_name": "Hyderabad One",
-  "description": "Hyderabad Multi-Modal Journey Planner • Bus + Metro + MMTS",
+  "name": "Go Hyderabad",
+  "short_name": "Go Hyderabad",
+  "description": "Go Hyderabad Multi-Modal Journey Planner • Bus + Metro + MMTS",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

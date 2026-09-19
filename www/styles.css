@@ -1,6 +1,6 @@
 :root {
   --bg-dark: #0f172a;
-  --card-bg: rgba(15, 23, 42, 0.58);
+  --card-bg: rgba(15, 23, 42, 0.65);
   --card-border: rgba(255, 255, 255, 0.16);
   --accent-primary: #6366f1;
   --accent-primary-hover: #4f46e5;
@@ -9,11 +9,32 @@
   --accent-cyan: #06b6d4;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --input-border: rgba(255, 255, 255, 0.12);
   --bus-color: #ef4444;
   --metro-blue: #3b82f6;
   --metro-red: #ec4899;
   --mmts-color: #8b5cf6;
   --walk-color: #64748b;
+}
+
+[data-theme="light"] {
+  --bg-dark: #f8fafc;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: rgba(15, 23, 42, 0.15);
+  --accent-primary: #4f46e5;
+  --accent-primary-hover: #4338ca;
+  --accent-gold: #d97706;
+  --accent-green: #059669;
+  --accent-cyan: #0891b2;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --input-bg: rgba(241, 245, 249, 0.95);
+  --input-border: rgba(15, 23, 42, 0.2);
+  --bus-color: #dc2626;
+  --metro-blue: #2563eb;
+  --mmts-color: #7c3aed;
+  --walk-color: #475569;
 }
 
 * {
@@ -1987,12 +2008,139 @@ input[type="text"]:focus {
   color: var(--accent-green);
 }
 
-.history-sub {
-  font-size: 0.72rem;
-  color: var(--text-muted);
+/* Photo-based Animated Background Slideshow (Ken Burns Effect - 8 Images) */
+.bg-slideshow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  overflow: hidden;
+  pointer-events: none;
 }
 
+.bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
+  will-change: transform, opacity;
+  animation: kenBurnsSlide 32s infinite linear;
+}
 
+[data-theme="light"] .bg-slide {
+  filter: brightness(1.05) contrast(0.95) saturate(1.1);
+}
+
+.bg-slide-1 { background-image: url('assets/charminar.png'); animation-delay: 0s; }
+.bg-slide-2 { background-image: url('assets/metro_train.jpg'); animation-delay: 4s; }
+.bg-slide-3 { background-image: url('assets/secretariat.jpg'); animation-delay: 8s; }
+.bg-slide-4 { background-image: url('assets/tgsrtc_bus.jpg'); animation-delay: 12s; }
+.bg-slide-5 { background-image: url('assets/chowmahalla.jpg'); animation-delay: 16s; }
+.bg-slide-6 { background-image: url('assets/mmts_train1.jpg'); animation-delay: 20s; }
+.bg-slide-7 { background-image: url('assets/buddha_statue.png'); animation-delay: 24s; }
+.bg-slide-8 { background-image: url('assets/mmts_train2.jpg'); animation-delay: 28s; }
+
+@keyframes kenBurnsSlide {
+  0% { opacity: 0; transform: scale(1.0) translate3d(0,0,0); }
+  3% { opacity: 0.85; }
+  10% { opacity: 0.85; }
+  13.5% { opacity: 0; transform: scale(1.08) translate3d(0,0,0); }
+  100% { opacity: 0; transform: scale(1.0) translate3d(0,0,0); }
+}
+
+/* Semi-Transparent Dark Overlay for High Readability */
+.bg-dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: radial-gradient(circle at center, rgba(15, 23, 42, 0.45) 0%, rgba(2, 6, 23, 0.75) 100%);
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+[data-theme="light"] .bg-dark-overlay {
+  background: radial-gradient(circle at center, rgba(248, 250, 252, 0.65) 0%, rgba(226, 232, 240, 0.85) 100%);
+}
+
+/* Parallax Animated Traffic Strip */
+.traffic-strip {
+  position: fixed;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.traffic-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 158, 11, 0.4) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(99, 102, 241, 0.4) 75%, transparent 100%);
+}
+
+.vehicle {
+  position: absolute;
+  bottom: 2px;
+  left: -60px;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+  will-change: transform;
+}
+
+.vehicle-bus { animation: moveVehicle 14s infinite linear; }
+.vehicle-metro { animation: moveVehicle 8s infinite linear; animation-delay: -4s; }
+.vehicle-auto { animation: moveVehicle 18s infinite linear; animation-delay: -9s; }
+.vehicle-car { animation: moveVehicle 11s infinite linear; animation-delay: -2s; }
+
+@keyframes moveVehicle {
+  0% { transform: translate3d(-80px, 0, 0); }
+  100% { transform: translate3d(calc(100vw + 80px), 0, 0); }
+}
+
+/* Theme Toggle Button in Header */
+.btn-theme-toggle {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
+}
+
+[data-theme="light"] .btn-theme-toggle {
+  background: rgba(15, 23, 42, 0.08);
+  border-color: rgba(15, 23, 42, 0.2);
+  color: #0f172a;
+}
 
 /* Mobile Responsive Rules (< 768px & < 480px for 375px, 390px, 428px viewports) */
 @media (max-width: 768px) {
