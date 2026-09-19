@@ -1,11 +1,14 @@
-const CACHE_NAME = 'hyd-transit-v1';
+const CACHE_NAME = 'hyd-transit-v2';
 const STATIC_ASSETS = [
   './',
   './index.html',
   './styles.css',
+  './manifest.json',
   './stops.json',
   './all_bus_stops.json',
   './assets/telangana_logo.png',
+  './assets/icon-192.png',
+  './assets/icon-512.png',
   './assets/charminar.png',
   './assets/metro_train.jpg',
   './assets/secretariat.jpg',

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hyderabad Transit Journey Planner</title>
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -4568,6 +4571,17 @@
         const dest = document.getElementById('dest-input').value.trim();
         if (origin && dest) {
           findRoutes();
+        }
+
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').then((reg) => {
+              console.log('[ServiceWorker] Registered successfully with scope:', reg.scope);
+            }).catch((err) => {
+              console.warn('[ServiceWorker] Registration failed:', err);
+            });
+          });
         }
       });
     </script>
