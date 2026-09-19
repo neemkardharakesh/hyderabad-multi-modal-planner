@@ -994,7 +994,7 @@
       </div>
     </div>
 
-    <!-- Dedicated Hyderabad Metro Rail Schematic Map Modal -->
+    <!-- Dedicated Hyderabad Metro Rail Network Map Modal -->
     <div class="modal-overlay" id="metro-map-modal" onclick="closeMetroMapModalOnOverlay(event)">
       <div class="metro-map-card" onclick="event.stopPropagation()">
         <!-- Header -->
@@ -1004,7 +1004,15 @@
             <span style="font-size: 1.05rem; font-weight: 700; color: #fff;" data-i18n="metroMapTitle">Hyderabad Metro Rail Network Map</span>
           </div>
 
-          <button class="ticket-close-btn" onclick="closeMetroMapModal()">✕</button>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="metro-zoom-controls">
+              <button class="metro-zoom-btn" onclick="zoomMetroMap(0.3)" title="Zoom In">🔍+</button>
+              <button class="metro-zoom-btn" onclick="zoomMetroMap(-0.3)" title="Zoom Out">🔍-</button>
+              <button class="metro-zoom-btn" onclick="resetMetroMapZoom()" title="Reset Zoom" style="width: auto; padding: 0 8px; font-size: 0.75rem; font-weight: 600;">↺ Reset</button>
+              <span id="metro-zoom-level-badge" style="font-size: 0.75rem; color: #94a3b8; min-width: 42px; text-align: center; font-weight: 600;">100%</span>
+            </div>
+            <button class="ticket-close-btn" onclick="closeMetroMapModal()">✕</button>
+          </div>
         </div>
 
         <!-- Line Legend Bar -->
@@ -1012,21 +1020,16 @@
           <span class="metro-legend-item"><span class="legend-line-dot" style="background: #ef4444;"></span> Red Line (Miyapur ⇄ LB Nagar)</span>
           <span class="metro-legend-item"><span class="legend-line-dot" style="background: #3b82f6;"></span> Blue Line (Raidurg ⇄ Nagole)</span>
           <span class="metro-legend-item"><span class="legend-line-dot" style="background: #10b981;"></span> Green Line (JBS ⇄ MGBS)</span>
-          <span class="metro-legend-item"><span class="legend-line-dot" style="background: #ffffff; border: 2px solid #000;"></span> 🔄 Interchange Station</span>
+          <span class="metro-legend-item" style="color: #94a3b8; margin-left: auto;">💡 Tip: Scroll / Pinch to zoom, drag to move map</span>
         </div>
 
-        <!-- SVG Container -->
+        <!-- Image Container Viewport -->
         <div class="metro-map-svg-container" id="metro-map-svg-wrapper">
-          <div id="metro-map-svg-holder" style="width: 100%; height: 100%;"></div>
-        </div>
-
-        <!-- Station Click Info Toast / Floating Card -->
-        <div id="metro-station-tooltip-card" class="metro-station-tooltip hidden">
-          <div id="metro-tooltip-title" style="font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 0.25rem;">Station Name</div>
-          <div id="metro-tooltip-sub" style="font-size: 0.78rem; color: #cbd5e1; margin-bottom: 0.65rem;">Line Information</div>
-          <div style="display: flex; gap: 0.5rem;">
-            <button class="chip" style="flex: 1; padding: 0.4rem; font-size: 0.75rem; text-align: center;" onclick="setMetroStationAsOrigin()" data-i18n="setOrigin">🚩 Set as Origin</button>
-            <button class="chip" style="flex: 1; padding: 0.4rem; font-size: 0.75rem; text-align: center; background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: #6ee7b7;" onclick="setMetroStationAsDest()" data-i18n="setDest">🏁 Set as Destination</button>
+          <div id="metro-map-viewport" style="width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; background: #090d16; display: flex; align-items: center; justify-content: center;">
+            <img id="metro-official-map-img" 
+                 src="assets/hyderabad_metro_official_map.png" 
+                 alt="Hyderabad Metro Rail Official Network Map"
+                 style="max-width: 100%; max-height: 100%; object-fit: contain; transform-origin: center center; transition: transform 0.05s ease-out; user-select: none; -webkit-user-drag: none; will-change: transform;" />
           </div>
         </div>
       </div>
@@ -2167,311 +2170,161 @@
       }
 
       // -----------------------------------------------------------------------------
-      // HYDERABAD METRO SCHEMATIC SVG MAP GENERATOR
-      // Programmatically generates clean 3-line schematic diagram from stops.json data
+      // OFFICIAL HYDERABAD METRO MAP INTERACTIVE PAN & CRISP ZOOM VIEWER
       // -----------------------------------------------------------------------------
-      let selectedMetroStationName = null;
+      let metroMapScale = 1;
+      let metroMapPanX = 0;
+      let metroMapPanY = 0;
+      let isMetroMapDragging = false;
+      let metroMapStartX = 0;
+      let metroMapStartY = 0;
+      let metroMapInitialTouchDistance = 0;
+      let metroMapInitialScale = 1;
+      let isMetroMapInitialized = false;
+
+      function initMetroMapViewer() {
+        if (isMetroMapInitialized) return;
+        const container = document.getElementById('metro-map-viewport');
+        const img = document.getElementById('metro-official-map-img');
+        if (!container || !img) return;
+
+        isMetroMapInitialized = true;
+
+        // Mouse Wheel Zoom
+        container.addEventListener('wheel', (e) => {
+          e.preventDefault();
+          const zoomFactor = e.deltaY < 0 ? 1.25 : 0.8;
+          const rect = container.getBoundingClientRect();
+          const mouseX = e.clientX - rect.left - rect.width / 2;
+          const mouseY = e.clientY - rect.top - rect.height / 2;
+          zoomMetroMapAtPoint(zoomFactor, mouseX, mouseY);
+        }, { passive: false });
+
+        // Mouse Drag (Pan)
+        container.addEventListener('mousedown', (e) => {
+          if (e.button !== 0) return;
+          isMetroMapDragging = true;
+          metroMapStartX = e.clientX - metroMapPanX;
+          metroMapStartY = e.clientY - metroMapPanY;
+          container.style.cursor = 'grabbing';
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (!isMetroMapDragging) return;
+          e.preventDefault();
+          metroMapPanX = e.clientX - metroMapStartX;
+          metroMapPanY = e.clientY - metroMapStartY;
+          updateMetroMapTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+          if (isMetroMapDragging) {
+            isMetroMapDragging = false;
+            const container = document.getElementById('metro-map-viewport');
+            if (container) container.style.cursor = 'grab';
+          }
+        });
+
+        // Touch Pinch & Pan (Mobile Devices)
+        container.addEventListener('touchstart', (e) => {
+          if (e.touches.length === 1) {
+            isMetroMapDragging = true;
+            metroMapStartX = e.touches[0].clientX - metroMapPanX;
+            metroMapStartY = e.touches[0].clientY - metroMapPanY;
+          } else if (e.touches.length === 2) {
+            isMetroMapDragging = false;
+            metroMapInitialTouchDistance = getTouchDistance(e.touches);
+            metroMapInitialScale = metroMapScale;
+          }
+        }, { passive: true });
+
+        container.addEventListener('touchmove', (e) => {
+          if (e.touches.length === 1 && isMetroMapDragging) {
+            metroMapPanX = e.touches[0].clientX - metroMapStartX;
+            metroMapPanY = e.touches[0].clientY - metroMapStartY;
+            updateMetroMapTransform();
+          } else if (e.touches.length === 2) {
+            const dist = getTouchDistance(e.touches);
+            if (metroMapInitialTouchDistance > 0) {
+              const factor = dist / metroMapInitialTouchDistance;
+              metroMapScale = Math.min(Math.max(metroMapInitialScale * factor, 1), 8);
+              updateMetroMapTransform();
+            }
+          }
+        }, { passive: true });
+
+        container.addEventListener('touchend', (e) => {
+          if (e.touches.length < 2) {
+            metroMapInitialTouchDistance = 0;
+          }
+          if (e.touches.length === 0) {
+            isMetroMapDragging = false;
+          }
+        });
+      }
+
+      function getTouchDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.hypot(dx, dy);
+      }
+
+      function zoomMetroMap(delta) {
+        const newScale = Math.min(Math.max(metroMapScale + delta, 1), 8);
+        if (newScale === metroMapScale) return;
+        const ratio = newScale / metroMapScale;
+        metroMapPanX *= ratio;
+        metroMapPanY *= ratio;
+        metroMapScale = newScale;
+        updateMetroMapTransform();
+      }
+
+      function zoomMetroMapAtPoint(factor, mouseX, mouseY) {
+        const newScale = Math.min(Math.max(metroMapScale * factor, 1), 8);
+        if (newScale === metroMapScale) return;
+        metroMapPanX = mouseX - (mouseX - metroMapPanX) * (newScale / metroMapScale);
+        metroMapPanY = mouseY - (mouseY - metroMapPanY) * (newScale / metroMapScale);
+        metroMapScale = newScale;
+        updateMetroMapTransform();
+      }
+
+      function resetMetroMapZoom() {
+        metroMapScale = 1;
+        metroMapPanX = 0;
+        metroMapPanY = 0;
+        updateMetroMapTransform();
+      }
+
+      function updateMetroMapTransform() {
+        const img = document.getElementById('metro-official-map-img');
+        const badge = document.getElementById('metro-zoom-level-badge');
+        if (!img) return;
+
+        if (metroMapScale <= 1) {
+          metroMapScale = 1;
+          metroMapPanX = 0;
+          metroMapPanY = 0;
+        }
+
+        img.style.transform = `translate3d(${metroMapPanX}px, ${metroMapPanY}px, 0) scale(${metroMapScale})`;
+        if (badge) {
+          badge.innerText = `${Math.round(metroMapScale * 100)}%`;
+        }
+      }
 
       function renderMetroMapSVG() {
-        const holder = document.getElementById('metro-map-svg-holder');
-        if (!holder) return;
-
-        // Collect all metro stops from allStopsList or stopsGeoMap
-        const metroStops = (allStopsList || []).filter(s => (s.mode || '').toLowerCase() === 'metro');
-        if (!metroStops.length) {
-          holder.innerHTML = `<div style="color: #94a3b8; text-align: center; padding: 3rem; font-size: 0.9rem;">Loading Metro Network Data...</div>`;
-          return;
-        }
-
-        // Group by line_id & sort by sequence ascending
-        const linesMap = {
-          red_line: [],
-          blue_line: [],
-          green_line: []
-        };
-
-        metroStops.forEach(st => {
-          const l = (st.line_id || '').toLowerCase();
-          if (linesMap[l]) linesMap[l].push(st);
-        });
-
-        Object.keys(linesMap).forEach(l => {
-          linesMap[l].sort((a, b) => (a.sequence || 0) - (b.sequence || 0));
-        });
-
-        // Schematic layout dimensions - Expanded for spacious, uncluttered readability
-        const svgW = 1600;
-        const svgH = 1100;
-
-        // Key Interchange Anchors (Forming standard Hyderabad Metro schematic triangle)
-        const AMEERPET_POS = { x: 500, y: 500 };
-        const JBS_POS      = { x: 1050, y: 500 };
-        const MGBS_POS     = { x: 1050, y: 920 };
-
-        // Position Dictionary: stationName -> { x, y, line, isInterchange, index }
-        const stationCoords = {};
-
-        // Helper to format/clean stop names for matching
-        const cleanName = (name) => (name || '').replace(/Metro Station/gi, '').trim();
-
-        // 1. Position BLUE LINE (horizontal path along y = 500)
-        const blueStops = linesMap.blue_line || [];
-        const ameerpetBlueIdx = blueStops.findIndex(s => cleanName(s.stop_name).includes('Ameerpet')) ?? 9;
-        const jbsBlueIdx = blueStops.findIndex(s => cleanName(s.stop_name).includes('JBS') || cleanName(s.stop_name).includes('Parade')) ?? 14;
-
-        blueStops.forEach((st, i) => {
-          let x, y = 500;
-          if (i <= ameerpetBlueIdx) {
-            const ratio = i / ameerpetBlueIdx;
-            x = 100 + ratio * (AMEERPET_POS.x - 100);
-          } else if (i <= jbsBlueIdx) {
-            const ratio = (i - ameerpetBlueIdx) / (jbsBlueIdx - ameerpetBlueIdx);
-            x = AMEERPET_POS.x + ratio * (JBS_POS.x - AMEERPET_POS.x);
-          } else {
-            const ratio = (i - jbsBlueIdx) / (blueStops.length - 1 - jbsBlueIdx);
-            x = JBS_POS.x + ratio * (1540 - JBS_POS.x);
-          }
-          stationCoords[st.stop_name] = { x, y, stop: st, line: 'blue_line', index: i };
-        });
-
-        // 2. Position GREEN LINE (vertical path along x = 1050 from MGBS to JBS)
-        const greenStops = linesMap.green_line || [];
-        const jbsGreenIdx = greenStops.length - 1;
-
-        greenStops.forEach((st, i) => {
-          let x = 1050;
-          const ratio = i / jbsGreenIdx;
-          const y = MGBS_POS.y - ratio * (MGBS_POS.y - JBS_POS.y);
-          if (!stationCoords[st.stop_name]) {
-            stationCoords[st.stop_name] = { x, y, stop: st, line: 'green_line', index: i };
-          } else {
-            stationCoords[st.stop_name].isInterchange = true;
-          }
-        });
-
-        // 3. Position RED LINE (Miyapur to Ameerpet 45° diagonal, Ameerpet to MGBS 45° diagonal, MGBS to LB Nagar horizontal)
-        const redStops = linesMap.red_line || [];
-        const ameerpetRedIdx = redStops.findIndex(s => cleanName(s.stop_name).includes('Ameerpet')) ?? 10;
-        const mgbsRedIdx = redStops.findIndex(s => cleanName(s.stop_name).includes('MGBS') || cleanName(s.stop_name).includes('Bus Station')) ?? 19;
-
-        redStops.forEach((st, i) => {
-          let x, y;
-          if (i <= ameerpetRedIdx) {
-            const ratio = i / ameerpetRedIdx;
-            x = 120 + ratio * (AMEERPET_POS.x - 120);
-            y = 120 + ratio * (AMEERPET_POS.y - 120);
-          } else if (i <= mgbsRedIdx) {
-            const ratio = (i - ameerpetRedIdx) / (mgbsRedIdx - ameerpetRedIdx);
-            x = AMEERPET_POS.x + ratio * (MGBS_POS.x - AMEERPET_POS.x);
-            y = AMEERPET_POS.y + ratio * (MGBS_POS.y - AMEERPET_POS.y);
-          } else {
-            const ratio = (i - mgbsRedIdx) / (redStops.length - 1 - mgbsRedIdx);
-            x = MGBS_POS.x + ratio * (1540 - MGBS_POS.x);
-            y = MGBS_POS.y;
-          }
-
-          if (!stationCoords[st.stop_name]) {
-            stationCoords[st.stop_name] = { x, y, stop: st, line: 'red_line', index: i };
-          } else {
-            stationCoords[st.stop_name].isInterchange = true;
-          }
-        });
-
-        // Explicitly set Interchange markers on Ameerpet, MGBS, JBS Parade Ground
-        Object.keys(stationCoords).forEach(name => {
-          const c = cleanName(name);
-          if (c.includes('Ameerpet') || c.includes('MGBS') || c.includes('Bus Station') || c.includes('JBS') || c.includes('Parade Ground')) {
-            stationCoords[name].isInterchange = true;
-          }
-        });
-
-        // Build SVG Elements
-        let svgContent = `
-          <svg id="metro-map-svg-element" viewBox="0 0 ${svgW} ${svgH}" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" style="background:#090d16; font-family: 'Outfit', sans-serif;">
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-              </pattern>
-            </defs>
-
-            <rect width="${svgW}" height="${svgH}" fill="url(#grid)" />
-
-            <g id="metro-svg-viewport">
-        `;
-
-        // 1. Draw BLUE LINE Polyline Path
-        const bluePoints = blueStops.map(s => {
-          const pt = stationCoords[s.stop_name];
-          return pt ? `${pt.x},${pt.y}` : '';
-        }).filter(Boolean).join(' ');
-
-        svgContent += `
-          <polyline points="${bluePoints}" fill="none" stroke="#3b82f6" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" />
-        `;
-
-        // 2. Draw GREEN LINE Polyline Path
-        const greenPoints = greenStops.map(s => {
-          const pt = stationCoords[s.stop_name];
-          return pt ? `${pt.x},${pt.y}` : '';
-        }).filter(Boolean).join(' ');
-
-        svgContent += `
-          <polyline points="${greenPoints}" fill="none" stroke="#10b981" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" />
-        `;
-
-        // 3. Draw RED LINE Polyline Path
-        const redPoints = redStops.map(s => {
-          const pt = stationCoords[s.stop_name];
-          return pt ? `${pt.x},${pt.y}` : '';
-        }).filter(Boolean).join(' ');
-
-        svgContent += `
-          <polyline points="${redPoints}" fill="none" stroke="#ef4444" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" />
-        `;
-
-        // 4. Draw Station Nodes & Text Labels with Directional Offsets
-        const allStationKeys = Object.keys(stationCoords);
-
-        allStationKeys.forEach((sName) => {
-          const pt = stationCoords[sName];
-          const displayName = cleanName(sName);
-          const isInter = pt.isInterchange;
-
-          if (isInter) {
-            let labelX = pt.x;
-            let labelY = pt.y - 24;
-            let anchor = "middle";
-
-            if (displayName.includes('Ameerpet')) {
-              labelX = pt.x + 35;
-              labelY = pt.y - 25;
-              anchor = "start";
-            } else if (displayName.includes('JBS') || displayName.includes('Parade')) {
-              labelX = pt.x + 24;
-              labelY = pt.y - 20;
-              anchor = "start";
-            } else if (displayName.includes('MGBS') || displayName.includes('Bus Station')) {
-              labelX = pt.x + 24;
-              labelY = pt.y + 28;
-              anchor = "start";
-            }
-
-            // Distinct Double-Ring Interchange Marker
-            svgContent += `
-              <g class="metro-station-node" cursor="pointer" onclick="onSelectMetroStation('${sName.replace(/'/g, "\\'")}')">
-                <circle cx="${pt.x}" cy="${pt.y}" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="4.5" />
-                <circle cx="${pt.x}" cy="${pt.y}" r="8" fill="#6366f1" />
-                <rect x="${anchor === 'end' ? labelX - 160 : (anchor === 'start' ? labelX - 8 : labelX - 85)}" y="${labelY - 14}" width="168" height="24" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" opacity="0.95" />
-                <text x="${labelX}" y="${labelY.toFixed(1)}" text-anchor="${anchor}" fill="#ffffff" font-size="12" font-weight="800">${displayName} 🔄</text>
-              </g>
-            `;
-          } else {
-            // Standard Station Dot
-            let strokeColor = '#ef4444';
-            if (pt.line === 'blue_line') strokeColor = '#3b82f6';
-            if (pt.line === 'green_line') strokeColor = '#10b981';
-
-            let xPos = pt.x;
-            let textY = pt.y - 14;
-            let textAnchor = "middle";
-            let rotation = 0;
-
-            if (pt.line === 'blue_line') {
-              // Blue Line (horizontal): Place labels BELOW the line (+45deg downwards-right)
-              // to avoid any collision with Red Line diagonal above y=500
-              rotation = 45;
-              xPos = pt.x;
-              textY = pt.y + 20;
-              textAnchor = "start";
-            } else if (pt.line === 'green_line') {
-              // Green Line (vertical): Place labels to the RIGHT of the line
-              rotation = 0;
-              xPos = pt.x + 18;
-              textY = pt.y + 4;
-              textAnchor = "start";
-            } else if (pt.line === 'red_line') {
-              if (pt.index <= 10) {
-                // Miyapur to S.R. Nagar (before Ameerpet): ABOVE-LEFT (-35deg upwards-left)
-                rotation = -35;
-                xPos = pt.x - 14;
-                textY = pt.y - 10;
-                textAnchor = "end";
-              } else if (pt.index <= 19) {
-                // Punjagutta to OMC (between Ameerpet & MGBS): BELOW-RIGHT (-35deg downwards-right)
-                rotation = -35;
-                xPos = pt.x + 14;
-                textY = pt.y + 14;
-                textAnchor = "start";
-              } else {
-                // Malakpet to LB Nagar (after MGBS): BELOW line (+45deg)
-                rotation = 45;
-                xPos = pt.x;
-                textY = pt.y + 20;
-                textAnchor = "start";
-              }
-            }
-
-            svgContent += `
-              <g class="metro-station-node" cursor="pointer" onclick="onSelectMetroStation('${sName.replace(/'/g, "\\'")}')">
-                <circle cx="${pt.x}" cy="${pt.y}" r="6" fill="#ffffff" stroke="${strokeColor}" stroke-width="3.5" />
-                <text x="${xPos.toFixed(1)}" y="${textY.toFixed(1)}" transform="rotate(${rotation}, ${xPos.toFixed(1)}, ${textY.toFixed(1)})" text-anchor="${textAnchor}" fill="#e2e8f0" font-size="11" font-weight="600" stroke="#090d16" stroke-width="3" paint-order="stroke fill">${displayName}</text>
-              </g>
-            `;
-          }
-        });
-
-        svgContent += `
-            </g>
-          </svg>
-        `;
-
-        holder.innerHTML = svgContent;
-      }
-
-      function onSelectMetroStation(stopName) {
-        selectedMetroStationName = stopName;
-        const clean = stopName.replace(/Metro Station/gi, '').trim();
-        const tooltip = document.getElementById('metro-station-tooltip-card');
-        const titleEl = document.getElementById('metro-tooltip-title');
-        const subEl = document.getElementById('metro-tooltip-sub');
-
-        if (tooltip && titleEl && subEl) {
-          titleEl.innerText = `${clean} Metro Station`;
-          subEl.innerText = `Select an action to set inputs`;
-          tooltip.classList.remove('hidden');
-        }
-      }
-
-      function setMetroStationAsOrigin() {
-        if (selectedMetroStationName) {
-          document.getElementById('origin-input').value = selectedMetroStationName;
-          closeMetroMapModal();
-          const dest = document.getElementById('dest-input').value.trim();
-          if (dest && dest.toLowerCase() !== selectedMetroStationName.toLowerCase()) {
-            findRoutes();
-          }
-        }
-      }
-
-      function setMetroStationAsDest() {
-        if (selectedMetroStationName) {
-          document.getElementById('dest-input').value = selectedMetroStationName;
-          closeMetroMapModal();
-          const origin = document.getElementById('origin-input').value.trim();
-          if (origin && origin.toLowerCase() !== selectedMetroStationName.toLowerCase()) {
-            findRoutes();
-          }
-        }
+        initMetroMapViewer();
+        resetMetroMapZoom();
       }
 
       function openMetroMapModal() {
         document.getElementById('metro-map-modal').classList.add('active');
-        renderMetroMapSVG();
+        initMetroMapViewer();
+        resetMetroMapZoom();
       }
 
       function closeMetroMapModal() {
         document.getElementById('metro-map-modal').classList.remove('active');
-        document.getElementById('metro-station-tooltip-card')?.classList.add('hidden');
       }
 
       function closeMetroMapModalOnOverlay(e) {
