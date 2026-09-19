@@ -19,15 +19,26 @@ def load_graph_and_lookup(pickle_path="graph.pickle", json_path="graph_data.json
     if os.path.exists(pickle_path):
         with open(pickle_path, "rb") as f:
             data = pickle.load(f)
-            return data["graph"], data["stop_lookup"]
+            stop_lookup = data.get("stop_lookup", {})
+            for k, info in stop_lookup.items():
+                if isinstance(info, dict) and "stop_id" not in info:
+                    info["stop_id"] = info.get("id", str(k))
+            return data["graph"], stop_lookup
     elif os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        stop_lookup = {node["id"]: node for node in data["nodes"]}
+        stop_lookup = {}
+        for node in data.get("nodes", []):
+            nid = node.get("stop_id") or node.get("id")
+            node_copy = dict(node)
+            node_copy["stop_id"] = nid
+            stop_lookup[nid] = node_copy
+
         G = nx.Graph()
-        for node in data["nodes"]:
-            G.add_node(node["id"], **node)
-        for edge in data["edges"]:
+        for node in data.get("nodes", []):
+            nid = node.get("stop_id") or node.get("id")
+            G.add_node(nid, **{**node, "stop_id": nid})
+        for edge in data.get("edges", []):
             G.add_edge(edge["from"], edge["to"], **{k: v for k, v in edge.items() if k not in ("from", "to")})
         return G, stop_lookup
     else:

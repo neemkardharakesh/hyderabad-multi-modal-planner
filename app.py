@@ -42,18 +42,35 @@ def get_stops():
         return jsonify({"status": "error", "message": "Graph data not loaded"}), 500
 
     # Collect unique stop names sorted alphabetically
-    unique_names = sorted(list(set(info["stop_name"] for info in STOP_LOOKUP.values())))
-    stops_detail = [
-        {
-            "stop_id": info["stop_id"],
-            "stop_name": info["stop_name"],
-            "mode": info["mode"],
-            "line_id": info["line_id"],
+    unique_names = sorted(list(set(
+        info.get("stop_name") for info in STOP_LOOKUP.values()
+        if isinstance(info, dict) and info.get("stop_name")
+    )))
+
+    stops_detail = []
+    missing_id_entries = []
+
+    for stop_key, info in STOP_LOOKUP.items():
+        if not isinstance(info, dict):
+            continue
+
+        sid = info.get("stop_id") or info.get("id") or str(stop_key)
+        if "stop_id" not in info:
+            missing_id_entries.append((stop_key, info))
+
+        stops_detail.append({
+            "stop_id": sid,
+            "stop_name": info.get("stop_name", sid),
+            "mode": info.get("mode", "bus"),
+            "line_id": info.get("line_id", ""),
             "lat": info.get("lat"),
             "lng": info.get("lng")
-        }
-        for info in STOP_LOOKUP.values()
-    ]
+        })
+
+    if missing_id_entries:
+        print(f"[WARNING] get_stops(): Found {len(missing_id_entries)} stop entries missing 'stop_id' key.")
+        for k, entry in missing_id_entries[:5]:
+            print(f"  [MISSING stop_id] Key: '{k}' | Entry data: {entry}")
 
     return jsonify({
         "status": "success",

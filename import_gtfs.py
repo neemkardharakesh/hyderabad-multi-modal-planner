@@ -217,7 +217,12 @@ def import_and_merge_gtfs():
     with open(stops_json_path, 'r', encoding='utf-8') as f:
         existing_data = json.load(f)
 
-    existing_stops = existing_data.get("stops", [])
+    # Ensure all existing stops have stop_id set
+    for s in existing_stops:
+        if "stop_id" not in s:
+            sid = s.get("id") or f"stop_{s.get('stop_name', 'unknown')}"
+            s["stop_id"] = sid
+            print(f"[WARNING] Normalizing stop missing 'stop_id' in existing stops.json: {s}")
 
     # Keep existing MMTS stops
     mmts_stops = [s for s in existing_stops if s.get("mode") == "mmts"]
@@ -240,8 +245,13 @@ def import_and_merge_gtfs():
     final_stops = []
     seen_ids = set()
     for s in combined_stops:
-        if s["stop_id"] not in seen_ids:
-            seen_ids.add(s["stop_id"])
+        sid = s.get("stop_id") or s.get("id")
+        if not sid:
+            print(f"[WARNING] Skipping malformed stop missing stop_id and id: {s}")
+            continue
+        s["stop_id"] = sid
+        if sid not in seen_ids:
+            seen_ids.add(sid)
             final_stops.append(s)
 
     new_payload = {"stops": final_stops}

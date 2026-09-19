@@ -119,21 +119,33 @@ def build_graph(stops_json_path: str = "stops.json") -> tuple[nx.Graph, dict]:
         data = json.load(f)
 
     stops = data.get("stops", [])
-    stop_lookup = {stop["stop_id"]: stop for stop in stops}
+    stop_lookup = {}
+    for stop in stops:
+        sid = stop.get("stop_id") or stop.get("id")
+        if not sid:
+            print(f"[WARNING] Skipping stop missing stop_id and id: {stop}")
+            continue
+        stop_entry = dict(stop)
+        stop_entry["stop_id"] = sid
+        stop_lookup[sid] = stop_entry
 
     G = nx.Graph()
 
     # 1. Add all stops as graph nodes with metadata
     for stop in stops:
+        sid = stop.get("stop_id") or stop.get("id")
+        if not sid:
+            continue
         G.add_node(
-            stop["stop_id"],
-            stop_name=stop["stop_name"],
-            lat=stop["lat"],
-            lng=stop["lng"],
-            mode=stop["mode"],
-            line_id=stop["line_id"],
-            sequence=stop["sequence"],
-            is_accessible=stop.get("is_accessible", stop["mode"] == "metro")
+            sid,
+            stop_id=sid,
+            stop_name=stop.get("stop_name", sid),
+            lat=stop.get("lat", 0.0),
+            lng=stop.get("lng", 0.0),
+            mode=stop.get("mode", "bus"),
+            line_id=stop.get("line_id", ""),
+            sequence=stop.get("sequence", 0),
+            is_accessible=stop.get("is_accessible", stop.get("mode") == "metro")
         )
 
     # 2. Add Direct Edges between consecutive stops in the same corridor/line
@@ -241,7 +253,7 @@ def export_graph_data(G: nx.Graph, stop_lookup: dict, transfer_edges: list):
     json_filename = "graph_data.json"
     nodes_data = []
     for node_id, data in G.nodes(data=True):
-        nodes_data.append({"id": node_id, **data})
+        nodes_data.append({"id": node_id, "stop_id": data.get("stop_id", node_id), **data})
 
     edges_data = []
     for u, v, data in G.edges(data=True):

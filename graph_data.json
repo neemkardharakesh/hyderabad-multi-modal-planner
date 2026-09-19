@@ -8,6 +8,7 @@
   "nodes": [
     {
       "id": "gtfs_bus_route_218C_00",
+      "stop_id": "gtfs_bus_route_218C_00",
       "stop_name": "Patancheruvu",
       "lat": 17.529542,
       "lng": 78.2641071,
@@ -18,6 +19,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_01",
+      "stop_id": "gtfs_bus_route_218C_01",
       "stop_name": "J.P Colony",
       "lat": 17.5286758,
       "lng": 78.2672027,
@@ -28,6 +30,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_02",
+      "stop_id": "gtfs_bus_route_218C_02",
       "stop_name": "Icrisat",
       "lat": 17.5183442,
       "lng": 78.2794387,
@@ -38,6 +41,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_03",
+      "stop_id": "gtfs_bus_route_218C_03",
       "stop_name": "Rc Puram",
       "lat": 17.5138065,
       "lng": 78.2883543,
@@ -48,6 +52,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_04",
+      "stop_id": "gtfs_bus_route_218C_04",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.508994,
       "lng": 78.300791,
@@ -58,6 +63,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_05",
+      "stop_id": "gtfs_bus_route_218C_05",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504589,
       "lng": 78.308468,
@@ -68,6 +74,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_06",
+      "stop_id": "gtfs_bus_route_218C_06",
       "stop_name": "Jyothi Nagar, (Lalaguda)",
       "lat": 17.50207,
       "lng": 78.312112,
@@ -78,6 +85,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_07",
+      "stop_id": "gtfs_bus_route_218C_07",
       "stop_name": "Lingampally",
       "lat": 17.4952073,
       "lng": 78.3172601,
@@ -88,6 +96,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_08",
+      "stop_id": "gtfs_bus_route_218C_08",
       "stop_name": "Chandanagar",
       "lat": 17.4951613,
       "lng": 78.3229762,
@@ -98,6 +107,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_09",
+      "stop_id": "gtfs_bus_route_218C_09",
       "stop_name": "Gangaram",
       "lat": 17.4951741,
       "lng": 78.3308995,
@@ -108,6 +118,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_10",
+      "stop_id": "gtfs_bus_route_218C_10",
       "stop_name": "Madeenaguda",
       "lat": 17.49539,
       "lng": 78.340708,
@@ -118,6 +129,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_11",
+      "stop_id": "gtfs_bus_route_218C_11",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.495068,
       "lng": 78.345604,
@@ -128,6 +140,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_12",
+      "stop_id": "gtfs_bus_route_218C_12",
       "stop_name": "Allwyn X Road",
       "lat": 17.4944114,
       "lng": 78.35221,
@@ -138,6 +151,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_13",
+      "stop_id": "gtfs_bus_route_218C_13",
       "stop_name": "Miyapur",
       "lat": 17.4966936,
       "lng": 78.3607712,
@@ -148,6 +162,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_14",
+      "stop_id": "gtfs_bus_route_218C_14",
       "stop_name": "Miyapur X Road",
       "lat": 17.4968377,
       "lng": 78.3635837,
@@ -158,6 +173,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_15",
+      "stop_id": "gtfs_bus_route_218C_15",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496817,
       "lng": 78.371098,
@@ -168,6 +184,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_16",
+      "stop_id": "gtfs_bus_route_218C_16",
       "stop_name": "Hydernagar",
       "lat": 17.49954,
       "lng": 78.383844,
@@ -178,6 +195,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_17",
+      "stop_id": "gtfs_bus_route_218C_17",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.4992379,
       "lng": 78.3858737,
@@ -188,6 +206,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_18",
+      "stop_id": "gtfs_bus_route_218C_18",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498657,
       "lng": 78.390476,
@@ -198,6 +217,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_19",
+      "stop_id": "gtfs_bus_route_218C_19",
       "stop_name": "Jntu",
       "lat": 17.4967243,
       "lng": 78.3944464,
@@ -208,6 +228,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_20",
+      "stop_id": "gtfs_bus_route_218C_20",
       "stop_name": "Remedy Hospital-Kuktplly",
       "lat": 17.494976,
       "lng": 78.398581,
@@ -218,6 +239,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_21",
+      "stop_id": "gtfs_bus_route_218C_21",
       "stop_name": "Kphb",
       "lat": 17.4945575,
       "lng": 78.4008099,
@@ -228,6 +250,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_22",
+      "stop_id": "gtfs_bus_route_218C_22",
       "stop_name": "Vivekananda Nagar Clny",
       "lat": 17.486536,
       "lng": 78.410808,
@@ -238,6 +261,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_23",
+      "stop_id": "gtfs_bus_route_218C_23",
       "stop_name": "Kukatpally",
       "lat": 17.4837158,
       "lng": 78.4129241,
@@ -248,6 +272,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_24",
+      "stop_id": "gtfs_bus_route_218C_24",
       "stop_name": "Habib Nagar",
       "lat": 17.4779986,
       "lng": 78.4204712,
@@ -258,6 +283,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_25",
+      "stop_id": "gtfs_bus_route_218C_25",
       "stop_name": "Moosapet",
       "lat": 17.4727071,
       "lng": 78.4256512,
@@ -268,6 +294,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_26",
+      "stop_id": "gtfs_bus_route_218C_26",
       "stop_name": "Bharath Nagar",
       "lat": 17.4671297,
       "lng": 78.4290362,
@@ -278,6 +305,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_27",
+      "stop_id": "gtfs_bus_route_218C_27",
       "stop_name": "Erragadda",
       "lat": 17.4527857,
       "lng": 78.43579,
@@ -288,6 +316,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_28",
+      "stop_id": "gtfs_bus_route_218C_28",
       "stop_name": "Esi Hospital Erragadda",
       "lat": 17.446138,
       "lng": 78.439221,
@@ -298,6 +327,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_29",
+      "stop_id": "gtfs_bus_route_218C_29",
       "stop_name": "Sr Nagar",
       "lat": 17.440269,
       "lng": 78.442599,
@@ -308,6 +338,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_30",
+      "stop_id": "gtfs_bus_route_218C_30",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -318,6 +349,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_31",
+      "stop_id": "gtfs_bus_route_218C_31",
       "stop_name": "Ameerpet",
       "lat": 17.431749,
       "lng": 78.447983,
@@ -328,6 +360,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_32",
+      "stop_id": "gtfs_bus_route_218C_32",
       "stop_name": "Punjagutta",
       "lat": 17.4264221,
       "lng": 78.4527375,
@@ -338,6 +371,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_33",
+      "stop_id": "gtfs_bus_route_218C_33",
       "stop_name": "Panjaguta Metro Station",
       "lat": 17.429261,
       "lng": 78.450954,
@@ -348,6 +382,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_34",
+      "stop_id": "gtfs_bus_route_218C_34",
       "stop_name": "Nims Hospital",
       "lat": 17.4231638,
       "lng": 78.4545278,
@@ -358,6 +393,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_35",
+      "stop_id": "gtfs_bus_route_218C_35",
       "stop_name": "Irram Manzil",
       "lat": 17.4205279,
       "lng": 78.4561856,
@@ -368,6 +404,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_36",
+      "stop_id": "gtfs_bus_route_218C_36",
       "stop_name": "Somajiguda",
       "lat": 17.4159262,
       "lng": 78.4578323,
@@ -378,6 +415,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_37",
+      "stop_id": "gtfs_bus_route_218C_37",
       "stop_name": "Khairatabad",
       "lat": 17.4128397,
       "lng": 78.4605682,
@@ -388,6 +426,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_38",
+      "stop_id": "gtfs_bus_route_218C_38",
       "stop_name": "Chintal Basthi",
       "lat": 17.4089547,
       "lng": 78.4605843,
@@ -398,6 +437,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_39",
+      "stop_id": "gtfs_bus_route_218C_39",
       "stop_name": "Lakdikapool",
       "lat": 17.406426,
       "lng": 78.4627549,
@@ -408,6 +448,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_40",
+      "stop_id": "gtfs_bus_route_218C_40",
       "stop_name": "Assembly",
       "lat": 17.402244,
       "lng": 78.4685611,
@@ -418,6 +459,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_41",
+      "stop_id": "gtfs_bus_route_218C_41",
       "stop_name": "Nampally Public Garden",
       "lat": 17.3962161,
       "lng": 78.4712742,
@@ -428,6 +470,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_42",
+      "stop_id": "gtfs_bus_route_218C_42",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3920763,
       "lng": 78.4702054,
@@ -438,6 +481,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_43",
+      "stop_id": "gtfs_bus_route_218C_43",
       "stop_name": "Gandhibavan",
       "lat": 17.3877775,
       "lng": 78.4719836,
@@ -448,6 +492,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_44",
+      "stop_id": "gtfs_bus_route_218C_44",
       "stop_name": "Osmangunj",
       "lat": 17.3805594,
       "lng": 78.4752623,
@@ -458,6 +503,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_45",
+      "stop_id": "gtfs_bus_route_218C_45",
       "stop_name": "Afzalgunj",
       "lat": 17.3733072,
       "lng": 78.4769324,
@@ -468,6 +514,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_46",
+      "stop_id": "gtfs_bus_route_218C_46",
       "stop_name": "Darul Shifa",
       "lat": 17.3732686,
       "lng": 78.4829861,
@@ -478,6 +525,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_47",
+      "stop_id": "gtfs_bus_route_218C_47",
       "stop_name": "Purani Haveli",
       "lat": 17.367562,
       "lng": 78.481414,
@@ -488,6 +536,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_48",
+      "stop_id": "gtfs_bus_route_218C_48",
       "stop_name": "Mir Chowk Police Statiom",
       "lat": 17.3639335,
       "lng": 78.4804517,
@@ -498,6 +547,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_49",
+      "stop_id": "gtfs_bus_route_218C_49",
       "stop_name": "Bibi Bazar",
       "lat": 17.3586002,
       "lng": 78.4793303,
@@ -508,6 +558,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_50",
+      "stop_id": "gtfs_bus_route_218C_50",
       "stop_name": "Charminar",
       "lat": 17.3586779,
       "lng": 78.4740277,
@@ -518,6 +569,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_51",
+      "stop_id": "gtfs_bus_route_218C_51",
       "stop_name": "Shahalibanda",
       "lat": 17.3546886,
       "lng": 78.4732872,
@@ -528,6 +580,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_52",
+      "stop_id": "gtfs_bus_route_218C_52",
       "stop_name": "Laldarwaza",
       "lat": 17.351204,
       "lng": 78.472682,
@@ -538,6 +591,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_53",
+      "stop_id": "gtfs_bus_route_218C_53",
       "stop_name": "Aliabad",
       "lat": 17.3474537,
       "lng": 78.4705728,
@@ -548,6 +602,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_54",
+      "stop_id": "gtfs_bus_route_218C_54",
       "stop_name": "Engine Bowli",
       "lat": 17.335,
       "lng": 78.469,
@@ -558,6 +613,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_55",
+      "stop_id": "gtfs_bus_route_218C_55",
       "stop_name": "Falaknuma Railway Bridge",
       "lat": 17.3280474,
       "lng": 78.474336,
@@ -568,6 +624,7 @@
     },
     {
       "id": "gtfs_bus_route_218C_56",
+      "stop_id": "gtfs_bus_route_218C_56",
       "stop_name": "Chandrayangutta",
       "lat": 17.3269668,
       "lng": 78.4759627,
@@ -578,6 +635,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_00",
+      "stop_id": "gtfs_bus_route_10H_00",
       "stop_name": "Waverock",
       "lat": 17.4191555,
       "lng": 78.3472716,
@@ -588,6 +646,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_01",
+      "stop_id": "gtfs_bus_route_10H_01",
       "stop_name": "Icici Junction",
       "lat": 17.4222994,
       "lng": 78.3382078,
@@ -598,6 +657,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_02",
+      "stop_id": "gtfs_bus_route_10H_02",
       "stop_name": "Infotech",
       "lat": 17.4203281,
       "lng": 78.3369908,
@@ -608,6 +668,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_03",
+      "stop_id": "gtfs_bus_route_10H_03",
       "stop_name": "Wipro Circle",
       "lat": 17.4261936,
       "lng": 78.340652,
@@ -618,6 +679,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_04",
+      "stop_id": "gtfs_bus_route_10H_04",
       "stop_name": "Infosys",
       "lat": 17.436867,
       "lng": 78.347239,
@@ -628,6 +690,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_05",
+      "stop_id": "gtfs_bus_route_10H_05",
       "stop_name": "Iiit",
       "lat": 17.4444415,
       "lng": 78.3536848,
@@ -638,6 +701,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_06",
+      "stop_id": "gtfs_bus_route_10H_06",
       "stop_name": "Indira Nagar- Gachibowli",
       "lat": 17.4406059,
       "lng": 78.3609429,
@@ -648,6 +712,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_07",
+      "stop_id": "gtfs_bus_route_10H_07",
       "stop_name": "Gachibowli",
       "lat": 17.4396633,
       "lng": 78.3635634,
@@ -658,6 +723,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_08",
+      "stop_id": "gtfs_bus_route_10H_08",
       "stop_name": "Anjaiah Nagar",
       "lat": 17.452137,
       "lng": 78.363446,
@@ -668,6 +734,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_09",
+      "stop_id": "gtfs_bus_route_10H_09",
       "stop_name": "Kothaguda-Kondapur",
       "lat": 17.45863,
       "lng": 78.3681768,
@@ -678,6 +745,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_10",
+      "stop_id": "gtfs_bus_route_10H_10",
       "stop_name": "Jayabheri",
       "lat": 17.4582603,
       "lng": 78.3700788,
@@ -688,6 +756,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_11",
+      "stop_id": "gtfs_bus_route_10H_11",
       "stop_name": "Hitex",
       "lat": 17.455115,
       "lng": 78.3781117,
@@ -698,6 +767,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_12",
+      "stop_id": "gtfs_bus_route_10H_12",
       "stop_name": "Hitech City (Cyber Towers)",
       "lat": 17.4499508,
       "lng": 78.3825736,
@@ -708,6 +778,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_13",
+      "stop_id": "gtfs_bus_route_10H_13",
       "stop_name": "Image Hospital",
       "lat": 17.4439505,
       "lng": 78.3872205,
@@ -718,6 +789,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_14",
+      "stop_id": "gtfs_bus_route_10H_14",
       "stop_name": "Madhapur Petrol Pump",
       "lat": 17.44142,
       "lng": 78.3898922,
@@ -728,6 +800,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_15",
+      "stop_id": "gtfs_bus_route_10H_15",
       "stop_name": "Madhapur Police Station",
       "lat": 17.4389939,
       "lng": 78.3970374,
@@ -738,6 +811,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_16",
+      "stop_id": "gtfs_bus_route_10H_16",
       "stop_name": "Madhapur Metro",
       "lat": 17.4378806,
       "lng": 78.4001595,
@@ -748,6 +822,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_17",
+      "stop_id": "gtfs_bus_route_10H_17",
       "stop_name": "Peddamma Temple",
       "lat": 17.4315983,
       "lng": 78.4072003,
@@ -758,6 +833,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_18",
+      "stop_id": "gtfs_bus_route_10H_18",
       "stop_name": "Ushakiran Movies",
       "lat": 17.4301655,
       "lng": 78.4110492,
@@ -768,6 +844,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_19",
+      "stop_id": "gtfs_bus_route_10H_19",
       "stop_name": "Jubilee Hills Checkpost",
       "lat": 17.4277138,
       "lng": 78.416478,
@@ -778,6 +855,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_20",
+      "stop_id": "gtfs_bus_route_10H_20",
       "stop_name": "Venkatagiri",
       "lat": 17.4307372,
       "lng": 78.420748,
@@ -788,6 +866,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_21",
+      "stop_id": "gtfs_bus_route_10H_21",
       "stop_name": "Krishnanagar",
       "lat": 17.4327122,
       "lng": 78.4263174,
@@ -798,6 +877,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_22",
+      "stop_id": "gtfs_bus_route_10H_22",
       "stop_name": "Yousufguda Check Post",
       "lat": 17.4366267,
       "lng": 78.4279847,
@@ -808,6 +888,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_23",
+      "stop_id": "gtfs_bus_route_10H_23",
       "stop_name": "Yousufguda Basti",
       "lat": 17.43678,
       "lng": 78.432168,
@@ -818,6 +899,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_24",
+      "stop_id": "gtfs_bus_route_10H_24",
       "stop_name": "Krishna Kanth Park",
       "lat": 17.441268,
       "lng": 78.43187,
@@ -828,6 +910,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_25",
+      "stop_id": "gtfs_bus_route_10H_25",
       "stop_name": "Kalyan Nagar",
       "lat": 17.4444,
       "lng": 78.433,
@@ -838,6 +921,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_26",
+      "stop_id": "gtfs_bus_route_10H_26",
       "stop_name": "Sr Nagar",
       "lat": 17.440269,
       "lng": 78.442599,
@@ -848,6 +932,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_27",
+      "stop_id": "gtfs_bus_route_10H_27",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -858,6 +943,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_28",
+      "stop_id": "gtfs_bus_route_10H_28",
       "stop_name": "Ameerpet",
       "lat": 17.434183,
       "lng": 78.446044,
@@ -868,6 +954,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_29",
+      "stop_id": "gtfs_bus_route_10H_29",
       "stop_name": "Sheesh Mahal",
       "lat": 17.434691,
       "lng": 78.448929,
@@ -878,6 +965,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_30",
+      "stop_id": "gtfs_bus_route_10H_30",
       "stop_name": "Lal Bungalow",
       "lat": 17.4360715,
       "lng": 78.4524679,
@@ -888,6 +976,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_31",
+      "stop_id": "gtfs_bus_route_10H_31",
       "stop_name": "Green Land",
       "lat": 17.4356308,
       "lng": 78.4544819,
@@ -898,6 +987,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_32",
+      "stop_id": "gtfs_bus_route_10H_32",
       "stop_name": "Hps Begumpet",
       "lat": 17.4427992,
       "lng": 78.4588915,
@@ -908,6 +998,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_33",
+      "stop_id": "gtfs_bus_route_10H_33",
       "stop_name": "Shyamlal Begumpet",
       "lat": 17.444383,
       "lng": 78.461112,
@@ -918,6 +1009,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_34",
+      "stop_id": "gtfs_bus_route_10H_34",
       "stop_name": "Shoppers Stop Begumpet",
       "lat": 17.4451223,
       "lng": 78.4650019,
@@ -928,6 +1020,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_35",
+      "stop_id": "gtfs_bus_route_10H_35",
       "stop_name": "Prakash Nagar Begumpet",
       "lat": 17.4443061,
       "lng": 78.4715305,
@@ -938,6 +1031,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_36",
+      "stop_id": "gtfs_bus_route_10H_36",
       "stop_name": "Police Lines",
       "lat": 17.443691,
       "lng": 78.478073,
@@ -948,6 +1042,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_37",
+      "stop_id": "gtfs_bus_route_10H_37",
       "stop_name": "Wesley College",
       "lat": 17.4434719,
       "lng": 78.4820527,
@@ -958,6 +1053,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_38",
+      "stop_id": "gtfs_bus_route_10H_38",
       "stop_name": "Paradise",
       "lat": 17.4434949,
       "lng": 78.48665,
@@ -968,6 +1064,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_39",
+      "stop_id": "gtfs_bus_route_10H_39",
       "stop_name": "Plaza",
       "lat": 17.4433031,
       "lng": 78.4906572,
@@ -978,6 +1075,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_40",
+      "stop_id": "gtfs_bus_route_10H_40",
       "stop_name": "Patny",
       "lat": 17.4431828,
       "lng": 78.4962469,
@@ -988,6 +1086,7 @@
     },
     {
       "id": "gtfs_bus_route_10H_41",
+      "stop_id": "gtfs_bus_route_10H_41",
       "stop_name": "Secunderabad",
       "lat": 17.434259,
       "lng": 78.501577,
@@ -998,6 +1097,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_00",
+      "stop_id": "gtfs_bus_route_299X_00",
       "stop_name": "Patancheruvu",
       "lat": 17.529542,
       "lng": 78.2641071,
@@ -1008,6 +1108,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_01",
+      "stop_id": "gtfs_bus_route_299X_01",
       "stop_name": "J.P Colony",
       "lat": 17.5286758,
       "lng": 78.2672027,
@@ -1018,6 +1119,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_02",
+      "stop_id": "gtfs_bus_route_299X_02",
       "stop_name": "Icrisat",
       "lat": 17.5183442,
       "lng": 78.2794387,
@@ -1028,6 +1130,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_03",
+      "stop_id": "gtfs_bus_route_299X_03",
       "stop_name": "Rc Puram",
       "lat": 17.5138065,
       "lng": 78.2883543,
@@ -1038,6 +1141,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_04",
+      "stop_id": "gtfs_bus_route_299X_04",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.508994,
       "lng": 78.300791,
@@ -1048,6 +1152,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_05",
+      "stop_id": "gtfs_bus_route_299X_05",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504589,
       "lng": 78.308468,
@@ -1058,6 +1163,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_06",
+      "stop_id": "gtfs_bus_route_299X_06",
       "stop_name": "Jyothi Nagar, (Lalaguda)",
       "lat": 17.50207,
       "lng": 78.312112,
@@ -1068,6 +1174,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_07",
+      "stop_id": "gtfs_bus_route_299X_07",
       "stop_name": "Lingampally",
       "lat": 17.4952073,
       "lng": 78.3172601,
@@ -1078,6 +1185,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_08",
+      "stop_id": "gtfs_bus_route_299X_08",
       "stop_name": "Chandanagar",
       "lat": 17.4951613,
       "lng": 78.3229762,
@@ -1088,6 +1196,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_09",
+      "stop_id": "gtfs_bus_route_299X_09",
       "stop_name": "Gangaram",
       "lat": 17.4951741,
       "lng": 78.3308995,
@@ -1098,6 +1207,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_10",
+      "stop_id": "gtfs_bus_route_299X_10",
       "stop_name": "Madeenaguda",
       "lat": 17.49539,
       "lng": 78.340708,
@@ -1108,6 +1218,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_11",
+      "stop_id": "gtfs_bus_route_299X_11",
       "stop_name": "Allwyn X Road",
       "lat": 17.4944114,
       "lng": 78.35221,
@@ -1118,6 +1229,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_12",
+      "stop_id": "gtfs_bus_route_299X_12",
       "stop_name": "Miyapur",
       "lat": 17.4966936,
       "lng": 78.3607712,
@@ -1128,6 +1240,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_13",
+      "stop_id": "gtfs_bus_route_299X_13",
       "stop_name": "Miyapur X Road",
       "lat": 17.4968377,
       "lng": 78.3635837,
@@ -1138,6 +1251,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_14",
+      "stop_id": "gtfs_bus_route_299X_14",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496817,
       "lng": 78.371098,
@@ -1148,6 +1262,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_15",
+      "stop_id": "gtfs_bus_route_299X_15",
       "stop_name": "Cbcid Colony-Hydernagar",
       "lat": 17.4989268,
       "lng": 78.3802521,
@@ -1158,6 +1273,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_16",
+      "stop_id": "gtfs_bus_route_299X_16",
       "stop_name": "Hydernagar",
       "lat": 17.49954,
       "lng": 78.383844,
@@ -1168,6 +1284,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_17",
+      "stop_id": "gtfs_bus_route_299X_17",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.4992379,
       "lng": 78.3858737,
@@ -1178,6 +1295,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_18",
+      "stop_id": "gtfs_bus_route_299X_18",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498657,
       "lng": 78.390476,
@@ -1188,6 +1306,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_19",
+      "stop_id": "gtfs_bus_route_299X_19",
       "stop_name": "Jntu",
       "lat": 17.4967243,
       "lng": 78.3944464,
@@ -1198,6 +1317,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_20",
+      "stop_id": "gtfs_bus_route_299X_20",
       "stop_name": "Remedy Hospital-Kuktplly",
       "lat": 17.494976,
       "lng": 78.398581,
@@ -1208,6 +1328,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_21",
+      "stop_id": "gtfs_bus_route_299X_21",
       "stop_name": "Kphb",
       "lat": 17.4945575,
       "lng": 78.4008099,
@@ -1218,6 +1339,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_22",
+      "stop_id": "gtfs_bus_route_299X_22",
       "stop_name": "Vivekananda Nagar Clny",
       "lat": 17.486536,
       "lng": 78.410808,
@@ -1228,6 +1350,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_23",
+      "stop_id": "gtfs_bus_route_299X_23",
       "stop_name": "Kukatpally",
       "lat": 17.4837158,
       "lng": 78.4129241,
@@ -1238,6 +1361,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_24",
+      "stop_id": "gtfs_bus_route_299X_24",
       "stop_name": "Habib Nagar",
       "lat": 17.4779986,
       "lng": 78.4204712,
@@ -1248,6 +1372,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_25",
+      "stop_id": "gtfs_bus_route_299X_25",
       "stop_name": "Moosapet",
       "lat": 17.4727071,
       "lng": 78.4256512,
@@ -1258,6 +1383,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_26",
+      "stop_id": "gtfs_bus_route_299X_26",
       "stop_name": "Bharath Nagar",
       "lat": 17.4671297,
       "lng": 78.4290362,
@@ -1268,6 +1394,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_27",
+      "stop_id": "gtfs_bus_route_299X_27",
       "stop_name": "Erragadda",
       "lat": 17.4527857,
       "lng": 78.43579,
@@ -1278,6 +1405,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_28",
+      "stop_id": "gtfs_bus_route_299X_28",
       "stop_name": "Esi Hospital Erragadda",
       "lat": 17.446138,
       "lng": 78.439221,
@@ -1288,6 +1416,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_29",
+      "stop_id": "gtfs_bus_route_299X_29",
       "stop_name": "Sr Nagar",
       "lat": 17.440269,
       "lng": 78.442599,
@@ -1298,6 +1427,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_30",
+      "stop_id": "gtfs_bus_route_299X_30",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -1308,6 +1438,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_31",
+      "stop_id": "gtfs_bus_route_299X_31",
       "stop_name": "Ameerpet",
       "lat": 17.431749,
       "lng": 78.447983,
@@ -1318,6 +1449,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_32",
+      "stop_id": "gtfs_bus_route_299X_32",
       "stop_name": "Panjaguta Metro Station",
       "lat": 17.429261,
       "lng": 78.450954,
@@ -1328,6 +1460,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_33",
+      "stop_id": "gtfs_bus_route_299X_33",
       "stop_name": "Punjagutta",
       "lat": 17.4264221,
       "lng": 78.4527375,
@@ -1338,6 +1471,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_34",
+      "stop_id": "gtfs_bus_route_299X_34",
       "stop_name": "Nims Hospital",
       "lat": 17.4231638,
       "lng": 78.4545278,
@@ -1348,6 +1482,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_35",
+      "stop_id": "gtfs_bus_route_299X_35",
       "stop_name": "Irram Manzil",
       "lat": 17.4205279,
       "lng": 78.4561856,
@@ -1358,6 +1493,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_36",
+      "stop_id": "gtfs_bus_route_299X_36",
       "stop_name": "Somajiguda",
       "lat": 17.4159262,
       "lng": 78.4578323,
@@ -1368,6 +1504,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_37",
+      "stop_id": "gtfs_bus_route_299X_37",
       "stop_name": "Khairatabad",
       "lat": 17.4128397,
       "lng": 78.4605682,
@@ -1378,6 +1515,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_38",
+      "stop_id": "gtfs_bus_route_299X_38",
       "stop_name": "Chintal Basthi",
       "lat": 17.4089547,
       "lng": 78.4605843,
@@ -1388,6 +1526,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_39",
+      "stop_id": "gtfs_bus_route_299X_39",
       "stop_name": "Lakdikapool",
       "lat": 17.406426,
       "lng": 78.4627549,
@@ -1398,6 +1537,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_40",
+      "stop_id": "gtfs_bus_route_299X_40",
       "stop_name": "Assembly",
       "lat": 17.402244,
       "lng": 78.4685611,
@@ -1408,6 +1548,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_41",
+      "stop_id": "gtfs_bus_route_299X_41",
       "stop_name": "Nizam College",
       "lat": 17.3974507,
       "lng": 78.4754535,
@@ -1418,6 +1559,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_42",
+      "stop_id": "gtfs_bus_route_299X_42",
       "stop_name": "Abids Grammar School",
       "lat": 17.3933318,
       "lng": 78.4762497,
@@ -1428,6 +1570,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_43",
+      "stop_id": "gtfs_bus_route_299X_43",
       "stop_name": "Koti Bank Street",
       "lat": 17.3854274,
       "lng": 78.4819078,
@@ -1438,6 +1581,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_44",
+      "stop_id": "gtfs_bus_route_299X_44",
       "stop_name": "Koti Women College",
       "lat": 17.3849503,
       "lng": 78.4884793,
@@ -1448,6 +1592,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_45",
+      "stop_id": "gtfs_bus_route_299X_45",
       "stop_name": "Chaderghat",
       "lat": 17.377081,
       "lng": 78.49577,
@@ -1458,6 +1603,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_46",
+      "stop_id": "gtfs_bus_route_299X_46",
       "stop_name": "Nalgonda X Roads",
       "lat": 17.375289,
       "lng": 78.498622,
@@ -1468,6 +1614,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_47",
+      "stop_id": "gtfs_bus_route_299X_47",
       "stop_name": "Old Malakpet",
       "lat": 17.3733481,
       "lng": 78.5042372,
@@ -1478,6 +1625,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_48",
+      "stop_id": "gtfs_bus_route_299X_48",
       "stop_name": "Super Bazar Malakpet",
       "lat": 17.3724599,
       "lng": 78.5091125,
@@ -1488,6 +1636,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_49",
+      "stop_id": "gtfs_bus_route_299X_49",
       "stop_name": "Moosarambhagh",
       "lat": 17.3695148,
       "lng": 78.5167614,
@@ -1498,6 +1647,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_50",
+      "stop_id": "gtfs_bus_route_299X_50",
       "stop_name": "Dilsukhnagar Bus Depot",
       "lat": 17.3686201,
       "lng": 78.5236645,
@@ -1508,6 +1658,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_51",
+      "stop_id": "gtfs_bus_route_299X_51",
       "stop_name": "Chaithanyapuri",
       "lat": 17.3684818,
       "lng": 78.5326123,
@@ -1518,6 +1669,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_52",
+      "stop_id": "gtfs_bus_route_299X_52",
       "stop_name": "Kothapet-Fruit Market",
       "lat": 17.3685177,
       "lng": 78.5350263,
@@ -1528,6 +1680,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_53",
+      "stop_id": "gtfs_bus_route_299X_53",
       "stop_name": "Kothapet X Road",
       "lat": 17.3668342,
       "lng": 78.5413017,
@@ -1538,6 +1691,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_54",
+      "stop_id": "gtfs_bus_route_299X_54",
       "stop_name": "Ashtalakshmi Temple-Kothapet",
       "lat": 17.362645,
       "lng": 78.543864,
@@ -1548,6 +1702,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_55",
+      "stop_id": "gtfs_bus_route_299X_55",
       "stop_name": "Ntr Nagar Lb Nagar",
       "lat": 17.3559666,
       "lng": 78.5456078,
@@ -1558,6 +1713,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_56",
+      "stop_id": "gtfs_bus_route_299X_56",
       "stop_name": "Lb Nagar Metro Station",
       "lat": 17.3497167,
       "lng": 78.5481692,
@@ -1568,6 +1724,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_57",
+      "stop_id": "gtfs_bus_route_299X_57",
       "stop_name": "Lb Nagar",
       "lat": 17.3465421,
       "lng": 78.5514589,
@@ -1578,6 +1735,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_58",
+      "stop_id": "gtfs_bus_route_299X_58",
       "stop_name": "Chintalkunta Check Post",
       "lat": 17.342,
       "lng": 78.558,
@@ -1588,6 +1746,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_59",
+      "stop_id": "gtfs_bus_route_299X_59",
       "stop_name": "Chintalkunta Bus Stop",
       "lat": 17.3408838,
       "lng": 78.5620978,
@@ -1598,6 +1757,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_60",
+      "stop_id": "gtfs_bus_route_299X_60",
       "stop_name": "Panama Godowns",
       "lat": 17.338403,
       "lng": 78.5686398,
@@ -1608,6 +1768,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_61",
+      "stop_id": "gtfs_bus_route_299X_61",
       "stop_name": "Sushma-Autonagar",
       "lat": 17.336679,
       "lng": 78.573089,
@@ -1618,6 +1779,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_62",
+      "stop_id": "gtfs_bus_route_299X_62",
       "stop_name": "Auto Nagar-Sushma",
       "lat": 17.336495,
       "lng": 78.576728,
@@ -1628,6 +1790,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_63",
+      "stop_id": "gtfs_bus_route_299X_63",
       "stop_name": "High Court Colony-Dsnr",
       "lat": 17.335042,
       "lng": 78.585203,
@@ -1638,6 +1801,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_64",
+      "stop_id": "gtfs_bus_route_299X_64",
       "stop_name": "Bhagyalatha",
       "lat": 17.3329402,
       "lng": 78.5892718,
@@ -1648,6 +1812,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_65",
+      "stop_id": "gtfs_bus_route_299X_65",
       "stop_name": "Hayathnagar Bus Depot",
       "lat": 17.330115,
       "lng": 78.5943729,
@@ -1658,6 +1823,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_66",
+      "stop_id": "gtfs_bus_route_299X_66",
       "stop_name": "Rtc Colony-Hyt",
       "lat": 17.328654,
       "lng": 78.598786,
@@ -1668,6 +1834,7 @@
     },
     {
       "id": "gtfs_bus_route_299X_67",
+      "stop_id": "gtfs_bus_route_299X_67",
       "stop_name": "Hayathnagar",
       "lat": 17.3273199,
       "lng": 78.6048933,
@@ -1678,6 +1845,7 @@
     },
     {
       "id": "gtfs_bus_route_218_00",
+      "stop_id": "gtfs_bus_route_218_00",
       "stop_name": "Patancheruvu",
       "lat": 17.529542,
       "lng": 78.2641071,
@@ -1688,6 +1856,7 @@
     },
     {
       "id": "gtfs_bus_route_218_01",
+      "stop_id": "gtfs_bus_route_218_01",
       "stop_name": "J.P Colony",
       "lat": 17.5286758,
       "lng": 78.2672027,
@@ -1698,6 +1867,7 @@
     },
     {
       "id": "gtfs_bus_route_218_02",
+      "stop_id": "gtfs_bus_route_218_02",
       "stop_name": "Allwyn",
       "lat": 17.5248985,
       "lng": 78.2717293,
@@ -1708,6 +1878,7 @@
     },
     {
       "id": "gtfs_bus_route_218_03",
+      "stop_id": "gtfs_bus_route_218_03",
       "stop_name": "Icrisat",
       "lat": 17.5183442,
       "lng": 78.2794387,
@@ -1718,6 +1889,7 @@
     },
     {
       "id": "gtfs_bus_route_218_04",
+      "stop_id": "gtfs_bus_route_218_04",
       "stop_name": "Rc Puram",
       "lat": 17.5138065,
       "lng": 78.2883543,
@@ -1728,6 +1900,7 @@
     },
     {
       "id": "gtfs_bus_route_218_05",
+      "stop_id": "gtfs_bus_route_218_05",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.508994,
       "lng": 78.300791,
@@ -1738,6 +1911,7 @@
     },
     {
       "id": "gtfs_bus_route_218_06",
+      "stop_id": "gtfs_bus_route_218_06",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504589,
       "lng": 78.308468,
@@ -1748,6 +1922,7 @@
     },
     {
       "id": "gtfs_bus_route_218_07",
+      "stop_id": "gtfs_bus_route_218_07",
       "stop_name": "Jyothi Nagar, (Lalaguda)",
       "lat": 17.50207,
       "lng": 78.312112,
@@ -1758,6 +1933,7 @@
     },
     {
       "id": "gtfs_bus_route_218_08",
+      "stop_id": "gtfs_bus_route_218_08",
       "stop_name": "Lingampally",
       "lat": 17.4952073,
       "lng": 78.3172601,
@@ -1768,6 +1944,7 @@
     },
     {
       "id": "gtfs_bus_route_218_09",
+      "stop_id": "gtfs_bus_route_218_09",
       "stop_name": "Chandanagar",
       "lat": 17.4951613,
       "lng": 78.3229762,
@@ -1778,6 +1955,7 @@
     },
     {
       "id": "gtfs_bus_route_218_10",
+      "stop_id": "gtfs_bus_route_218_10",
       "stop_name": "Gangaram",
       "lat": 17.4951741,
       "lng": 78.3308995,
@@ -1788,6 +1966,7 @@
     },
     {
       "id": "gtfs_bus_route_218_11",
+      "stop_id": "gtfs_bus_route_218_11",
       "stop_name": "Madeenaguda",
       "lat": 17.49539,
       "lng": 78.340708,
@@ -1798,6 +1977,7 @@
     },
     {
       "id": "gtfs_bus_route_218_12",
+      "stop_id": "gtfs_bus_route_218_12",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.495068,
       "lng": 78.345604,
@@ -1808,6 +1988,7 @@
     },
     {
       "id": "gtfs_bus_route_218_13",
+      "stop_id": "gtfs_bus_route_218_13",
       "stop_name": "Allwyn X Road",
       "lat": 17.4944114,
       "lng": 78.35221,
@@ -1818,6 +1999,7 @@
     },
     {
       "id": "gtfs_bus_route_218_14",
+      "stop_id": "gtfs_bus_route_218_14",
       "stop_name": "Miyapur",
       "lat": 17.4966936,
       "lng": 78.3607712,
@@ -1828,6 +2010,7 @@
     },
     {
       "id": "gtfs_bus_route_218_15",
+      "stop_id": "gtfs_bus_route_218_15",
       "stop_name": "Miyapur X Road",
       "lat": 17.4968377,
       "lng": 78.3635837,
@@ -1838,6 +2021,7 @@
     },
     {
       "id": "gtfs_bus_route_218_16",
+      "stop_id": "gtfs_bus_route_218_16",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496817,
       "lng": 78.371098,
@@ -1848,6 +2032,7 @@
     },
     {
       "id": "gtfs_bus_route_218_17",
+      "stop_id": "gtfs_bus_route_218_17",
       "stop_name": "Cbcid Colony-Hydernagar",
       "lat": 17.4989268,
       "lng": 78.3802521,
@@ -1858,6 +2043,7 @@
     },
     {
       "id": "gtfs_bus_route_218_18",
+      "stop_id": "gtfs_bus_route_218_18",
       "stop_name": "Hydernagar",
       "lat": 17.49954,
       "lng": 78.383844,
@@ -1868,6 +2054,7 @@
     },
     {
       "id": "gtfs_bus_route_218_19",
+      "stop_id": "gtfs_bus_route_218_19",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.4992379,
       "lng": 78.3858737,
@@ -1878,6 +2065,7 @@
     },
     {
       "id": "gtfs_bus_route_218_20",
+      "stop_id": "gtfs_bus_route_218_20",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498657,
       "lng": 78.390476,
@@ -1888,6 +2076,7 @@
     },
     {
       "id": "gtfs_bus_route_218_21",
+      "stop_id": "gtfs_bus_route_218_21",
       "stop_name": "Jntu",
       "lat": 17.4967243,
       "lng": 78.3944464,
@@ -1898,6 +2087,7 @@
     },
     {
       "id": "gtfs_bus_route_218_22",
+      "stop_id": "gtfs_bus_route_218_22",
       "stop_name": "Remedy Hospital-Kuktplly",
       "lat": 17.494976,
       "lng": 78.398581,
@@ -1908,6 +2098,7 @@
     },
     {
       "id": "gtfs_bus_route_218_23",
+      "stop_id": "gtfs_bus_route_218_23",
       "stop_name": "Kphb",
       "lat": 17.4945575,
       "lng": 78.4008099,
@@ -1918,6 +2109,7 @@
     },
     {
       "id": "gtfs_bus_route_218_24",
+      "stop_id": "gtfs_bus_route_218_24",
       "stop_name": "Vivekananda Nagar Clny",
       "lat": 17.486536,
       "lng": 78.410808,
@@ -1928,6 +2120,7 @@
     },
     {
       "id": "gtfs_bus_route_218_25",
+      "stop_id": "gtfs_bus_route_218_25",
       "stop_name": "Kukatpally",
       "lat": 17.4837158,
       "lng": 78.4129241,
@@ -1938,6 +2131,7 @@
     },
     {
       "id": "gtfs_bus_route_218_26",
+      "stop_id": "gtfs_bus_route_218_26",
       "stop_name": "Habib Nagar",
       "lat": 17.4779986,
       "lng": 78.4204712,
@@ -1948,6 +2142,7 @@
     },
     {
       "id": "gtfs_bus_route_218_27",
+      "stop_id": "gtfs_bus_route_218_27",
       "stop_name": "Moosapet",
       "lat": 17.4727071,
       "lng": 78.4256512,
@@ -1958,6 +2153,7 @@
     },
     {
       "id": "gtfs_bus_route_218_28",
+      "stop_id": "gtfs_bus_route_218_28",
       "stop_name": "Bharath Nagar",
       "lat": 17.4671297,
       "lng": 78.4290362,
@@ -1968,6 +2164,7 @@
     },
     {
       "id": "gtfs_bus_route_218_29",
+      "stop_id": "gtfs_bus_route_218_29",
       "stop_name": "Erragadda",
       "lat": 17.4527857,
       "lng": 78.43579,
@@ -1978,6 +2175,7 @@
     },
     {
       "id": "gtfs_bus_route_218_30",
+      "stop_id": "gtfs_bus_route_218_30",
       "stop_name": "Esi Hospital Erragadda",
       "lat": 17.446138,
       "lng": 78.439221,
@@ -1988,6 +2186,7 @@
     },
     {
       "id": "gtfs_bus_route_218_31",
+      "stop_id": "gtfs_bus_route_218_31",
       "stop_name": "Sr Nagar",
       "lat": 17.440269,
       "lng": 78.442599,
@@ -1998,6 +2197,7 @@
     },
     {
       "id": "gtfs_bus_route_218_32",
+      "stop_id": "gtfs_bus_route_218_32",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -2008,6 +2208,7 @@
     },
     {
       "id": "gtfs_bus_route_218_33",
+      "stop_id": "gtfs_bus_route_218_33",
       "stop_name": "Ameerpet",
       "lat": 17.431749,
       "lng": 78.447983,
@@ -2018,6 +2219,7 @@
     },
     {
       "id": "gtfs_bus_route_218_34",
+      "stop_id": "gtfs_bus_route_218_34",
       "stop_name": "Panjaguta Metro Station",
       "lat": 17.429261,
       "lng": 78.450954,
@@ -2028,6 +2230,7 @@
     },
     {
       "id": "gtfs_bus_route_218_35",
+      "stop_id": "gtfs_bus_route_218_35",
       "stop_name": "Punjagutta",
       "lat": 17.4264221,
       "lng": 78.4527375,
@@ -2038,6 +2241,7 @@
     },
     {
       "id": "gtfs_bus_route_218_36",
+      "stop_id": "gtfs_bus_route_218_36",
       "stop_name": "Nims Hospital",
       "lat": 17.4231638,
       "lng": 78.4545278,
@@ -2048,6 +2252,7 @@
     },
     {
       "id": "gtfs_bus_route_218_37",
+      "stop_id": "gtfs_bus_route_218_37",
       "stop_name": "Irram Manzil",
       "lat": 17.4205279,
       "lng": 78.4561856,
@@ -2058,6 +2263,7 @@
     },
     {
       "id": "gtfs_bus_route_218_38",
+      "stop_id": "gtfs_bus_route_218_38",
       "stop_name": "Somajiguda",
       "lat": 17.4159262,
       "lng": 78.4578323,
@@ -2068,6 +2274,7 @@
     },
     {
       "id": "gtfs_bus_route_218_39",
+      "stop_id": "gtfs_bus_route_218_39",
       "stop_name": "Khairatabad",
       "lat": 17.4128397,
       "lng": 78.4605682,
@@ -2078,6 +2285,7 @@
     },
     {
       "id": "gtfs_bus_route_218_40",
+      "stop_id": "gtfs_bus_route_218_40",
       "stop_name": "Chintal Basthi",
       "lat": 17.4089547,
       "lng": 78.4605843,
@@ -2088,6 +2296,7 @@
     },
     {
       "id": "gtfs_bus_route_218_41",
+      "stop_id": "gtfs_bus_route_218_41",
       "stop_name": "Lakdikapool",
       "lat": 17.406426,
       "lng": 78.4627549,
@@ -2098,6 +2307,7 @@
     },
     {
       "id": "gtfs_bus_route_218_42",
+      "stop_id": "gtfs_bus_route_218_42",
       "stop_name": "Assembly",
       "lat": 17.402244,
       "lng": 78.4685611,
@@ -2108,6 +2318,7 @@
     },
     {
       "id": "gtfs_bus_route_218_43",
+      "stop_id": "gtfs_bus_route_218_43",
       "stop_name": "Nizam College",
       "lat": 17.3974507,
       "lng": 78.4754535,
@@ -2118,6 +2329,7 @@
     },
     {
       "id": "gtfs_bus_route_218_44",
+      "stop_id": "gtfs_bus_route_218_44",
       "stop_name": "Abids Grammar School",
       "lat": 17.3933318,
       "lng": 78.4762497,
@@ -2128,6 +2340,7 @@
     },
     {
       "id": "gtfs_bus_route_218_45",
+      "stop_id": "gtfs_bus_route_218_45",
       "stop_name": "Koti Bank Street",
       "lat": 17.3854274,
       "lng": 78.4819078,
@@ -2138,6 +2351,7 @@
     },
     {
       "id": "gtfs_bus_route_218_46",
+      "stop_id": "gtfs_bus_route_218_46",
       "stop_name": "Koti Women College",
       "lat": 17.3849503,
       "lng": 78.4884793,
@@ -2148,6 +2362,7 @@
     },
     {
       "id": "gtfs_bus_route_218_47",
+      "stop_id": "gtfs_bus_route_218_47",
       "stop_name": "Chaderghat",
       "lat": 17.377081,
       "lng": 78.49577,
@@ -2158,6 +2373,7 @@
     },
     {
       "id": "gtfs_bus_route_218_48",
+      "stop_id": "gtfs_bus_route_218_48",
       "stop_name": "Nalgonda X Roads",
       "lat": 17.375289,
       "lng": 78.498622,
@@ -2168,6 +2384,7 @@
     },
     {
       "id": "gtfs_bus_route_218_49",
+      "stop_id": "gtfs_bus_route_218_49",
       "stop_name": "Old Malakpet",
       "lat": 17.3733481,
       "lng": 78.5042372,
@@ -2178,6 +2395,7 @@
     },
     {
       "id": "gtfs_bus_route_218_50",
+      "stop_id": "gtfs_bus_route_218_50",
       "stop_name": "Super Bazar Malakpet",
       "lat": 17.3724599,
       "lng": 78.5091125,
@@ -2188,6 +2406,7 @@
     },
     {
       "id": "gtfs_bus_route_218_51",
+      "stop_id": "gtfs_bus_route_218_51",
       "stop_name": "Moosarambhagh",
       "lat": 17.3695148,
       "lng": 78.5167614,
@@ -2198,6 +2417,7 @@
     },
     {
       "id": "gtfs_bus_route_218_52",
+      "stop_id": "gtfs_bus_route_218_52",
       "stop_name": "Dilsukhnagar Bus Depot",
       "lat": 17.3686201,
       "lng": 78.5236645,
@@ -2208,6 +2428,7 @@
     },
     {
       "id": "gtfs_bus_route_218_53",
+      "stop_id": "gtfs_bus_route_218_53",
       "stop_name": "Kothapet X Road",
       "lat": 17.3671302,
       "lng": 78.5404041,
@@ -2218,6 +2439,7 @@
     },
     {
       "id": "gtfs_bus_route_218_54",
+      "stop_id": "gtfs_bus_route_218_54",
       "stop_name": "Ashtalakshmi Temple-Kothapet",
       "lat": 17.362645,
       "lng": 78.543864,
@@ -2228,6 +2450,7 @@
     },
     {
       "id": "gtfs_bus_route_218_55",
+      "stop_id": "gtfs_bus_route_218_55",
       "stop_name": "Ntr Nagar Lb Nagar",
       "lat": 17.3557182,
       "lng": 78.5453041,
@@ -2238,6 +2461,7 @@
     },
     {
       "id": "gtfs_bus_route_218_56",
+      "stop_id": "gtfs_bus_route_218_56",
       "stop_name": "Lb Nagar",
       "lat": 17.3437053,
       "lng": 78.5555291,
@@ -2248,6 +2472,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_00",
+      "stop_id": "gtfs_bus_route_107VL_00",
       "stop_name": "Telangana High Court",
       "lat": 17.370175,
       "lng": 78.474051,
@@ -2258,6 +2483,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_01",
+      "stop_id": "gtfs_bus_route_107VL_01",
       "stop_name": "Afzalgunj",
       "lat": 17.373,
       "lng": 78.477,
@@ -2268,6 +2494,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_02",
+      "stop_id": "gtfs_bus_route_107VL_02",
       "stop_name": "Cbs",
       "lat": 17.377853,
       "lng": 78.4819282,
@@ -2278,6 +2505,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_03",
+      "stop_id": "gtfs_bus_route_107VL_03",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -2288,6 +2516,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_04",
+      "stop_id": "gtfs_bus_route_107VL_04",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -2298,6 +2527,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_05",
+      "stop_id": "gtfs_bus_route_107VL_05",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3921595,
       "lng": 78.4700498,
@@ -2308,6 +2538,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_06",
+      "stop_id": "gtfs_bus_route_107VL_06",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -2318,6 +2549,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_07",
+      "stop_id": "gtfs_bus_route_107VL_07",
       "stop_name": "Assembly",
       "lat": 17.400243,
       "lng": 78.470014,
@@ -2328,6 +2560,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_08",
+      "stop_id": "gtfs_bus_route_107VL_08",
       "stop_name": "Lakdikapool",
       "lat": 17.403609,
       "lng": 78.464974,
@@ -2338,6 +2571,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_09",
+      "stop_id": "gtfs_bus_route_107VL_09",
       "stop_name": "Chintal Basthi",
       "lat": 17.408898,
       "lng": 78.460376,
@@ -2348,6 +2582,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_10",
+      "stop_id": "gtfs_bus_route_107VL_10",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -2358,6 +2593,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_11",
+      "stop_id": "gtfs_bus_route_107VL_11",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -2368,6 +2604,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_12",
+      "stop_id": "gtfs_bus_route_107VL_12",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -2378,6 +2615,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_13",
+      "stop_id": "gtfs_bus_route_107VL_13",
       "stop_name": "Punjagutta",
       "lat": 17.4271047,
       "lng": 78.4521165,
@@ -2388,6 +2626,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_14",
+      "stop_id": "gtfs_bus_route_107VL_14",
       "stop_name": "Pvr Mall Bus Stop",
       "lat": 17.429381,
       "lng": 78.450406,
@@ -2398,6 +2637,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_15",
+      "stop_id": "gtfs_bus_route_107VL_15",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -2408,6 +2648,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_16",
+      "stop_id": "gtfs_bus_route_107VL_16",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -2418,6 +2659,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_17",
+      "stop_id": "gtfs_bus_route_107VL_17",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -2428,6 +2670,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_18",
+      "stop_id": "gtfs_bus_route_107VL_18",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -2438,6 +2681,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_19",
+      "stop_id": "gtfs_bus_route_107VL_19",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -2448,6 +2692,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_20",
+      "stop_id": "gtfs_bus_route_107VL_20",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -2458,6 +2703,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_21",
+      "stop_id": "gtfs_bus_route_107VL_21",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -2468,6 +2714,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_22",
+      "stop_id": "gtfs_bus_route_107VL_22",
       "stop_name": "Habib Nagar",
       "lat": 17.4774824,
       "lng": 78.4205952,
@@ -2478,6 +2725,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_23",
+      "stop_id": "gtfs_bus_route_107VL_23",
       "stop_name": "Govt Degree College Kukatpally",
       "lat": 17.4817552,
       "lng": 78.4155151,
@@ -2488,6 +2736,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_24",
+      "stop_id": "gtfs_bus_route_107VL_24",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -2498,6 +2747,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_25",
+      "stop_id": "gtfs_bus_route_107VL_25",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -2508,6 +2758,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_26",
+      "stop_id": "gtfs_bus_route_107VL_26",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -2518,6 +2769,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_27",
+      "stop_id": "gtfs_bus_route_107VL_27",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -2528,6 +2780,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_28",
+      "stop_id": "gtfs_bus_route_107VL_28",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -2538,6 +2791,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_29",
+      "stop_id": "gtfs_bus_route_107VL_29",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.498712,
       "lng": 78.386862,
@@ -2548,6 +2802,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_30",
+      "stop_id": "gtfs_bus_route_107VL_30",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -2558,6 +2813,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_31",
+      "stop_id": "gtfs_bus_route_107VL_31",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -2568,6 +2824,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_32",
+      "stop_id": "gtfs_bus_route_107VL_32",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -2578,6 +2835,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_33",
+      "stop_id": "gtfs_bus_route_107VL_33",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -2588,6 +2846,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_34",
+      "stop_id": "gtfs_bus_route_107VL_34",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -2598,6 +2857,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_35",
+      "stop_id": "gtfs_bus_route_107VL_35",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.494731,
       "lng": 78.345525,
@@ -2608,6 +2868,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_36",
+      "stop_id": "gtfs_bus_route_107VL_36",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -2618,6 +2879,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_37",
+      "stop_id": "gtfs_bus_route_107VL_37",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -2628,6 +2890,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_38",
+      "stop_id": "gtfs_bus_route_107VL_38",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -2638,6 +2901,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_39",
+      "stop_id": "gtfs_bus_route_107VL_39",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -2648,6 +2912,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_40",
+      "stop_id": "gtfs_bus_route_107VL_40",
       "stop_name": "Jyothi Nagar-Bhel",
       "lat": 17.501464,
       "lng": 78.312041,
@@ -2658,6 +2923,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_41",
+      "stop_id": "gtfs_bus_route_107VL_41",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -2668,6 +2934,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_42",
+      "stop_id": "gtfs_bus_route_107VL_42",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -2678,6 +2945,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_43",
+      "stop_id": "gtfs_bus_route_107VL_43",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -2688,6 +2956,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_44",
+      "stop_id": "gtfs_bus_route_107VL_44",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -2698,6 +2967,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_45",
+      "stop_id": "gtfs_bus_route_107VL_45",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -2708,6 +2978,7 @@
     },
     {
       "id": "gtfs_bus_route_107VL_46",
+      "stop_id": "gtfs_bus_route_107VL_46",
       "stop_name": "Patancheruvu",
       "lat": 17.529542,
       "lng": 78.2641071,
@@ -2718,6 +2989,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_00",
+      "stop_id": "gtfs_bus_route_72D_00",
       "stop_name": "Dilsukhnagar Bus Depot",
       "lat": 17.3684429,
       "lng": 78.5231852,
@@ -2728,6 +3000,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_01",
+      "stop_id": "gtfs_bus_route_72D_01",
       "stop_name": "Moosarambhagh",
       "lat": 17.3696031,
       "lng": 78.5157788,
@@ -2738,6 +3011,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_02",
+      "stop_id": "gtfs_bus_route_72D_02",
       "stop_name": "Super Bazar Malakpet",
       "lat": 17.371934,
       "lng": 78.50992,
@@ -2748,6 +3022,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_03",
+      "stop_id": "gtfs_bus_route_72D_03",
       "stop_name": "Chermas Malakpet",
       "lat": 17.3730026,
       "lng": 78.5052967,
@@ -2758,6 +3033,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_04",
+      "stop_id": "gtfs_bus_route_72D_04",
       "stop_name": "Nalgonda X Roads",
       "lat": 17.3741803,
       "lng": 78.4997124,
@@ -2768,6 +3044,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_05",
+      "stop_id": "gtfs_bus_route_72D_05",
       "stop_name": "Chaderghat",
       "lat": 17.3772161,
       "lng": 78.4930202,
@@ -2778,6 +3055,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_06",
+      "stop_id": "gtfs_bus_route_72D_06",
       "stop_name": "Koti Women College",
       "lat": 17.3848083,
       "lng": 78.487621,
@@ -2788,6 +3066,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_07",
+      "stop_id": "gtfs_bus_route_72D_07",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -2798,6 +3077,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_08",
+      "stop_id": "gtfs_bus_route_72D_08",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -2808,6 +3088,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_09",
+      "stop_id": "gtfs_bus_route_72D_09",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3921595,
       "lng": 78.4700498,
@@ -2818,6 +3099,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_10",
+      "stop_id": "gtfs_bus_route_72D_10",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -2828,6 +3110,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_11",
+      "stop_id": "gtfs_bus_route_72D_11",
       "stop_name": "Assembly",
       "lat": 17.400243,
       "lng": 78.470014,
@@ -2838,6 +3121,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_12",
+      "stop_id": "gtfs_bus_route_72D_12",
       "stop_name": "Lakdikapool",
       "lat": 17.403609,
       "lng": 78.464974,
@@ -2848,6 +3132,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_13",
+      "stop_id": "gtfs_bus_route_72D_13",
       "stop_name": "Chintal Basthi",
       "lat": 17.408898,
       "lng": 78.460376,
@@ -2858,6 +3143,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_14",
+      "stop_id": "gtfs_bus_route_72D_14",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -2868,6 +3154,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_15",
+      "stop_id": "gtfs_bus_route_72D_15",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -2878,6 +3165,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_16",
+      "stop_id": "gtfs_bus_route_72D_16",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -2888,6 +3176,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_17",
+      "stop_id": "gtfs_bus_route_72D_17",
       "stop_name": "Punjagutta",
       "lat": 17.4271047,
       "lng": 78.4521165,
@@ -2898,6 +3187,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_18",
+      "stop_id": "gtfs_bus_route_72D_18",
       "stop_name": "Pvr Mall Bus Stop",
       "lat": 17.429381,
       "lng": 78.450406,
@@ -2908,6 +3198,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_19",
+      "stop_id": "gtfs_bus_route_72D_19",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -2918,6 +3209,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_20",
+      "stop_id": "gtfs_bus_route_72D_20",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -2928,6 +3220,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_21",
+      "stop_id": "gtfs_bus_route_72D_21",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -2938,6 +3231,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_22",
+      "stop_id": "gtfs_bus_route_72D_22",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -2948,6 +3242,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_23",
+      "stop_id": "gtfs_bus_route_72D_23",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -2958,6 +3253,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_24",
+      "stop_id": "gtfs_bus_route_72D_24",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -2968,6 +3264,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_25",
+      "stop_id": "gtfs_bus_route_72D_25",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -2978,6 +3275,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_26",
+      "stop_id": "gtfs_bus_route_72D_26",
       "stop_name": "Habib Nagar",
       "lat": 17.4774824,
       "lng": 78.4205952,
@@ -2988,6 +3286,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_27",
+      "stop_id": "gtfs_bus_route_72D_27",
       "stop_name": "Govt Degree College Kukatpally",
       "lat": 17.4817552,
       "lng": 78.4155151,
@@ -2998,6 +3297,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_28",
+      "stop_id": "gtfs_bus_route_72D_28",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -3008,6 +3308,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_29",
+      "stop_id": "gtfs_bus_route_72D_29",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -3018,6 +3319,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_30",
+      "stop_id": "gtfs_bus_route_72D_30",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -3028,6 +3330,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_31",
+      "stop_id": "gtfs_bus_route_72D_31",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -3038,6 +3341,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_32",
+      "stop_id": "gtfs_bus_route_72D_32",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -3048,6 +3352,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_33",
+      "stop_id": "gtfs_bus_route_72D_33",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.498712,
       "lng": 78.386862,
@@ -3058,6 +3363,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_34",
+      "stop_id": "gtfs_bus_route_72D_34",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -3068,6 +3374,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_35",
+      "stop_id": "gtfs_bus_route_72D_35",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -3078,6 +3385,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_36",
+      "stop_id": "gtfs_bus_route_72D_36",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -3088,6 +3396,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_37",
+      "stop_id": "gtfs_bus_route_72D_37",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -3098,6 +3407,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_38",
+      "stop_id": "gtfs_bus_route_72D_38",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -3108,6 +3418,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_39",
+      "stop_id": "gtfs_bus_route_72D_39",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.494731,
       "lng": 78.345525,
@@ -3118,6 +3429,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_40",
+      "stop_id": "gtfs_bus_route_72D_40",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -3128,6 +3440,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_41",
+      "stop_id": "gtfs_bus_route_72D_41",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -3138,6 +3451,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_42",
+      "stop_id": "gtfs_bus_route_72D_42",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -3148,6 +3462,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_43",
+      "stop_id": "gtfs_bus_route_72D_43",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -3158,6 +3473,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_44",
+      "stop_id": "gtfs_bus_route_72D_44",
       "stop_name": "Jyothi Nagar-Bhel",
       "lat": 17.501464,
       "lng": 78.312041,
@@ -3168,6 +3484,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_45",
+      "stop_id": "gtfs_bus_route_72D_45",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -3178,6 +3495,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_46",
+      "stop_id": "gtfs_bus_route_72D_46",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -3188,6 +3506,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_47",
+      "stop_id": "gtfs_bus_route_72D_47",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -3198,6 +3517,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_48",
+      "stop_id": "gtfs_bus_route_72D_48",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -3208,6 +3528,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_49",
+      "stop_id": "gtfs_bus_route_72D_49",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -3218,6 +3539,7 @@
     },
     {
       "id": "gtfs_bus_route_72D_50",
+      "stop_id": "gtfs_bus_route_72D_50",
       "stop_name": "Patancheruvu",
       "lat": 17.5290253,
       "lng": 78.2642841,
@@ -3228,6 +3550,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_00",
+      "stop_id": "gtfs_bus_route_10KM_00",
       "stop_name": "Miyapur X Road",
       "lat": 17.4968377,
       "lng": 78.3635837,
@@ -3238,6 +3561,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_01",
+      "stop_id": "gtfs_bus_route_10KM_01",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496817,
       "lng": 78.371098,
@@ -3248,6 +3572,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_02",
+      "stop_id": "gtfs_bus_route_10KM_02",
       "stop_name": "Hydernagar",
       "lat": 17.49954,
       "lng": 78.383844,
@@ -3258,6 +3583,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_03",
+      "stop_id": "gtfs_bus_route_10KM_03",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498657,
       "lng": 78.390476,
@@ -3268,6 +3594,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_04",
+      "stop_id": "gtfs_bus_route_10KM_04",
       "stop_name": "Jntu",
       "lat": 17.4967243,
       "lng": 78.3944464,
@@ -3278,6 +3605,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_05",
+      "stop_id": "gtfs_bus_route_10KM_05",
       "stop_name": "Remedy Hospital-Kuktplly",
       "lat": 17.494976,
       "lng": 78.398581,
@@ -3288,6 +3616,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_06",
+      "stop_id": "gtfs_bus_route_10KM_06",
       "stop_name": "Kphb",
       "lat": 17.4945575,
       "lng": 78.4008099,
@@ -3298,6 +3627,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_07",
+      "stop_id": "gtfs_bus_route_10KM_07",
       "stop_name": "Vivekananda Nagar Clny",
       "lat": 17.486536,
       "lng": 78.410808,
@@ -3308,6 +3638,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_08",
+      "stop_id": "gtfs_bus_route_10KM_08",
       "stop_name": "Kukatpally",
       "lat": 17.4837158,
       "lng": 78.4129241,
@@ -3318,6 +3649,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_09",
+      "stop_id": "gtfs_bus_route_10KM_09",
       "stop_name": "Habib Nagar",
       "lat": 17.4779986,
       "lng": 78.4204712,
@@ -3328,6 +3660,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_10",
+      "stop_id": "gtfs_bus_route_10KM_10",
       "stop_name": "Moosapet",
       "lat": 17.4727071,
       "lng": 78.4256512,
@@ -3338,6 +3671,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_11",
+      "stop_id": "gtfs_bus_route_10KM_11",
       "stop_name": "Bharath Nagar",
       "lat": 17.4671297,
       "lng": 78.4290362,
@@ -3348,6 +3682,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_12",
+      "stop_id": "gtfs_bus_route_10KM_12",
       "stop_name": "Erragadda",
       "lat": 17.4527857,
       "lng": 78.43579,
@@ -3358,6 +3693,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_13",
+      "stop_id": "gtfs_bus_route_10KM_13",
       "stop_name": "Esi Hospital Erragadda",
       "lat": 17.446138,
       "lng": 78.439221,
@@ -3368,6 +3704,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_14",
+      "stop_id": "gtfs_bus_route_10KM_14",
       "stop_name": "Sr Nagar",
       "lat": 17.440269,
       "lng": 78.442599,
@@ -3378,6 +3715,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_15",
+      "stop_id": "gtfs_bus_route_10KM_15",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -3388,6 +3726,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_16",
+      "stop_id": "gtfs_bus_route_10KM_16",
       "stop_name": "Ameerpet",
       "lat": 17.4347639,
       "lng": 78.4479672,
@@ -3398,6 +3737,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_17",
+      "stop_id": "gtfs_bus_route_10KM_17",
       "stop_name": "Lal Bungalow",
       "lat": 17.4360715,
       "lng": 78.4524679,
@@ -3408,6 +3748,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_18",
+      "stop_id": "gtfs_bus_route_10KM_18",
       "stop_name": "Green Land",
       "lat": 17.4356308,
       "lng": 78.4544819,
@@ -3418,6 +3759,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_19",
+      "stop_id": "gtfs_bus_route_10KM_19",
       "stop_name": "Hps Begumpet",
       "lat": 17.4427992,
       "lng": 78.4588915,
@@ -3428,6 +3770,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_20",
+      "stop_id": "gtfs_bus_route_10KM_20",
       "stop_name": "Shyamlal Begumpet",
       "lat": 17.444383,
       "lng": 78.461112,
@@ -3438,6 +3781,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_21",
+      "stop_id": "gtfs_bus_route_10KM_21",
       "stop_name": "Prakash Nagar Begumpet",
       "lat": 17.4443061,
       "lng": 78.4715305,
@@ -3448,6 +3792,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_22",
+      "stop_id": "gtfs_bus_route_10KM_22",
       "stop_name": "Police Lines",
       "lat": 17.443691,
       "lng": 78.478073,
@@ -3458,6 +3803,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_23",
+      "stop_id": "gtfs_bus_route_10KM_23",
       "stop_name": "Wesley College",
       "lat": 17.4434719,
       "lng": 78.4820527,
@@ -3468,6 +3814,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_24",
+      "stop_id": "gtfs_bus_route_10KM_24",
       "stop_name": "Paradise",
       "lat": 17.443141,
       "lng": 78.4862176,
@@ -3478,6 +3825,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_25",
+      "stop_id": "gtfs_bus_route_10KM_25",
       "stop_name": "Plaza",
       "lat": 17.4433031,
       "lng": 78.4906572,
@@ -3488,6 +3836,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_26",
+      "stop_id": "gtfs_bus_route_10KM_26",
       "stop_name": "Patny",
       "lat": 17.4431828,
       "lng": 78.4962469,
@@ -3498,6 +3847,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_27",
+      "stop_id": "gtfs_bus_route_10KM_27",
       "stop_name": "Secunderabad",
       "lat": 17.434259,
       "lng": 78.501577,
@@ -3508,6 +3858,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_00",
+      "stop_id": "gtfs_bus_route_10KM_224G_00",
       "stop_name": "Secunderabad",
       "lat": 17.434259,
       "lng": 78.501577,
@@ -3518,6 +3869,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_01",
+      "stop_id": "gtfs_bus_route_10KM_224G_01",
       "stop_name": "Patny",
       "lat": 17.4429601,
       "lng": 78.4966734,
@@ -3528,6 +3880,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_02",
+      "stop_id": "gtfs_bus_route_10KM_224G_02",
       "stop_name": "Paradise",
       "lat": 17.443141,
       "lng": 78.4862176,
@@ -3538,6 +3891,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_03",
+      "stop_id": "gtfs_bus_route_10KM_224G_03",
       "stop_name": "Wesley College",
       "lat": 17.4433472,
       "lng": 78.4819314,
@@ -3548,6 +3902,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_04",
+      "stop_id": "gtfs_bus_route_10KM_224G_04",
       "stop_name": "Police Lines",
       "lat": 17.4436511,
       "lng": 78.4749931,
@@ -3558,6 +3913,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_05",
+      "stop_id": "gtfs_bus_route_10KM_224G_05",
       "stop_name": "Shoppers Stop Begumpet",
       "lat": 17.4448396,
       "lng": 78.4649043,
@@ -3568,6 +3924,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_06",
+      "stop_id": "gtfs_bus_route_10KM_224G_06",
       "stop_name": "Shyamlal Begumpet",
       "lat": 17.4442096,
       "lng": 78.4617282,
@@ -3578,6 +3935,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_07",
+      "stop_id": "gtfs_bus_route_10KM_224G_07",
       "stop_name": "Hps Begumpet",
       "lat": 17.4425549,
       "lng": 78.459278,
@@ -3588,6 +3946,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_08",
+      "stop_id": "gtfs_bus_route_10KM_224G_08",
       "stop_name": "Lal Bungalow",
       "lat": 17.4349392,
       "lng": 78.4512891,
@@ -3598,6 +3957,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_09",
+      "stop_id": "gtfs_bus_route_10KM_224G_09",
       "stop_name": "Ameerpet",
       "lat": 17.4347639,
       "lng": 78.4479672,
@@ -3608,6 +3968,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_10",
+      "stop_id": "gtfs_bus_route_10KM_224G_10",
       "stop_name": "Sathyam Theatre Ameerpet",
       "lat": 17.4374175,
       "lng": 78.4480798,
@@ -3618,6 +3979,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_11",
+      "stop_id": "gtfs_bus_route_10KM_224G_11",
       "stop_name": "Maithrivanam",
       "lat": 17.4378425,
       "lng": 78.4434932,
@@ -3628,6 +3990,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_12",
+      "stop_id": "gtfs_bus_route_10KM_224G_12",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -3638,6 +4001,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_13",
+      "stop_id": "gtfs_bus_route_10KM_224G_13",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -3648,6 +4012,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_14",
+      "stop_id": "gtfs_bus_route_10KM_224G_14",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -3658,6 +4023,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_15",
+      "stop_id": "gtfs_bus_route_10KM_224G_15",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -3668,6 +4034,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_16",
+      "stop_id": "gtfs_bus_route_10KM_224G_16",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -3678,6 +4045,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_17",
+      "stop_id": "gtfs_bus_route_10KM_224G_17",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -3688,6 +4056,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_18",
+      "stop_id": "gtfs_bus_route_10KM_224G_18",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -3698,6 +4067,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_19",
+      "stop_id": "gtfs_bus_route_10KM_224G_19",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -3708,6 +4078,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_20",
+      "stop_id": "gtfs_bus_route_10KM_224G_20",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -3718,6 +4089,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_21",
+      "stop_id": "gtfs_bus_route_10KM_224G_21",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -3728,6 +4100,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_22",
+      "stop_id": "gtfs_bus_route_10KM_224G_22",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -3738,6 +4111,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_23",
+      "stop_id": "gtfs_bus_route_10KM_224G_23",
       "stop_name": "Miyapur X Road",
       "lat": 17.498,
       "lng": 78.362,
@@ -3748,6 +4122,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_24",
+      "stop_id": "gtfs_bus_route_10KM_224G_24",
       "stop_name": "Rangapuram",
       "lat": 17.505978,
       "lng": 78.3622377,
@@ -3758,6 +4133,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_25",
+      "stop_id": "gtfs_bus_route_10KM_224G_25",
       "stop_name": "Mayuri Nagar Bus Stop",
       "lat": 17.5099876,
       "lng": 78.3617636,
@@ -3768,6 +4144,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_26",
+      "stop_id": "gtfs_bus_route_10KM_224G_26",
       "stop_name": "Makta",
       "lat": 17.5196685,
       "lng": 78.3559925,
@@ -3778,6 +4155,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_27",
+      "stop_id": "gtfs_bus_route_10KM_224G_27",
       "stop_name": "Cococola",
       "lat": 17.5221562,
       "lng": 78.3563523,
@@ -3788,6 +4166,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_28",
+      "stop_id": "gtfs_bus_route_10KM_224G_28",
       "stop_name": "Volvo Bachupally",
       "lat": 17.5296185,
       "lng": 78.3552752,
@@ -3798,6 +4177,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_29",
+      "stop_id": "gtfs_bus_route_10KM_224G_29",
       "stop_name": "Ida X Road",
       "lat": 17.534507,
       "lng": 78.3575215,
@@ -3808,6 +4188,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_30",
+      "stop_id": "gtfs_bus_route_10KM_224G_30",
       "stop_name": "Bachupally",
       "lat": 17.5410766,
       "lng": 78.3636761,
@@ -3818,6 +4199,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_31",
+      "stop_id": "gtfs_bus_route_10KM_224G_31",
       "stop_name": "Sri Chaitanya Junior College-Bachupally",
       "lat": 17.5412812,
       "lng": 78.3685121,
@@ -3828,6 +4210,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_32",
+      "stop_id": "gtfs_bus_route_10KM_224G_32",
       "stop_name": "Indira Nagar Twd Gandimaisamma",
       "lat": 17.5434313,
       "lng": 78.3726242,
@@ -3838,6 +4221,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_33",
+      "stop_id": "gtfs_bus_route_10KM_224G_33",
       "stop_name": "Dargha Bachupally",
       "lat": 17.5436852,
       "lng": 78.3795601,
@@ -3848,6 +4232,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_34",
+      "stop_id": "gtfs_bus_route_10KM_224G_34",
       "stop_name": "Vnr College",
       "lat": 17.5421354,
       "lng": 78.3859706,
@@ -3858,6 +4243,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_35",
+      "stop_id": "gtfs_bus_route_10KM_224G_35",
       "stop_name": "Pragathi Nagar Bachupally",
       "lat": 17.5415881,
       "lng": 78.3888245,
@@ -3868,6 +4254,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_36",
+      "stop_id": "gtfs_bus_route_10KM_224G_36",
       "stop_name": "Kaisar Nagar",
       "lat": 17.5417314,
       "lng": 78.3974826,
@@ -3878,6 +4265,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_37",
+      "stop_id": "gtfs_bus_route_10KM_224G_37",
       "stop_name": "Drk College",
       "lat": 17.5495878,
       "lng": 78.4036839,
@@ -3888,6 +4276,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_38",
+      "stop_id": "gtfs_bus_route_10KM_224G_38",
       "stop_name": "Suraram Village X Road",
       "lat": 17.5571379,
       "lng": 78.4108833,
@@ -3898,6 +4287,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_39",
+      "stop_id": "gtfs_bus_route_10KM_224G_39",
       "stop_name": "Bowrampet X Road",
       "lat": 17.562548,
       "lng": 78.4131548,
@@ -3908,6 +4298,7 @@
     },
     {
       "id": "gtfs_bus_route_10KM_224G_40",
+      "stop_id": "gtfs_bus_route_10KM_224G_40",
       "stop_name": "Gandimaisamma",
       "lat": 17.5750629,
       "lng": 78.4233391,
@@ -3918,6 +4309,7 @@
     },
     {
       "id": "gtfs_bus_route_524_00",
+      "stop_id": "gtfs_bus_route_524_00",
       "stop_name": "Dilsukhnagar Bus Depot",
       "lat": 17.3684429,
       "lng": 78.5231852,
@@ -3928,6 +4320,7 @@
     },
     {
       "id": "gtfs_bus_route_524_01",
+      "stop_id": "gtfs_bus_route_524_01",
       "stop_name": "Moosarambhagh",
       "lat": 17.3696031,
       "lng": 78.5157788,
@@ -3938,6 +4331,7 @@
     },
     {
       "id": "gtfs_bus_route_524_02",
+      "stop_id": "gtfs_bus_route_524_02",
       "stop_name": "Super Bazar Malakpet",
       "lat": 17.371934,
       "lng": 78.50992,
@@ -3948,6 +4342,7 @@
     },
     {
       "id": "gtfs_bus_route_524_03",
+      "stop_id": "gtfs_bus_route_524_03",
       "stop_name": "Chermas Malakpet",
       "lat": 17.3730026,
       "lng": 78.5052967,
@@ -3958,6 +4353,7 @@
     },
     {
       "id": "gtfs_bus_route_524_04",
+      "stop_id": "gtfs_bus_route_524_04",
       "stop_name": "Nalgonda X Roads",
       "lat": 17.3741803,
       "lng": 78.4997124,
@@ -3968,6 +4364,7 @@
     },
     {
       "id": "gtfs_bus_route_524_05",
+      "stop_id": "gtfs_bus_route_524_05",
       "stop_name": "Chaderghat",
       "lat": 17.3772161,
       "lng": 78.4930202,
@@ -3978,6 +4375,7 @@
     },
     {
       "id": "gtfs_bus_route_524_06",
+      "stop_id": "gtfs_bus_route_524_06",
       "stop_name": "Koti Women College",
       "lat": 17.3848083,
       "lng": 78.487621,
@@ -3988,6 +4386,7 @@
     },
     {
       "id": "gtfs_bus_route_524_07",
+      "stop_id": "gtfs_bus_route_524_07",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -3998,6 +4397,7 @@
     },
     {
       "id": "gtfs_bus_route_524_08",
+      "stop_id": "gtfs_bus_route_524_08",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -4008,6 +4408,7 @@
     },
     {
       "id": "gtfs_bus_route_524_09",
+      "stop_id": "gtfs_bus_route_524_09",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3921595,
       "lng": 78.4700498,
@@ -4018,6 +4419,7 @@
     },
     {
       "id": "gtfs_bus_route_524_10",
+      "stop_id": "gtfs_bus_route_524_10",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -4028,6 +4430,7 @@
     },
     {
       "id": "gtfs_bus_route_524_11",
+      "stop_id": "gtfs_bus_route_524_11",
       "stop_name": "Assembly",
       "lat": 17.400243,
       "lng": 78.470014,
@@ -4038,6 +4441,7 @@
     },
     {
       "id": "gtfs_bus_route_524_12",
+      "stop_id": "gtfs_bus_route_524_12",
       "stop_name": "Lakdikapool",
       "lat": 17.403609,
       "lng": 78.464974,
@@ -4048,6 +4452,7 @@
     },
     {
       "id": "gtfs_bus_route_524_13",
+      "stop_id": "gtfs_bus_route_524_13",
       "stop_name": "Chintal Basthi",
       "lat": 17.408898,
       "lng": 78.460376,
@@ -4058,6 +4463,7 @@
     },
     {
       "id": "gtfs_bus_route_524_14",
+      "stop_id": "gtfs_bus_route_524_14",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -4068,6 +4474,7 @@
     },
     {
       "id": "gtfs_bus_route_524_15",
+      "stop_id": "gtfs_bus_route_524_15",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -4078,6 +4485,7 @@
     },
     {
       "id": "gtfs_bus_route_524_16",
+      "stop_id": "gtfs_bus_route_524_16",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -4088,6 +4496,7 @@
     },
     {
       "id": "gtfs_bus_route_524_17",
+      "stop_id": "gtfs_bus_route_524_17",
       "stop_name": "Punjagutta",
       "lat": 17.4271047,
       "lng": 78.4521165,
@@ -4098,6 +4507,7 @@
     },
     {
       "id": "gtfs_bus_route_524_18",
+      "stop_id": "gtfs_bus_route_524_18",
       "stop_name": "Pvr Mall Bus Stop",
       "lat": 17.429381,
       "lng": 78.450406,
@@ -4108,6 +4518,7 @@
     },
     {
       "id": "gtfs_bus_route_524_19",
+      "stop_id": "gtfs_bus_route_524_19",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -4118,6 +4529,7 @@
     },
     {
       "id": "gtfs_bus_route_524_20",
+      "stop_id": "gtfs_bus_route_524_20",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -4128,6 +4540,7 @@
     },
     {
       "id": "gtfs_bus_route_524_21",
+      "stop_id": "gtfs_bus_route_524_21",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -4138,6 +4551,7 @@
     },
     {
       "id": "gtfs_bus_route_524_22",
+      "stop_id": "gtfs_bus_route_524_22",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -4148,6 +4562,7 @@
     },
     {
       "id": "gtfs_bus_route_524_23",
+      "stop_id": "gtfs_bus_route_524_23",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -4158,6 +4573,7 @@
     },
     {
       "id": "gtfs_bus_route_524_24",
+      "stop_id": "gtfs_bus_route_524_24",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -4168,6 +4584,7 @@
     },
     {
       "id": "gtfs_bus_route_524_25",
+      "stop_id": "gtfs_bus_route_524_25",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -4178,6 +4595,7 @@
     },
     {
       "id": "gtfs_bus_route_524_26",
+      "stop_id": "gtfs_bus_route_524_26",
       "stop_name": "Habib Nagar",
       "lat": 17.4774824,
       "lng": 78.4205952,
@@ -4188,6 +4606,7 @@
     },
     {
       "id": "gtfs_bus_route_524_27",
+      "stop_id": "gtfs_bus_route_524_27",
       "stop_name": "Govt Degree College Kukatpally",
       "lat": 17.4817552,
       "lng": 78.4155151,
@@ -4198,6 +4617,7 @@
     },
     {
       "id": "gtfs_bus_route_524_28",
+      "stop_id": "gtfs_bus_route_524_28",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -4208,6 +4628,7 @@
     },
     {
       "id": "gtfs_bus_route_524_29",
+      "stop_id": "gtfs_bus_route_524_29",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -4218,6 +4639,7 @@
     },
     {
       "id": "gtfs_bus_route_524_30",
+      "stop_id": "gtfs_bus_route_524_30",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -4228,6 +4650,7 @@
     },
     {
       "id": "gtfs_bus_route_524_31",
+      "stop_id": "gtfs_bus_route_524_31",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -4238,6 +4661,7 @@
     },
     {
       "id": "gtfs_bus_route_524_32",
+      "stop_id": "gtfs_bus_route_524_32",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -4248,6 +4672,7 @@
     },
     {
       "id": "gtfs_bus_route_524_33",
+      "stop_id": "gtfs_bus_route_524_33",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.498712,
       "lng": 78.386862,
@@ -4258,6 +4683,7 @@
     },
     {
       "id": "gtfs_bus_route_524_34",
+      "stop_id": "gtfs_bus_route_524_34",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -4268,6 +4694,7 @@
     },
     {
       "id": "gtfs_bus_route_524_35",
+      "stop_id": "gtfs_bus_route_524_35",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -4278,6 +4705,7 @@
     },
     {
       "id": "gtfs_bus_route_524_36",
+      "stop_id": "gtfs_bus_route_524_36",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -4288,6 +4716,7 @@
     },
     {
       "id": "gtfs_bus_route_524_37",
+      "stop_id": "gtfs_bus_route_524_37",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -4298,6 +4727,7 @@
     },
     {
       "id": "gtfs_bus_route_524_38",
+      "stop_id": "gtfs_bus_route_524_38",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -4308,6 +4738,7 @@
     },
     {
       "id": "gtfs_bus_route_524_39",
+      "stop_id": "gtfs_bus_route_524_39",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.494731,
       "lng": 78.345525,
@@ -4318,6 +4749,7 @@
     },
     {
       "id": "gtfs_bus_route_524_40",
+      "stop_id": "gtfs_bus_route_524_40",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -4328,6 +4760,7 @@
     },
     {
       "id": "gtfs_bus_route_524_41",
+      "stop_id": "gtfs_bus_route_524_41",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -4338,6 +4771,7 @@
     },
     {
       "id": "gtfs_bus_route_524_42",
+      "stop_id": "gtfs_bus_route_524_42",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -4348,6 +4782,7 @@
     },
     {
       "id": "gtfs_bus_route_524_43",
+      "stop_id": "gtfs_bus_route_524_43",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -4358,6 +4793,7 @@
     },
     {
       "id": "gtfs_bus_route_524_44",
+      "stop_id": "gtfs_bus_route_524_44",
       "stop_name": "Jyothi Nagar-Bhel",
       "lat": 17.501464,
       "lng": 78.312041,
@@ -4368,6 +4804,7 @@
     },
     {
       "id": "gtfs_bus_route_524_45",
+      "stop_id": "gtfs_bus_route_524_45",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -4378,6 +4815,7 @@
     },
     {
       "id": "gtfs_bus_route_524_46",
+      "stop_id": "gtfs_bus_route_524_46",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -4388,6 +4826,7 @@
     },
     {
       "id": "gtfs_bus_route_524_47",
+      "stop_id": "gtfs_bus_route_524_47",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -4398,6 +4837,7 @@
     },
     {
       "id": "gtfs_bus_route_524_48",
+      "stop_id": "gtfs_bus_route_524_48",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -4408,6 +4848,7 @@
     },
     {
       "id": "gtfs_bus_route_524_49",
+      "stop_id": "gtfs_bus_route_524_49",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -4418,6 +4859,7 @@
     },
     {
       "id": "gtfs_bus_route_524_50",
+      "stop_id": "gtfs_bus_route_524_50",
       "stop_name": "Patancheruvu",
       "lat": 17.5290253,
       "lng": 78.2642841,
@@ -4428,6 +4870,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_00",
+      "stop_id": "gtfs_bus_route_127K_00",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -4438,6 +4881,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_01",
+      "stop_id": "gtfs_bus_route_127K_01",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -4448,6 +4892,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_02",
+      "stop_id": "gtfs_bus_route_127K_02",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3921595,
       "lng": 78.4700498,
@@ -4458,6 +4903,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_03",
+      "stop_id": "gtfs_bus_route_127K_03",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -4468,6 +4914,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_04",
+      "stop_id": "gtfs_bus_route_127K_04",
       "stop_name": "Assembly",
       "lat": 17.400243,
       "lng": 78.470014,
@@ -4478,6 +4925,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_05",
+      "stop_id": "gtfs_bus_route_127K_05",
       "stop_name": "Lakdikapool",
       "lat": 17.403609,
       "lng": 78.464974,
@@ -4488,6 +4936,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_06",
+      "stop_id": "gtfs_bus_route_127K_06",
       "stop_name": "Chintal Basthi",
       "lat": 17.408898,
       "lng": 78.460376,
@@ -4498,6 +4947,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_07",
+      "stop_id": "gtfs_bus_route_127K_07",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -4508,6 +4958,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_08",
+      "stop_id": "gtfs_bus_route_127K_08",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -4518,6 +4969,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_09",
+      "stop_id": "gtfs_bus_route_127K_09",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -4528,6 +4980,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_10",
+      "stop_id": "gtfs_bus_route_127K_10",
       "stop_name": "Punjagutta",
       "lat": 17.4263229,
       "lng": 78.4526289,
@@ -4538,6 +4991,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_11",
+      "stop_id": "gtfs_bus_route_127K_11",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -4548,6 +5002,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_12",
+      "stop_id": "gtfs_bus_route_127K_12",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -4558,6 +5013,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_13",
+      "stop_id": "gtfs_bus_route_127K_13",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -4568,6 +5024,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_14",
+      "stop_id": "gtfs_bus_route_127K_14",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -4578,6 +5035,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_15",
+      "stop_id": "gtfs_bus_route_127K_15",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -4588,6 +5046,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_16",
+      "stop_id": "gtfs_bus_route_127K_16",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -4598,6 +5057,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_17",
+      "stop_id": "gtfs_bus_route_127K_17",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -4608,6 +5068,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_18",
+      "stop_id": "gtfs_bus_route_127K_18",
       "stop_name": "Govt Degree College Kukatpally",
       "lat": 17.4817552,
       "lng": 78.4155151,
@@ -4618,6 +5079,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_19",
+      "stop_id": "gtfs_bus_route_127K_19",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -4628,6 +5090,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_20",
+      "stop_id": "gtfs_bus_route_127K_20",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -4638,6 +5101,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_21",
+      "stop_id": "gtfs_bus_route_127K_21",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -4648,6 +5112,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_22",
+      "stop_id": "gtfs_bus_route_127K_22",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -4658,6 +5123,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_23",
+      "stop_id": "gtfs_bus_route_127K_23",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -4668,6 +5134,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_24",
+      "stop_id": "gtfs_bus_route_127K_24",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -4678,6 +5145,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_25",
+      "stop_id": "gtfs_bus_route_127K_25",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -4688,6 +5156,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_26",
+      "stop_id": "gtfs_bus_route_127K_26",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -4698,6 +5167,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_27",
+      "stop_id": "gtfs_bus_route_127K_27",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -4708,6 +5178,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_28",
+      "stop_id": "gtfs_bus_route_127K_28",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -4718,6 +5189,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_29",
+      "stop_id": "gtfs_bus_route_127K_29",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.494731,
       "lng": 78.345525,
@@ -4728,6 +5200,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_30",
+      "stop_id": "gtfs_bus_route_127K_30",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -4738,6 +5211,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_31",
+      "stop_id": "gtfs_bus_route_127K_31",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -4748,6 +5222,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_32",
+      "stop_id": "gtfs_bus_route_127K_32",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -4758,6 +5233,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_33",
+      "stop_id": "gtfs_bus_route_127K_33",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -4768,6 +5244,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_34",
+      "stop_id": "gtfs_bus_route_127K_34",
       "stop_name": "Jyothi Nagar-Bhel",
       "lat": 17.501464,
       "lng": 78.312041,
@@ -4778,6 +5255,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_35",
+      "stop_id": "gtfs_bus_route_127K_35",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -4788,6 +5266,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_36",
+      "stop_id": "gtfs_bus_route_127K_36",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -4798,6 +5277,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_37",
+      "stop_id": "gtfs_bus_route_127K_37",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -4808,6 +5288,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_38",
+      "stop_id": "gtfs_bus_route_127K_38",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -4818,6 +5299,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_39",
+      "stop_id": "gtfs_bus_route_127K_39",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -4828,6 +5310,7 @@
     },
     {
       "id": "gtfs_bus_route_127K_40",
+      "stop_id": "gtfs_bus_route_127K_40",
       "stop_name": "Patancheruvu",
       "lat": 17.5290253,
       "lng": 78.2642841,
@@ -4838,6 +5321,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_00",
+      "stop_id": "gtfs_bus_route_105_218_00",
       "stop_name": "Srisai Balaji Homes",
       "lat": 17.29985,
       "lng": 78.51558,
@@ -4848,6 +5332,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_01",
+      "stop_id": "gtfs_bus_route_105_218_01",
       "stop_name": "Kaman Twd Badangpet",
       "lat": 17.3061118,
       "lng": 78.5161543,
@@ -4858,6 +5343,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_02",
+      "stop_id": "gtfs_bus_route_105_218_02",
       "stop_name": "Badangpet",
       "lat": 17.3072385,
       "lng": 78.5251719,
@@ -4868,6 +5354,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_03",
+      "stop_id": "gtfs_bus_route_105_218_03",
       "stop_name": "Udyog Nagar",
       "lat": 17.3127183,
       "lng": 78.5229483,
@@ -4878,6 +5365,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_04",
+      "stop_id": "gtfs_bus_route_105_218_04",
       "stop_name": "Lenin Nagar",
       "lat": 17.3156477,
       "lng": 78.5226385,
@@ -4888,6 +5376,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_05",
+      "stop_id": "gtfs_bus_route_105_218_05",
       "stop_name": "Balapur X Road",
       "lat": 17.3191329,
       "lng": 78.5191838,
@@ -4898,6 +5387,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_06",
+      "stop_id": "gtfs_bus_route_105_218_06",
       "stop_name": "Midhani Township",
       "lat": 17.3238318,
       "lng": 78.5152426,
@@ -4908,6 +5398,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_07",
+      "stop_id": "gtfs_bus_route_105_218_07",
       "stop_name": "Dhatunagar Kanchanbagh",
       "lat": 17.3250964,
       "lng": 78.5140997,
@@ -4918,6 +5409,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_08",
+      "stop_id": "gtfs_bus_route_105_218_08",
       "stop_name": "Drdo Township",
       "lat": 17.3267206,
       "lng": 78.5126997,
@@ -4928,6 +5420,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_09",
+      "stop_id": "gtfs_bus_route_105_218_09",
       "stop_name": "Pisal Banda",
       "lat": 17.3408743,
       "lng": 78.5025041,
@@ -4938,6 +5431,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_10",
+      "stop_id": "gtfs_bus_route_105_218_10",
       "stop_name": "Yadagiri Theater",
       "lat": 17.3467826,
       "lng": 78.5081934,
@@ -4948,6 +5442,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_11",
+      "stop_id": "gtfs_bus_route_105_218_11",
       "stop_name": "Is Sadan",
       "lat": 17.3528728,
       "lng": 78.5064427,
@@ -4958,6 +5453,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_12",
+      "stop_id": "gtfs_bus_route_105_218_12",
       "stop_name": "Saidabad",
       "lat": 17.3594758,
       "lng": 78.5047066,
@@ -4968,6 +5464,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_13",
+      "stop_id": "gtfs_bus_route_105_218_13",
       "stop_name": "Government Press",
       "lat": 17.3674284,
       "lng": 78.5016382,
@@ -4978,6 +5475,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_14",
+      "stop_id": "gtfs_bus_route_105_218_14",
       "stop_name": "Malakpet Government Hospital Twd Koti",
       "lat": 17.3721092,
       "lng": 78.4995461,
@@ -4988,6 +5486,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_15",
+      "stop_id": "gtfs_bus_route_105_218_15",
       "stop_name": "Chaderghat",
       "lat": 17.3772161,
       "lng": 78.4930202,
@@ -4998,6 +5497,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_16",
+      "stop_id": "gtfs_bus_route_105_218_16",
       "stop_name": "Koti Women College",
       "lat": 17.3848083,
       "lng": 78.487621,
@@ -5008,6 +5508,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_17",
+      "stop_id": "gtfs_bus_route_105_218_17",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -5018,6 +5519,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_18",
+      "stop_id": "gtfs_bus_route_105_218_18",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -5028,6 +5530,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_19",
+      "stop_id": "gtfs_bus_route_105_218_19",
       "stop_name": "Nampally Railway Station",
       "lat": 17.3921595,
       "lng": 78.4700498,
@@ -5038,6 +5541,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_20",
+      "stop_id": "gtfs_bus_route_105_218_20",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -5048,6 +5552,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_21",
+      "stop_id": "gtfs_bus_route_105_218_21",
       "stop_name": "Assembly",
       "lat": 17.400243,
       "lng": 78.470014,
@@ -5058,6 +5563,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_22",
+      "stop_id": "gtfs_bus_route_105_218_22",
       "stop_name": "Birla Mandir",
       "lat": 17.4060319,
       "lng": 78.4671503,
@@ -5068,6 +5574,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_23",
+      "stop_id": "gtfs_bus_route_105_218_23",
       "stop_name": "Secretariat Lic Building",
       "lat": 17.408117,
       "lng": 78.471823,
@@ -5078,6 +5585,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_24",
+      "stop_id": "gtfs_bus_route_105_218_24",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -5088,6 +5596,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_25",
+      "stop_id": "gtfs_bus_route_105_218_25",
       "stop_name": "Khairatabad",
       "lat": 17.415785,
       "lng": 78.457715,
@@ -5098,6 +5607,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_26",
+      "stop_id": "gtfs_bus_route_105_218_26",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -5108,6 +5618,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_27",
+      "stop_id": "gtfs_bus_route_105_218_27",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -5118,6 +5629,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_28",
+      "stop_id": "gtfs_bus_route_105_218_28",
       "stop_name": "Punjagutta",
       "lat": 17.4263229,
       "lng": 78.4526289,
@@ -5128,6 +5640,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_29",
+      "stop_id": "gtfs_bus_route_105_218_29",
       "stop_name": "Pvr Mall Bus Stop",
       "lat": 17.429381,
       "lng": 78.450406,
@@ -5138,6 +5651,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_30",
+      "stop_id": "gtfs_bus_route_105_218_30",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -5148,6 +5662,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_31",
+      "stop_id": "gtfs_bus_route_105_218_31",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -5158,6 +5673,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_32",
+      "stop_id": "gtfs_bus_route_105_218_32",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -5168,6 +5684,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_33",
+      "stop_id": "gtfs_bus_route_105_218_33",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -5178,6 +5695,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_34",
+      "stop_id": "gtfs_bus_route_105_218_34",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -5188,6 +5706,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_35",
+      "stop_id": "gtfs_bus_route_105_218_35",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -5198,6 +5717,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_36",
+      "stop_id": "gtfs_bus_route_105_218_36",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -5208,6 +5728,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_37",
+      "stop_id": "gtfs_bus_route_105_218_37",
       "stop_name": "Govt Degree College Kukatpally",
       "lat": 17.4817552,
       "lng": 78.4155151,
@@ -5218,6 +5739,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_38",
+      "stop_id": "gtfs_bus_route_105_218_38",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -5228,6 +5750,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_39",
+      "stop_id": "gtfs_bus_route_105_218_39",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -5238,6 +5761,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_40",
+      "stop_id": "gtfs_bus_route_105_218_40",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -5248,6 +5772,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_41",
+      "stop_id": "gtfs_bus_route_105_218_41",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -5258,6 +5783,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_42",
+      "stop_id": "gtfs_bus_route_105_218_42",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -5268,6 +5794,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_43",
+      "stop_id": "gtfs_bus_route_105_218_43",
       "stop_name": "Vasanth Nagar Bus Stop",
       "lat": 17.498712,
       "lng": 78.386862,
@@ -5278,6 +5805,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_44",
+      "stop_id": "gtfs_bus_route_105_218_44",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -5288,6 +5816,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_45",
+      "stop_id": "gtfs_bus_route_105_218_45",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -5298,6 +5827,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_46",
+      "stop_id": "gtfs_bus_route_105_218_46",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -5308,6 +5838,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_47",
+      "stop_id": "gtfs_bus_route_105_218_47",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -5318,6 +5849,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_48",
+      "stop_id": "gtfs_bus_route_105_218_48",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -5328,6 +5860,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_49",
+      "stop_id": "gtfs_bus_route_105_218_49",
       "stop_name": "Deepthi Sri Nagar",
       "lat": 17.494731,
       "lng": 78.345525,
@@ -5338,6 +5871,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_50",
+      "stop_id": "gtfs_bus_route_105_218_50",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -5348,6 +5882,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_51",
+      "stop_id": "gtfs_bus_route_105_218_51",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -5358,6 +5893,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_52",
+      "stop_id": "gtfs_bus_route_105_218_52",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -5368,6 +5904,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_53",
+      "stop_id": "gtfs_bus_route_105_218_53",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -5378,6 +5915,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_54",
+      "stop_id": "gtfs_bus_route_105_218_54",
       "stop_name": "Jyothi Nagar-Bhel",
       "lat": 17.501464,
       "lng": 78.312041,
@@ -5388,6 +5926,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_55",
+      "stop_id": "gtfs_bus_route_105_218_55",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -5398,6 +5937,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_56",
+      "stop_id": "gtfs_bus_route_105_218_56",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -5408,6 +5948,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_57",
+      "stop_id": "gtfs_bus_route_105_218_57",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -5418,6 +5959,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_58",
+      "stop_id": "gtfs_bus_route_105_218_58",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -5428,6 +5970,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_59",
+      "stop_id": "gtfs_bus_route_105_218_59",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -5438,6 +5981,7 @@
     },
     {
       "id": "gtfs_bus_route_105_218_60",
+      "stop_id": "gtfs_bus_route_105_218_60",
       "stop_name": "Patancheruvu",
       "lat": 17.5290253,
       "lng": 78.2642841,
@@ -5448,6 +5992,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_00",
+      "stop_id": "gtfs_bus_route_203N_102B_00",
       "stop_name": "Cbs",
       "lat": 17.3782255,
       "lng": 78.4816789,
@@ -5458,6 +6003,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_01",
+      "stop_id": "gtfs_bus_route_203N_102B_01",
       "stop_name": "Chaderghat",
       "lat": 17.3808783,
       "lng": 78.4912419,
@@ -5468,6 +6014,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_02",
+      "stop_id": "gtfs_bus_route_203N_102B_02",
       "stop_name": "Koti",
       "lat": 17.3830984,
       "lng": 78.4828198,
@@ -5478,6 +6025,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_03",
+      "stop_id": "gtfs_bus_route_203N_102B_03",
       "stop_name": "Abids Gpo",
       "lat": 17.3875676,
       "lng": 78.4761733,
@@ -5488,6 +6036,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_04",
+      "stop_id": "gtfs_bus_route_203N_102B_04",
       "stop_name": "Nampally Public Garden",
       "lat": 17.396278,
       "lng": 78.470819,
@@ -5498,6 +6047,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_05",
+      "stop_id": "gtfs_bus_route_203N_102B_05",
       "stop_name": "Lakdikapool",
       "lat": 17.403609,
       "lng": 78.464974,
@@ -5508,6 +6058,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_06",
+      "stop_id": "gtfs_bus_route_203N_102B_06",
       "stop_name": "Chintal Basthi",
       "lat": 17.408898,
       "lng": 78.460376,
@@ -5518,6 +6069,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_07",
+      "stop_id": "gtfs_bus_route_203N_102B_07",
       "stop_name": "Khairatabad",
       "lat": 17.4141654,
       "lng": 78.4586397,
@@ -5528,6 +6080,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_08",
+      "stop_id": "gtfs_bus_route_203N_102B_08",
       "stop_name": "Irram Manzil",
       "lat": 17.420753,
       "lng": 78.4556972,
@@ -5538,6 +6091,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_09",
+      "stop_id": "gtfs_bus_route_203N_102B_09",
       "stop_name": "Nims Hospital",
       "lat": 17.4230085,
       "lng": 78.4543891,
@@ -5548,6 +6102,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_10",
+      "stop_id": "gtfs_bus_route_203N_102B_10",
       "stop_name": "Punjagutta",
       "lat": 17.4271047,
       "lng": 78.4521165,
@@ -5558,6 +6113,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_11",
+      "stop_id": "gtfs_bus_route_203N_102B_11",
       "stop_name": "Ameerpet",
       "lat": 17.431553,
       "lng": 78.44765,
@@ -5568,6 +6124,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_12",
+      "stop_id": "gtfs_bus_route_203N_102B_12",
       "stop_name": "Maithrivanam",
       "lat": 17.4400455,
       "lng": 78.4423641,
@@ -5578,6 +6135,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_13",
+      "stop_id": "gtfs_bus_route_203N_102B_13",
       "stop_name": "Sr Nagar",
       "lat": 17.4429653,
       "lng": 78.4407373,
@@ -5588,6 +6146,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_14",
+      "stop_id": "gtfs_bus_route_203N_102B_14",
       "stop_name": "Esi Hospital",
       "lat": 17.448534,
       "lng": 78.437619,
@@ -5598,6 +6157,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_15",
+      "stop_id": "gtfs_bus_route_203N_102B_15",
       "stop_name": "Erragadda",
       "lat": 17.45617,
       "lng": 78.433778,
@@ -5608,6 +6168,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_16",
+      "stop_id": "gtfs_bus_route_203N_102B_16",
       "stop_name": "Bharath Nagar",
       "lat": 17.4672321,
       "lng": 78.4287787,
@@ -5618,6 +6179,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_17",
+      "stop_id": "gtfs_bus_route_203N_102B_17",
       "stop_name": "Moosapet",
       "lat": 17.4708131,
       "lng": 78.4266758,
@@ -5628,6 +6190,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_18",
+      "stop_id": "gtfs_bus_route_203N_102B_18",
       "stop_name": "Kukatpally",
       "lat": 17.483854,
       "lng": 78.4124172,
@@ -5638,6 +6201,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_19",
+      "stop_id": "gtfs_bus_route_203N_102B_19",
       "stop_name": "Ramdev Rao Hospital",
       "lat": 17.489894,
       "lng": 78.4079969,
@@ -5648,6 +6212,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_20",
+      "stop_id": "gtfs_bus_route_203N_102B_20",
       "stop_name": "Kphb",
       "lat": 17.494062,
       "lng": 78.400453,
@@ -5658,6 +6223,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_21",
+      "stop_id": "gtfs_bus_route_203N_102B_21",
       "stop_name": "Jntu",
       "lat": 17.496261,
       "lng": 78.39441,
@@ -5668,6 +6234,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_22",
+      "stop_id": "gtfs_bus_route_203N_102B_22",
       "stop_name": "Nizampet X Rds",
       "lat": 17.498276,
       "lng": 78.390314,
@@ -5678,6 +6245,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_23",
+      "stop_id": "gtfs_bus_route_203N_102B_23",
       "stop_name": "Hydernagar",
       "lat": 17.499185,
       "lng": 78.383519,
@@ -5688,6 +6256,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_24",
+      "stop_id": "gtfs_bus_route_203N_102B_24",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.496265,
       "lng": 78.370945,
@@ -5698,6 +6267,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_25",
+      "stop_id": "gtfs_bus_route_203N_102B_25",
       "stop_name": "Miyapur X Road",
       "lat": 17.496481,
       "lng": 78.3626093,
@@ -5708,6 +6278,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_26",
+      "stop_id": "gtfs_bus_route_203N_102B_26",
       "stop_name": "Miyapur",
       "lat": 17.495772,
       "lng": 78.357949,
@@ -5718,6 +6289,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_27",
+      "stop_id": "gtfs_bus_route_203N_102B_27",
       "stop_name": "Allwyn X Road",
       "lat": 17.493918,
       "lng": 78.3500665,
@@ -5728,6 +6300,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_28",
+      "stop_id": "gtfs_bus_route_203N_102B_28",
       "stop_name": "Madeenaguda",
       "lat": 17.494912,
       "lng": 78.340601,
@@ -5738,6 +6311,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_29",
+      "stop_id": "gtfs_bus_route_203N_102B_29",
       "stop_name": "Gangaram",
       "lat": 17.4950922,
       "lng": 78.3327071,
@@ -5748,6 +6322,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_30",
+      "stop_id": "gtfs_bus_route_203N_102B_30",
       "stop_name": "Chandanagar",
       "lat": 17.494893,
       "lng": 78.323144,
@@ -5758,6 +6333,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_31",
+      "stop_id": "gtfs_bus_route_203N_102B_31",
       "stop_name": "Lingampally",
       "lat": 17.4948492,
       "lng": 78.3168903,
@@ -5768,6 +6344,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_32",
+      "stop_id": "gtfs_bus_route_203N_102B_32",
       "stop_name": "Ashok Nagar - Bhel",
       "lat": 17.504123,
       "lng": 78.308781,
@@ -5778,6 +6355,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_33",
+      "stop_id": "gtfs_bus_route_203N_102B_33",
       "stop_name": "Beeramguda Kaman",
       "lat": 17.50889,
       "lng": 78.300277,
@@ -5788,6 +6366,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_34",
+      "stop_id": "gtfs_bus_route_203N_102B_34",
       "stop_name": "Rc Puram",
       "lat": 17.513617,
       "lng": 78.287795,
@@ -5798,6 +6377,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_35",
+      "stop_id": "gtfs_bus_route_203N_102B_35",
       "stop_name": "Icrisat",
       "lat": 17.5185538,
       "lng": 78.2787145,
@@ -5808,6 +6388,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_36",
+      "stop_id": "gtfs_bus_route_203N_102B_36",
       "stop_name": "Allwyn",
       "lat": 17.5247616,
       "lng": 78.2717192,
@@ -5818,6 +6399,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_37",
+      "stop_id": "gtfs_bus_route_203N_102B_37",
       "stop_name": "Patancheruvu",
       "lat": 17.5290253,
       "lng": 78.2642841,
@@ -5828,6 +6410,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_38",
+      "stop_id": "gtfs_bus_route_203N_102B_38",
       "stop_name": "Pc Tanda",
       "lat": 17.5370517,
       "lng": 78.2428277,
@@ -5838,6 +6421,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_39",
+      "stop_id": "gtfs_bus_route_203N_102B_39",
       "stop_name": "Muthangi",
       "lat": 17.5424509,
       "lng": 78.2266309,
@@ -5848,6 +6432,7 @@
     },
     {
       "id": "gtfs_bus_route_203N_102B_40",
+      "stop_id": "gtfs_bus_route_203N_102B_40",
       "stop_name": "Isnapur",
       "lat": 17.5473679,
       "lng": 78.2118309,
@@ -5858,6 +6443,7 @@
     },
     {
       "id": "gtfs_metro_red_line_00",
+      "stop_id": "gtfs_metro_red_line_00",
       "stop_name": "Miyapur Metro Station",
       "lat": 17.4965452,
       "lng": 78.3730262,
@@ -5868,6 +6454,7 @@
     },
     {
       "id": "gtfs_metro_red_line_01",
+      "stop_id": "gtfs_metro_red_line_01",
       "stop_name": "JNTU College Metro Station",
       "lat": 17.4987037,
       "lng": 78.3888668,
@@ -5878,6 +6465,7 @@
     },
     {
       "id": "gtfs_metro_red_line_02",
+      "stop_id": "gtfs_metro_red_line_02",
       "stop_name": "KPHB Colony Metro Station",
       "lat": 17.4937602,
       "lng": 78.4018258,
@@ -5888,6 +6476,7 @@
     },
     {
       "id": "gtfs_metro_red_line_03",
+      "stop_id": "gtfs_metro_red_line_03",
       "stop_name": "Kukatpally Metro Station",
       "lat": 17.4849033,
       "lng": 78.4117896,
@@ -5898,6 +6487,7 @@
     },
     {
       "id": "gtfs_metro_red_line_04",
+      "stop_id": "gtfs_metro_red_line_04",
       "stop_name": "Balanagar Metro Station",
       "lat": 17.4767464,
       "lng": 78.4221082,
@@ -5908,6 +6498,7 @@
     },
     {
       "id": "gtfs_metro_red_line_05",
+      "stop_id": "gtfs_metro_red_line_05",
       "stop_name": "Moosapet Metro Station",
       "lat": 17.4718855,
       "lng": 78.4261182,
@@ -5918,6 +6509,7 @@
     },
     {
       "id": "gtfs_metro_red_line_06",
+      "stop_id": "gtfs_metro_red_line_06",
       "stop_name": "Bharat Nagar Metro Station",
       "lat": 17.4629092,
       "lng": 78.4305364,
@@ -5928,6 +6520,7 @@
     },
     {
       "id": "gtfs_metro_red_line_07",
+      "stop_id": "gtfs_metro_red_line_07",
       "stop_name": "Erragadda Metro Station",
       "lat": 17.4570487,
       "lng": 78.4335811,
@@ -5938,6 +6531,7 @@
     },
     {
       "id": "gtfs_metro_red_line_08",
+      "stop_id": "gtfs_metro_red_line_08",
       "stop_name": "ESI Hospital Metro Station",
       "lat": 17.4486969,
       "lng": 78.4376283,
@@ -5948,6 +6542,7 @@
     },
     {
       "id": "gtfs_metro_red_line_09",
+      "stop_id": "gtfs_metro_red_line_09",
       "stop_name": "S. R. Nagar Metro Station",
       "lat": 17.4431205,
       "lng": 78.4407241,
@@ -5958,6 +6553,7 @@
     },
     {
       "id": "gtfs_metro_red_line_10",
+      "stop_id": "gtfs_metro_red_line_10",
       "stop_name": "Ameerpet Metro Station",
       "lat": 17.4357214,
       "lng": 78.4447933,
@@ -5968,6 +6564,7 @@
     },
     {
       "id": "gtfs_metro_red_line_11",
+      "stop_id": "gtfs_metro_red_line_11",
       "stop_name": "Panjagutta Metro Station",
       "lat": 17.4289362,
       "lng": 78.450955,
@@ -5978,6 +6575,7 @@
     },
     {
       "id": "gtfs_metro_red_line_12",
+      "stop_id": "gtfs_metro_red_line_12",
       "stop_name": "Erra Manzil Metro Station",
       "lat": 17.4202292,
       "lng": 78.4563489,
@@ -5988,6 +6586,7 @@
     },
     {
       "id": "gtfs_metro_red_line_13",
+      "stop_id": "gtfs_metro_red_line_13",
       "stop_name": "Khairatabad Metro Station",
       "lat": 17.4116323,
       "lng": 78.4608678,
@@ -5998,6 +6597,7 @@
     },
     {
       "id": "gtfs_metro_red_line_14",
+      "stop_id": "gtfs_metro_red_line_14",
       "stop_name": "Lakdi-ka-pul Metro Station",
       "lat": 17.4040433,
       "lng": 78.4649442,
@@ -6008,6 +6608,7 @@
     },
     {
       "id": "gtfs_metro_red_line_15",
+      "stop_id": "gtfs_metro_red_line_15",
       "stop_name": "Assembly Metro Station",
       "lat": 17.3979907,
       "lng": 78.4708797,
@@ -6018,6 +6619,7 @@
     },
     {
       "id": "gtfs_metro_red_line_16",
+      "stop_id": "gtfs_metro_red_line_16",
       "stop_name": "Nampally Metro Station",
       "lat": 17.392222,
       "lng": 78.4701612,
@@ -6028,6 +6630,7 @@
     },
     {
       "id": "gtfs_metro_red_line_17",
+      "stop_id": "gtfs_metro_red_line_17",
       "stop_name": "Gandhi Bhavan Metro Station",
       "lat": 17.3858253,
       "lng": 78.4733347,
@@ -6038,6 +6641,7 @@
     },
     {
       "id": "gtfs_metro_red_line_18",
+      "stop_id": "gtfs_metro_red_line_18",
       "stop_name": "Osmania Medical College Metro Station",
       "lat": 17.3820769,
       "lng": 78.4817011,
@@ -6048,6 +6652,7 @@
     },
     {
       "id": "gtfs_metro_red_line_19",
+      "stop_id": "gtfs_metro_red_line_19",
       "stop_name": "MGBS Metro Station",
       "lat": 17.3797886,
       "lng": 78.4861571,
@@ -6058,6 +6663,7 @@
     },
     {
       "id": "gtfs_metro_red_line_20",
+      "stop_id": "gtfs_metro_red_line_20",
       "stop_name": "Malakpet Metro Station",
       "lat": 17.3771888,
       "lng": 78.4939356,
@@ -6068,6 +6674,7 @@
     },
     {
       "id": "gtfs_metro_red_line_21",
+      "stop_id": "gtfs_metro_red_line_21",
       "stop_name": "New Market Metro Station",
       "lat": 17.3734454,
       "lng": 78.5031791,
@@ -6078,6 +6685,7 @@
     },
     {
       "id": "gtfs_metro_red_line_22",
+      "stop_id": "gtfs_metro_red_line_22",
       "stop_name": "Musarambagh Metro Station",
       "lat": 17.3710873,
       "lng": 78.5119545,
@@ -6088,6 +6696,7 @@
     },
     {
       "id": "gtfs_metro_red_line_23",
+      "stop_id": "gtfs_metro_red_line_23",
       "stop_name": "Dilsukh Nagar Metro Station",
       "lat": 17.3685493,
       "lng": 78.5253873,
@@ -6098,6 +6707,7 @@
     },
     {
       "id": "gtfs_metro_red_line_24",
+      "stop_id": "gtfs_metro_red_line_24",
       "stop_name": "Chaitanyapuri Metro Station",
       "lat": 17.3681501,
       "lng": 78.5381335,
@@ -6108,6 +6718,7 @@
     },
     {
       "id": "gtfs_metro_red_line_25",
+      "stop_id": "gtfs_metro_red_line_25",
       "stop_name": "Victoria Memorial Metro Station",
       "lat": 17.3618565,
       "lng": 78.5439622,
@@ -6118,6 +6729,7 @@
     },
     {
       "id": "gtfs_metro_red_line_26",
+      "stop_id": "gtfs_metro_red_line_26",
       "stop_name": "L. B. Nagar Metro Station",
       "lat": 17.349846,
       "lng": 78.5479412,
@@ -6128,6 +6740,7 @@
     },
     {
       "id": "gtfs_metro_green_line_00",
+      "stop_id": "gtfs_metro_green_line_00",
       "stop_name": "MGBS Metro Station",
       "lat": 17.3797886,
       "lng": 78.4861571,
@@ -6138,6 +6751,7 @@
     },
     {
       "id": "gtfs_metro_green_line_01",
+      "stop_id": "gtfs_metro_green_line_01",
       "stop_name": "Sultan Bazar Metro Station",
       "lat": 17.3844473,
       "lng": 78.4840241,
@@ -6148,6 +6762,7 @@
     },
     {
       "id": "gtfs_metro_green_line_02",
+      "stop_id": "gtfs_metro_green_line_02",
       "stop_name": "Narayanaguda Metro Station",
       "lat": 17.3943658,
       "lng": 78.4899578,
@@ -6158,6 +6773,7 @@
     },
     {
       "id": "gtfs_metro_green_line_03",
+      "stop_id": "gtfs_metro_green_line_03",
       "stop_name": "Chikkadpally Metro Station",
       "lat": 17.4003634,
       "lng": 78.4948964,
@@ -6168,6 +6784,7 @@
     },
     {
       "id": "gtfs_metro_green_line_04",
+      "stop_id": "gtfs_metro_green_line_04",
       "stop_name": "RTC Cross Roads Metro Station",
       "lat": 17.4070321,
       "lng": 78.4968023,
@@ -6178,6 +6795,7 @@
     },
     {
       "id": "gtfs_metro_green_line_05",
+      "stop_id": "gtfs_metro_green_line_05",
       "stop_name": "Musheerabad Metro Station",
       "lat": 17.4178744,
       "lng": 78.4995051,
@@ -6188,6 +6806,7 @@
     },
     {
       "id": "gtfs_metro_green_line_06",
+      "stop_id": "gtfs_metro_green_line_06",
       "stop_name": "Gandhi Hospital Metro Station",
       "lat": 17.4255155,
       "lng": 78.501956,
@@ -6198,6 +6817,7 @@
     },
     {
       "id": "gtfs_metro_green_line_07",
+      "stop_id": "gtfs_metro_green_line_07",
       "stop_name": "Secunderabad West Metro Station",
       "lat": 17.4338034,
       "lng": 78.4995181,
@@ -6208,6 +6828,7 @@
     },
     {
       "id": "gtfs_metro_green_line_08",
+      "stop_id": "gtfs_metro_green_line_08",
       "stop_name": "JBS Parade Ground Metro Station",
       "lat": 17.4444775,
       "lng": 78.497584,
@@ -6218,6 +6839,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_00",
+      "stop_id": "gtfs_metro_blue_line_00",
       "stop_name": "Raidurg Metro Station",
       "lat": 17.442,
       "lng": 78.3772038,
@@ -6228,6 +6850,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_01",
+      "stop_id": "gtfs_metro_blue_line_01",
       "stop_name": "HITEC City Metro Station",
       "lat": 17.4490055,
       "lng": 78.3831376,
@@ -6238,6 +6861,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_02",
+      "stop_id": "gtfs_metro_blue_line_02",
       "stop_name": "Durgam Cheruvu Metro Station",
       "lat": 17.4429466,
       "lng": 78.3875721,
@@ -6248,6 +6872,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_03",
+      "stop_id": "gtfs_metro_blue_line_03",
       "stop_name": "Madhapur Metro Station",
       "lat": 17.4372637,
       "lng": 78.4004257,
@@ -6258,6 +6883,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_04",
+      "stop_id": "gtfs_metro_blue_line_04",
       "stop_name": "Peddamma Gudi Metro Station",
       "lat": 17.4306512,
       "lng": 78.4083721,
@@ -6268,6 +6894,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_05",
+      "stop_id": "gtfs_metro_blue_line_05",
       "stop_name": "Jubilee Hills Checkpost Metro Station",
       "lat": 17.4281969,
       "lng": 78.4137145,
@@ -6278,6 +6905,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_06",
+      "stop_id": "gtfs_metro_blue_line_06",
       "stop_name": "Road No 5 Jubilee Hills Metro Station",
       "lat": 17.4300489,
       "lng": 78.4232069,
@@ -6288,6 +6916,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_07",
+      "stop_id": "gtfs_metro_blue_line_07",
       "stop_name": "Yusufguda Metro Station",
       "lat": 17.4351132,
       "lng": 78.4273216,
@@ -6298,6 +6927,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_08",
+      "stop_id": "gtfs_metro_blue_line_08",
       "stop_name": "Madhura Nagar Metro Station",
       "lat": 17.4369652,
       "lng": 78.4390993,
@@ -6308,6 +6938,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_09",
+      "stop_id": "gtfs_metro_blue_line_09",
       "stop_name": "Ameerpet Metro Station",
       "lat": 17.4357214,
       "lng": 78.4447933,
@@ -6318,6 +6949,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_10",
+      "stop_id": "gtfs_metro_blue_line_10",
       "stop_name": "Begumpet Metro Station",
       "lat": 17.4375661,
       "lng": 78.4569341,
@@ -6328,6 +6960,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_11",
+      "stop_id": "gtfs_metro_blue_line_11",
       "stop_name": "Prakash Nagar Metro Station",
       "lat": 17.4448889,
       "lng": 78.4658749,
@@ -6338,6 +6971,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_12",
+      "stop_id": "gtfs_metro_blue_line_12",
       "stop_name": "Rasoolpura Metro Station",
       "lat": 17.443612,
       "lng": 78.4764053,
@@ -6348,6 +6982,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_13",
+      "stop_id": "gtfs_metro_blue_line_13",
       "stop_name": "Paradise Metro Station",
       "lat": 17.4434668,
       "lng": 78.4862436,
@@ -6358,6 +6993,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_14",
+      "stop_id": "gtfs_metro_blue_line_14",
       "stop_name": "JBS Parade Ground Metro Station",
       "lat": 17.4431943,
       "lng": 78.4974687,
@@ -6368,6 +7004,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_15",
+      "stop_id": "gtfs_metro_blue_line_15",
       "stop_name": "Secunderabad East Metro Station",
       "lat": 17.4357184,
       "lng": 78.5054623,
@@ -6378,6 +7015,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_16",
+      "stop_id": "gtfs_metro_blue_line_16",
       "stop_name": "Mettuguda Metro Station",
       "lat": 17.4355207,
       "lng": 78.5195754,
@@ -6388,6 +7026,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_17",
+      "stop_id": "gtfs_metro_blue_line_17",
       "stop_name": "Tarnaka Metro Station",
       "lat": 17.4274418,
       "lng": 78.5300079,
@@ -6398,6 +7037,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_18",
+      "stop_id": "gtfs_metro_blue_line_18",
       "stop_name": "Habsiguda Metro Station",
       "lat": 17.42018,
       "lng": 78.540548,
@@ -6408,6 +7048,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_19",
+      "stop_id": "gtfs_metro_blue_line_19",
       "stop_name": "NGRI Metro Station",
       "lat": 17.4148264,
       "lng": 78.5463345,
@@ -6418,6 +7059,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_20",
+      "stop_id": "gtfs_metro_blue_line_20",
       "stop_name": "Stadium Metro Station",
       "lat": 17.4074002,
       "lng": 78.5542531,
@@ -6428,6 +7070,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_21",
+      "stop_id": "gtfs_metro_blue_line_21",
       "stop_name": "Uppal Metro Station",
       "lat": 17.4000665,
       "lng": 78.5601868,
@@ -6438,6 +7081,7 @@
     },
     {
       "id": "gtfs_metro_blue_line_22",
+      "stop_id": "gtfs_metro_blue_line_22",
       "stop_name": "Nagole Metro Station",
       "lat": 17.3907683,
       "lng": 78.5588222,
@@ -6448,6 +7092,7 @@
     },
     {
       "id": "mmts_flp_00",
+      "stop_id": "mmts_flp_00",
       "stop_name": "Falaknuma Railway Station",
       "lat": 17.3372,
       "lng": 78.4754,
@@ -6458,6 +7103,7 @@
     },
     {
       "id": "mmts_flp_01",
+      "stop_id": "mmts_flp_01",
       "stop_name": "Uppuguda Railway Station",
       "lat": 17.3485,
       "lng": 78.4812,
@@ -6468,6 +7114,7 @@
     },
     {
       "id": "mmts_flp_02",
+      "stop_id": "mmts_flp_02",
       "stop_name": "Yakutpura Railway Station",
       "lat": 17.3592,
       "lng": 78.4868,
@@ -6478,6 +7125,7 @@
     },
     {
       "id": "mmts_flp_03",
+      "stop_id": "mmts_flp_03",
       "stop_name": "Dabirpura Railway Station",
       "lat": 17.3668,
       "lng": 78.4912,
@@ -6488,6 +7136,7 @@
     },
     {
       "id": "mmts_flp_04",
+      "stop_id": "mmts_flp_04",
       "stop_name": "Malakpet MMTS Station",
       "lat": 17.3731,
       "lng": 78.4942,
@@ -6498,6 +7147,7 @@
     },
     {
       "id": "mmts_flp_05",
+      "stop_id": "mmts_flp_05",
       "stop_name": "Kacheguda Railway Station",
       "lat": 17.3842,
       "lng": 78.4951,
@@ -6508,6 +7158,7 @@
     },
     {
       "id": "mmts_flp_06",
+      "stop_id": "mmts_flp_06",
       "stop_name": "Vidyanagar Railway Station",
       "lat": 17.3996,
       "lng": 78.5028,
@@ -6518,6 +7169,7 @@
     },
     {
       "id": "mmts_flp_07",
+      "stop_id": "mmts_flp_07",
       "stop_name": "Jamai Osmania Railway Station",
       "lat": 17.4082,
       "lng": 78.5065,
@@ -6528,6 +7180,7 @@
     },
     {
       "id": "mmts_flp_08",
+      "stop_id": "mmts_flp_08",
       "stop_name": "Arts College Railway Station",
       "lat": 17.4145,
       "lng": 78.5085,
@@ -6538,6 +7191,7 @@
     },
     {
       "id": "mmts_flp_09",
+      "stop_id": "mmts_flp_09",
       "stop_name": "Sitafalmandi Railway Station",
       "lat": 17.4208,
       "lng": 78.5106,
@@ -6548,6 +7202,7 @@
     },
     {
       "id": "mmts_flp_10",
+      "stop_id": "mmts_flp_10",
       "stop_name": "Secunderabad Junction Railway Station",
       "lat": 17.4353,
       "lng": 78.5019,
@@ -6558,6 +7213,7 @@
     },
     {
       "id": "mmts_flp_11",
+      "stop_id": "mmts_flp_11",
       "stop_name": "James Street Railway Station",
       "lat": 17.4362,
       "lng": 78.4892,
@@ -6568,6 +7224,7 @@
     },
     {
       "id": "mmts_flp_12",
+      "stop_id": "mmts_flp_12",
       "stop_name": "Sanjeevaiah Park Railway Station",
       "lat": 17.4348,
       "lng": 78.4785,
@@ -6578,6 +7235,7 @@
     },
     {
       "id": "mmts_flp_13",
+      "stop_id": "mmts_flp_13",
       "stop_name": "Begumpet Railway Station",
       "lat": 17.4442,
       "lng": 78.4665,
@@ -6588,6 +7246,7 @@
     },
     {
       "id": "mmts_flp_14",
+      "stop_id": "mmts_flp_14",
       "stop_name": "Nature Cure Hospital Railway Station",
       "lat": 17.4525,
       "lng": 78.4485,
@@ -6598,6 +7257,7 @@
     },
     {
       "id": "mmts_flp_15",
+      "stop_id": "mmts_flp_15",
       "stop_name": "Fateh Nagar Railway Station",
       "lat": 17.4582,
       "lng": 78.4395,
@@ -6608,6 +7268,7 @@
     },
     {
       "id": "mmts_flp_16",
+      "stop_id": "mmts_flp_16",
       "stop_name": "Bharat Nagar MMTS Station",
       "lat": 17.4638,
       "lng": 78.4276,
@@ -6618,6 +7279,7 @@
     },
     {
       "id": "mmts_flp_17",
+      "stop_id": "mmts_flp_17",
       "stop_name": "Borabanda Railway Station",
       "lat": 17.4628,
       "lng": 78.4112,
@@ -6628,6 +7290,7 @@
     },
     {
       "id": "mmts_flp_18",
+      "stop_id": "mmts_flp_18",
       "stop_name": "Hi-Tech City MMTS Station",
       "lat": 17.4645,
       "lng": 78.3842,
@@ -6638,6 +7301,7 @@
     },
     {
       "id": "mmts_flp_19",
+      "stop_id": "mmts_flp_19",
       "stop_name": "Hafizpet Railway Station",
       "lat": 17.4795,
       "lng": 78.3582,
@@ -6648,6 +7312,7 @@
     },
     {
       "id": "mmts_flp_20",
+      "stop_id": "mmts_flp_20",
       "stop_name": "Chanda Nagar Railway Station",
       "lat": 17.481,
       "lng": 78.3392,
@@ -6658,6 +7323,7 @@
     },
     {
       "id": "mmts_flp_21",
+      "stop_id": "mmts_flp_21",
       "stop_name": "Lingampally Railway Station",
       "lat": 17.4813,
       "lng": 78.3184,
@@ -6668,6 +7334,7 @@
     },
     {
       "id": "mmts_sb_00",
+      "stop_id": "mmts_sb_00",
       "stop_name": "Secunderabad Junction Railway Station",
       "lat": 17.4353,
       "lng": 78.5019,
@@ -6678,6 +7345,7 @@
     },
     {
       "id": "mmts_sb_01",
+      "stop_id": "mmts_sb_01",
       "stop_name": "Lallaguda Railway Station",
       "lat": 17.4395,
       "lng": 78.5142,
@@ -6688,6 +7356,7 @@
     },
     {
       "id": "mmts_sb_02",
+      "stop_id": "mmts_sb_02",
       "stop_name": "Malkajgiri Railway Station",
       "lat": 17.4482,
       "lng": 78.5285,
@@ -6698,6 +7367,7 @@
     },
     {
       "id": "mmts_sb_03",
+      "stop_id": "mmts_sb_03",
       "stop_name": "Dayanand Nagar Railway Station",
       "lat": 17.4565,
       "lng": 78.5312,
@@ -6708,6 +7378,7 @@
     },
     {
       "id": "mmts_sb_04",
+      "stop_id": "mmts_sb_04",
       "stop_name": "Safilguda Railway Station",
       "lat": 17.4632,
       "lng": 78.5345,
@@ -6718,6 +7389,7 @@
     },
     {
       "id": "mmts_sb_05",
+      "stop_id": "mmts_sb_05",
       "stop_name": "Ramakistapuram Gate Railway Station",
       "lat": 17.4752,
       "lng": 78.5398,
@@ -6728,6 +7400,7 @@
     },
     {
       "id": "mmts_sb_06",
+      "stop_id": "mmts_sb_06",
       "stop_name": "Ammuguda Railway Station",
       "lat": 17.4842,
       "lng": 78.5422,
@@ -6738,6 +7411,7 @@
     },
     {
       "id": "mmts_sb_07",
+      "stop_id": "mmts_sb_07",
       "stop_name": "Cavalry Barracks Railway Station",
       "lat": 17.4935,
       "lng": 78.5385,
@@ -6748,6 +7422,7 @@
     },
     {
       "id": "mmts_sb_08",
+      "stop_id": "mmts_sb_08",
       "stop_name": "Alwal Railway Station",
       "lat": 17.5028,
       "lng": 78.532,
@@ -6758,6 +7433,7 @@
     },
     {
       "id": "mmts_sb_09",
+      "stop_id": "mmts_sb_09",
       "stop_name": "Bolarum Railway Station",
       "lat": 17.5255,
       "lng": 78.5145,
@@ -6768,6 +7444,7 @@
     },
     {
       "id": "mmts_sb_10",
+      "stop_id": "mmts_sb_10",
       "stop_name": "Medchal Railway Station",
       "lat": 17.6285,
       "lng": 78.4812,
@@ -6778,6 +7455,7 @@
     },
     {
       "id": "mmts_fu_00",
+      "stop_id": "mmts_fu_00",
       "stop_name": "Falaknuma Railway Station",
       "lat": 17.3372,
       "lng": 78.4754,
@@ -6788,6 +7466,7 @@
     },
     {
       "id": "mmts_fu_01",
+      "stop_id": "mmts_fu_01",
       "stop_name": "Engine Bowli Railway Station",
       "lat": 17.321,
       "lng": 78.4712,
@@ -6798,6 +7477,7 @@
     },
     {
       "id": "mmts_fu_02",
+      "stop_id": "mmts_fu_02",
       "stop_name": "Budvel Railway Station",
       "lat": 17.3085,
       "lng": 78.4312,
@@ -6808,6 +7488,7 @@
     },
     {
       "id": "mmts_fu_03",
+      "stop_id": "mmts_fu_03",
       "stop_name": "Umdanagar Railway Station",
       "lat": 17.2512,
       "lng": 78.4285,
@@ -6818,6 +7499,7 @@
     },
     {
       "id": "mmts_sh_00",
+      "stop_id": "mmts_sh_00",
       "stop_name": "Secunderabad Junction Railway Station",
       "lat": 17.4353,
       "lng": 78.5019,
@@ -6828,6 +7510,7 @@
     },
     {
       "id": "mmts_sh_01",
+      "stop_id": "mmts_sh_01",
       "stop_name": "James Street Railway Station",
       "lat": 17.4362,
       "lng": 78.4892,
@@ -6838,6 +7521,7 @@
     },
     {
       "id": "mmts_sh_02",
+      "stop_id": "mmts_sh_02",
       "stop_name": "Sanjeevaiah Park Railway Station",
       "lat": 17.4348,
       "lng": 78.4785,
@@ -6848,6 +7532,7 @@
     },
     {
       "id": "mmts_sh_03",
+      "stop_id": "mmts_sh_03",
       "stop_name": "Begumpet Railway Station",
       "lat": 17.4442,
       "lng": 78.4665,
@@ -6858,6 +7543,7 @@
     },
     {
       "id": "mmts_sh_04",
+      "stop_id": "mmts_sh_04",
       "stop_name": "Khairatabad Railway Station",
       "lat": 17.412,
       "lng": 78.4605,
@@ -6868,6 +7554,7 @@
     },
     {
       "id": "mmts_sh_05",
+      "stop_id": "mmts_sh_05",
       "stop_name": "Lakdikapul Railway Station",
       "lat": 17.4045,
       "lng": 78.463,
@@ -6878,6 +7565,7 @@
     },
     {
       "id": "mmts_sh_06",
+      "stop_id": "mmts_sh_06",
       "stop_name": "Hyderabad Nampally Railway Station",
       "lat": 17.3915,
       "lng": 78.4712,
