@@ -2704,11 +2704,13 @@
       }
 
       async function findRoutes() {
-        const origin = document.getElementById('origin-input').value.trim();
-        const dest = document.getElementById('dest-input').value.trim();
+        const originInput = document.getElementById('origin-input');
+        const destInput = document.getElementById('dest-input');
+        const origin = originInput ? originInput.value.trim() : '';
+        const dest = destInput ? destInput.value.trim() : '';
         const errorBanner = document.getElementById('error-banner');
 
-        errorBanner.style.display = 'none';
+        if (errorBanner) errorBanner.style.display = 'none';
 
         if (!origin || !dest) {
           showError('Please enter both origin and destination stations.');
@@ -2735,8 +2737,11 @@
         stopUserLocationTracking();
 
         // Show loading state
-        document.getElementById('results-container').classList.add('hidden');
-        document.getElementById('loading-spinner').style.display = 'block';
+        const resultsContainer = document.getElementById('results-container');
+        if (resultsContainer) resultsContainer.classList.add('hidden');
+
+        const spinner = document.getElementById('loading-spinner');
+        if (spinner) spinner.style.display = 'block';
 
         try {
           const response = await fetch(getApiUrl('/find_routes'), {
@@ -2752,7 +2757,7 @@
 
           const data = await response.json();
 
-          document.getElementById('loading-spinner').style.display = 'none';
+          if (spinner) spinner.style.display = 'none';
 
           if (!response.ok || data.status !== 'success') {
             showError(data.message || 'No valid routes found. Ensure origin and destination are valid stops.');
@@ -2772,7 +2777,7 @@
             time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           }));
 
-          document.getElementById('results-container').classList.remove('hidden');
+          if (resultsContainer) resultsContainer.classList.remove('hidden');
           renderResults(data);
 
         } catch (err) {
@@ -2784,14 +2789,14 @@
               const cachedData = JSON.parse(cachedDataStr);
               const cachedParams = JSON.parse(localStorage.getItem('hyd_last_route_params') || '{}');
 
-              document.getElementById('loading-spinner').style.display = 'none';
-              document.getElementById('results-container').classList.remove('hidden');
+              if (spinner) spinner.style.display = 'none';
+              if (resultsContainer) resultsContainer.classList.remove('hidden');
 
               // Render cached route results
               renderResults(cachedData);
 
               // Inject Offline Banner
-              const resultsContainer = document.getElementById('results-container');
+              const resCont = document.getElementById('results-container');
               const existingBanner = document.getElementById('offline-route-banner');
               if (existingBanner) existingBanner.remove();
 
@@ -2809,7 +2814,7 @@
                   <span class="offline-tag">OFFLINE MODE</span>
                 </div>
               `;
-              resultsContainer.insertAdjacentHTML('afterbegin', bannerHtml);
+              if (resCont) resCont.insertAdjacentHTML('afterbegin', bannerHtml);
               showToast('⚠️ Offline: Showing last saved route.');
               return;
             } catch (cacheErr) {
@@ -2817,15 +2822,17 @@
             }
           }
 
-          document.getElementById('loading-spinner').style.display = 'none';
+          if (spinner) spinner.style.display = 'none';
           showError(`Failed to connect to Flask API server at ${API_BASE === 'YOUR_RENDER_URL_HERE' ? 'https://hyderabad-multi-modal-planner.onrender.com' : API_BASE}.\nMake sure backend server is running.`);
         }
       }
 
       function showError(msg) {
         const errorBanner = document.getElementById('error-banner');
-        errorBanner.innerText = msg;
-        errorBanner.style.display = 'block';
+        if (errorBanner) {
+          errorBanner.innerText = msg;
+          errorBanner.style.display = 'block';
+        }
       }
 
       function getModeIcon(mode) {
