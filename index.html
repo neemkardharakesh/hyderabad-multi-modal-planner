@@ -4157,6 +4157,9 @@
       function closeAllBusStopsModal() {
         const modal = document.getElementById('all-bus-stops-modal');
         if (modal) modal.classList.remove('active');
+        if (allStopsClusterGroup) {
+          allStopsClusterGroup.clearLayers();
+        }
       }
 
       function initAllStopsBrowseMap() {
@@ -4183,10 +4186,12 @@
           maxZoom: 18
         }).addTo(allStopsMapInstance);
 
-        // Marker clustering plugin group or fallback canvas layer
+        // Marker clustering plugin group with chunkedLoading: true for WebView performance
         if (typeof L.markerClusterGroup === 'function') {
           allStopsClusterGroup = L.markerClusterGroup({
             chunkedLoading: true,
+            chunkInterval: 100,
+            chunkDelay: 50,
             maxClusterRadius: 45,
             spiderfyOnMaxZoom: true,
             showCoverageOnHover: false,
