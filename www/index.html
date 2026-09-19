@@ -4136,18 +4136,37 @@
       async function loadAllBusStopsData() {
         if (allBusStopsData.length > 0) return;
         try {
-          const res = await fetch('all_bus_stops.json');
-          if (res.ok) {
-            const data = await res.json();
-            allBusStopsData = data.stops || [];
-            const countEl = document.getElementById('all-stops-counter-text');
-            if (countEl) {
-              const totalFormatted = (data.total_count || allBusStopsData.length).toLocaleString();
-              countEl.innerText = `🚏 ${totalFormatted} official TSRTC bus stops across Hyderabad.`;
+          let loaded = false;
+          try {
+            const res = await fetch(getApiUrl('/all_bus_stops'));
+            if (res.ok) {
+              const data = await res.json();
+              allBusStopsData = data.stops || [];
+              const countEl = document.getElementById('all-stops-counter-text');
+              if (countEl) {
+                const totalFormatted = (data.total_count || allBusStopsData.length).toLocaleString();
+                countEl.innerText = `🚏 ${totalFormatted} official TSRTC bus stops across Hyderabad.`;
+              }
+              loaded = true;
+            }
+          } catch (apiErr) {
+            console.warn("Backend API /api/all_bus_stops fetch failed, attempting local fallback...", apiErr);
+          }
+
+          if (!loaded) {
+            const res = await fetch('all_bus_stops.json');
+            if (res.ok) {
+              const data = await res.json();
+              allBusStopsData = data.stops || [];
+              const countEl = document.getElementById('all-stops-counter-text');
+              if (countEl) {
+                const totalFormatted = (data.total_count || allBusStopsData.length).toLocaleString();
+                countEl.innerText = `🚏 ${totalFormatted} official TSRTC bus stops across Hyderabad.`;
+              }
             }
           }
         } catch (err) {
-          console.warn("Could not load all_bus_stops.json:", err);
+          console.warn("Could not load all_bus_stops data:", err);
         }
       }
 

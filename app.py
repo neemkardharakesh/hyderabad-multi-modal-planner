@@ -34,6 +34,29 @@ except Exception as e:
     print(f"[ERROR] Failed to load graph: {e}")
     G, STOP_LOOKUP = None, {}
 
+# Pre-load all_bus_stops.json dataset on app startup
+import json
+ALL_BUS_STOPS_DATA = None
+try:
+    if os.path.exists("all_bus_stops.json"):
+        with open("all_bus_stops.json", "r", encoding="utf-8") as f:
+            ALL_BUS_STOPS_DATA = json.load(f)
+        print(f"[INFO] all_bus_stops.json loaded successfully with {ALL_BUS_STOPS_DATA.get('total_count', len(ALL_BUS_STOPS_DATA.get('stops', [])))} stops.")
+    else:
+        print("[WARNING] all_bus_stops.json not found on disk.")
+except Exception as e:
+    print(f"[ERROR] Failed to load all_bus_stops.json: {e}")
+    ALL_BUS_STOPS_DATA = None
+
+
+@app.route("/api/all_bus_stops", methods=["GET"])
+def get_all_bus_stops():
+    """Returns complete list of official bus stops from all_bus_stops.json."""
+    if ALL_BUS_STOPS_DATA is None:
+        return jsonify({"status": "error", "message": "all_bus_stops.json dataset not available on server"}), 500
+    return jsonify(ALL_BUS_STOPS_DATA)
+
+
 
 @app.route("/api/stops", methods=["GET"])
 def get_stops():
