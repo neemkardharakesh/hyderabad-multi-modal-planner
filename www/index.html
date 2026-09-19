@@ -1029,9 +1029,9 @@
     </div>
 
     <script>
-      const API_BASE = 'YOUR_RENDER_URL_HERE';
+      const API_BASE = 'https://hyderabad-multi-modal-planner.onrender.com';
       const getApiUrl = (path) => {
-        const base = (API_BASE && API_BASE !== 'YOUR_RENDER_URL_HERE') ? API_BASE : 'http://localhost:5000';
+        const base = (API_BASE && API_BASE !== 'YOUR_RENDER_URL_HERE') ? API_BASE : 'https://hyderabad-multi-modal-planner.onrender.com';
         const cleanBase = base.replace(/\/$/, '');
         return cleanBase.endsWith('/api') ? `${cleanBase}${path}` : `${cleanBase}/api${path}`;
       };
@@ -1772,7 +1772,7 @@
 
       // -----------------------------------------------------------------------------
       // LIVE PASSENGER LOCATION TRACKING
-      // Note: Geolocation API requires HTTPS in production environments. Localhost (http://localhost:5000)
+      // Note: Geolocation API requires HTTPS in production environments. Localhost (https://hyderabad-multi-modal-planner.onrender.com)
       // is treated as a secure context by modern browsers for local development/testing.
       // -----------------------------------------------------------------------------
       let userLocationWatchId = null;
@@ -1891,13 +1891,29 @@
             }
           },
           (err) => {
-            console.warn("Geolocation watchPosition error / permission denied:", err.message);
-            if (statusEl) {
-              statusEl.style.display = 'inline-block';
-              statusEl.style.background = 'rgba(245, 158, 11, 0.15)';
-              statusEl.style.color = '#fcd34d';
-              statusEl.style.border = '1px solid rgba(245, 158, 11, 0.3)';
-              statusEl.innerText = '⚠️ Enable location to see your live position';
+            const isPermissionDenied = err && (err.code === 1 || err.code === err.PERMISSION_DENIED || (err.message && err.message.toLowerCase().includes('denied')));
+            if (isPermissionDenied) {
+              if (userLocationWatchId !== null && navigator.geolocation) {
+                navigator.geolocation.clearWatch(userLocationWatchId);
+                userLocationWatchId = null;
+              }
+              console.warn("Geolocation permission denied. Location watch stopped.");
+              if (statusEl) {
+                statusEl.style.display = 'inline-block';
+                statusEl.style.background = 'rgba(239, 68, 68, 0.15)';
+                statusEl.style.color = '#fca5a5';
+                statusEl.style.border = '1px solid rgba(239, 68, 68, 0.3)';
+                statusEl.innerText = '🚫 Location access denied';
+              }
+            } else {
+              console.warn("Geolocation watchPosition error:", err ? err.message : "Unknown error");
+              if (statusEl) {
+                statusEl.style.display = 'inline-block';
+                statusEl.style.background = 'rgba(245, 158, 11, 0.15)';
+                statusEl.style.color = '#fcd34d';
+                statusEl.style.border = '1px solid rgba(245, 158, 11, 0.3)';
+                statusEl.innerText = '⚠️ Enable location to see your live position';
+              }
             }
           },
           {
@@ -2853,7 +2869,7 @@
           }
 
           document.getElementById('loading-spinner').style.display = 'none';
-          showError(`Failed to connect to Flask API server at ${API_BASE === 'YOUR_RENDER_URL_HERE' ? 'http://localhost:5000' : API_BASE}.\nMake sure backend server is running.`);
+          showError(`Failed to connect to Flask API server at ${API_BASE === 'YOUR_RENDER_URL_HERE' ? 'https://hyderabad-multi-modal-planner.onrender.com' : API_BASE}.\nMake sure backend server is running.`);
         }
       }
 
