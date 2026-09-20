@@ -3091,14 +3091,14 @@ input[type="text"]:focus {
   filter: brightness(1.05) contrast(0.95) saturate(1.1);
 }
 
-.bg-slide-1 { background-image: url('assets/charminar.png'); animation-delay: 0s; }
-.bg-slide-2 { background-image: url('assets/metro_train.jpg'); animation-delay: 4s; }
-.bg-slide-3 { background-image: url('assets/secretariat.jpg'); animation-delay: 8s; }
-.bg-slide-4 { background-image: url('assets/tgsrtc_bus.jpg'); animation-delay: 12s; }
-.bg-slide-5 { background-image: url('assets/chowmahalla.jpg'); animation-delay: 16s; }
-.bg-slide-6 { background-image: url('assets/mmts_train1.jpg'); animation-delay: 20s; }
-.bg-slide-7 { background-image: url('assets/buddha_statue.png'); animation-delay: 24s; }
-.bg-slide-8 { background-image: url('assets/mmts_train2.jpg'); animation-delay: 28s; }
+.bg-slide-1 { background-image: url('assets/golconda.jpg.jpeg'); animation-delay: 0s; }
+.bg-slide-2 { background-image: url('assets/Hyderabad-Metro-Rail.webp'); animation-delay: 4s; }
+.bg-slide-3 { background-image: url('assets/tankbund.jpg.jpeg'); animation-delay: 8s; }
+.bg-slide-4 { background-image: url('assets/electric bus.jpeg'); animation-delay: 12s; }
+.bg-slide-5 { background-image: url('assets/charminar2.jpg.jpeg'); animation-delay: 16s; }
+.bg-slide-6 { background-image: url('assets/MMTS-train-in-Hyderabad.webp'); animation-delay: 20s; }
+.bg-slide-7 { background-image: url('assets/blue bus.webp'); animation-delay: 24s; }
+.bg-slide-8 { background-image: url('assets/red bus.jpg.jpeg'); animation-delay: 28s; }
 
 @keyframes kenBurnsSlide {
   0% { opacity: 0; transform: scale(1.0) translate3d(0,0,0); }
