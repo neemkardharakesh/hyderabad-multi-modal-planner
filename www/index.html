@@ -171,6 +171,77 @@
 
       <!-- Right Column: Search Form & Route Results -->
       <div class="right-panel">
+
+        <!-- Header Greeting Card -->
+        <div class="header-greeting-card">
+          <div class="greeting-left">
+            <div class="greeting-title" id="greeting-title-el">Good Morning, Traveler</div>
+            <div class="greeting-subtitle">Plan your journey</div>
+          </div>
+          <div class="header-right-actions">
+            <div class="app-brand-pill">
+              <span>⚡</span> <span>Go Hyderabad</span>
+            </div>
+            <button class="btn-theme-toggle" id="btn-theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">☀️</button>
+          </div>
+        </div>
+
+        <!-- "Where to?" Prominent Search Bar -->
+        <div class="where-to-search-bar" onclick="focusSearchForm()">
+          <div class="where-to-icon">🔍</div>
+          <div class="where-to-text-group">
+            <div class="where-to-title">Where to?</div>
+            <div class="where-to-sub">Tap to search Bus, Metro, MMTS stops</div>
+          </div>
+          <div style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">Search ➔</div>
+        </div>
+
+        <!-- Quick Actions Row -->
+        <div class="quick-actions-row">
+          <div class="quick-action-item" onclick="filterByQuickAction('bus')">
+            <div class="quick-action-circle bus">🚌</div>
+            <div class="quick-action-label">Bus (TSRTC)</div>
+          </div>
+          <div class="quick-action-item" onclick="filterByQuickAction('metro')">
+            <div class="quick-action-circle metro">🚇</div>
+            <div class="quick-action-label">Metro</div>
+          </div>
+          <div class="quick-action-item" onclick="filterByQuickAction('mmts')">
+            <div class="quick-action-circle mmts">🚆</div>
+            <div class="quick-action-label">MMTS Trains</div>
+          </div>
+          <div class="quick-action-item" onclick="filterByQuickAction('tickets')">
+            <div class="quick-action-circle tickets">🎟️</div>
+            <div class="quick-action-label">Tickets</div>
+          </div>
+        </div>
+
+        <!-- Live Hyderabad Alerts Card -->
+        <div class="live-alerts-card">
+          <div class="alerts-card-header">
+            <div class="alerts-title-wrap">
+              <span>📢</span> <span>Live Hyderabad Alerts</span>
+            </div>
+            <span class="live-pulse-badge">🔴 LIVE</span>
+          </div>
+          <div class="alerts-list">
+            <div class="alert-item">
+              <span class="alert-icon">⚠️</span>
+              <div class="alert-content">
+                <div class="alert-text">Heavy Traffic — Necklace Road, 5:00 PM</div>
+                <div class="alert-time">Expect +15 min transit delay • Updated 10m ago</div>
+              </div>
+            </div>
+            <div class="alert-item">
+              <span class="alert-icon">🚨</span>
+              <div class="alert-content">
+                <div class="alert-text">Road Diversion — Tank Bund Junction</div>
+                <div class="alert-time">TSRTC buses rerouted via Lower Tank Bund</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Search Form Card -->
         <div class="glass-card search-form-card">
           <div class="form-group">
@@ -259,7 +330,35 @@
 
         <!-- Results Area -->
         <div id="results-container">
-          <!-- Route Cards Container -->
+          <div class="route-results-header-bar">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+              <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-main);">Available Routes</div>
+              <select id="route-sort-select" onchange="changeRouteSort(this.value)" class="sort-filter-btn">
+                <option value="recommended">⚡ Sort: Best (Recommended)</option>
+                <option value="fastest">⏱️ Sort: Fastest</option>
+                <option value="cheapest">💰 Sort: Cheapest</option>
+                <option value="transfers">🔄 Sort: Fewest Transfers</option>
+              </select>
+            </div>
+
+            <!-- Mode Filter Pill Tabs -->
+            <div class="mode-pill-tabs">
+              <button class="mode-pill-tab active" id="pill-all" onclick="setModePillFilter('all')">
+                <span>✨ All Modes</span>
+              </button>
+              <button class="mode-pill-tab" id="pill-bus" onclick="setModePillFilter('bus')">
+                <span>🚌 TSRTC Bus</span>
+              </button>
+              <button class="mode-pill-tab" id="pill-metro" onclick="setModePillFilter('metro')">
+                <span>🚇 Metro</span>
+              </button>
+              <button class="mode-pill-tab" id="pill-mmts" onclick="setModePillFilter('mmts')">
+                <span>🚆 MMTS</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Compact Horizontal Route Cards Container -->
           <div id="routes-list"></div>
         </div>
       </div>
@@ -2814,88 +2913,183 @@
         }
       }
 
+      let activeModeFilterPill = 'all';
+      let activeRouteSort = 'recommended';
+
+      function updateHeaderGreeting() {
+        const greetingEl = document.getElementById('greeting-title-el');
+        if (!greetingEl) return;
+
+        const hour = new Date().getHours();
+        let timeGreeting = "Good Morning";
+        if (hour >= 12 && hour < 17) {
+          timeGreeting = "Good Afternoon";
+        } else if (hour >= 17 || hour < 4) {
+          timeGreeting = "Good Evening";
+        }
+
+        const savedName = localStorage.getItem('hyd_user_name');
+        const name = (currentUserProfile && currentUserProfile.name) ? currentUserProfile.name : (savedName && savedName !== 'Transit Passenger' ? savedName : null);
+        if (name && name.trim()) {
+          greetingEl.innerText = `${timeGreeting}, ${name.trim()}`;
+        } else {
+          greetingEl.innerText = `${timeGreeting}, Traveler`;
+        }
+      }
+
+      function focusSearchForm() {
+        const formCard = document.querySelector('.search-form-card');
+        const destInput = document.getElementById('dest-input');
+        const originInput = document.getElementById('origin-input');
+
+        if (formCard) {
+          formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        if (destInput && !destInput.value) {
+          destInput.focus();
+        } else if (originInput) {
+          originInput.focus();
+        }
+      }
+
+      function filterByQuickAction(mode) {
+        if (mode === 'bus') {
+          document.getElementById('mode-bus').checked = true;
+          document.getElementById('mode-metro').checked = false;
+          document.getElementById('mode-mmts').checked = false;
+          setModePillFilter('bus');
+          focusSearchForm();
+        } else if (mode === 'metro') {
+          openMetroMapModal();
+        } else if (mode === 'mmts') {
+          document.getElementById('mode-bus').checked = false;
+          document.getElementById('mode-metro').checked = false;
+          document.getElementById('mode-mmts').checked = true;
+          setModePillFilter('mmts');
+          focusSearchForm();
+        } else if (mode === 'tickets') {
+          openHistoryModal();
+        }
+      }
+
+      function setModePillFilter(mode) {
+        activeModeFilterPill = mode;
+        document.querySelectorAll('.mode-pill-tab').forEach(tab => {
+          tab.classList.remove('active');
+        });
+        const activeTab = document.getElementById(`pill-${mode}`);
+        if (activeTab) activeTab.classList.add('active');
+
+        if (lastRenderedRoutesData) {
+          renderResults(lastRenderedRoutesData);
+        }
+      }
+
+      function changeRouteSort(sortVal) {
+        activeRouteSort = sortVal;
+        if (lastRenderedRoutesData) {
+          renderResults(lastRenderedRoutesData);
+        }
+      }
+
       function renderResults(data) {
         lastRenderedRoutesData = data;
+        let routes = (data.routes || []).slice();
         const recRoute = data.recommended_route;
-        const routes = data.routes || [];
-        currentRoutes = routes;
+        currentRoutes = data.routes || [];
         routePassengerCounts = {};
 
         const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-
-        // Render Route Cards
         const container = document.getElementById('routes-list');
         container.innerHTML = '';
 
-        routes.forEach((route, idx) => {
-          routePassengerCounts[idx] = 1;
+        if (!routes.length) {
+          container.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 2rem;">No routes found matching your query.</div>`;
+          return;
+        }
+
+        // Filter by active mode pill tab
+        if (activeModeFilterPill !== 'all') {
+          routes = routes.filter(r => {
+            const modesInRoute = (r.steps || []).map(s => (s.mode || '').toLowerCase());
+            return modesInRoute.includes(activeModeFilterPill.toLowerCase());
+          });
+        }
+
+        // Sort by selected criteria
+        if (activeRouteSort === 'fastest') {
+          routes.sort((a, b) => a.total_time_minutes - b.total_time_minutes);
+        } else if (activeRouteSort === 'cheapest') {
+          routes.sort((a, b) => a.total_fare_rupees - b.total_fare_rupees);
+        } else if (activeRouteSort === 'transfers') {
+          routes.sort((a, b) => a.num_transfers - b.num_transfers);
+        }
+
+        if (!routes.length) {
+          container.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 2rem;">No ${activeModeFilterPill.toUpperCase()} routes found. Click "✨ All Modes" to see all options.</div>`;
+          return;
+        }
+
+        routes.forEach((route, displayIdx) => {
+          const originalIdx = (data.routes || []).indexOf(route);
+          routePassengerCounts[originalIdx] = 1;
           const isRec = recRoute && (route.route_type === recRoute.route_type);
-          const card = document.createElement('div');
-          card.className = `route-card ${isRec ? 'is-recommended' : ''}`;
-          card.style.cursor = 'pointer';
 
-          // Build Mode Flow Badges
-          const flowBadges = route.steps.map(s => {
-            const badgeClass = s.edge_type === 'transfer' ? 'walk' : (s.line_id || s.mode);
-            const label = s.edge_type === 'transfer' ? (t.walkTransfer || 'Walk') : (s.line_id || s.mode.toUpperCase());
-            return `<span class="mode-badge ${badgeClass}">${label}</span>`;
-          }).join('<span class="arrow-icon">➔</span>');
+          // Identify primary transport modes
+          const modesInRoute = Array.from(new Set(route.steps.map(s => s.mode).filter(m => m && m !== 'transfer')));
+          let primaryModeClass = 'multi';
+          let modeIcon = '⚡';
+          if (modesInRoute.length === 1) {
+            primaryModeClass = modesInRoute[0].toLowerCase();
+            if (primaryModeClass === 'bus') modeIcon = '🚌';
+            else if (primaryModeClass === 'metro') modeIcon = '🚇';
+            else if (primaryModeClass === 'mmts') modeIcon = '🚆';
+          }
 
-          card.innerHTML = `
-          <div class="route-header">
-            <div class="route-tag">
-              ${isRec ? '<span class="rec-star">★</span>' : ''} ${route.route_type} ${isRec ? `[${t.recommendedBadge}]` : ''} ${route.is_accessible ? `<span class="accessibility-badge" title="100% Accessible Route">${t.accessibleBadge}</span>` : ''}
+          // Format summary mode label
+          const modeNames = modesInRoute.map(m => {
+            if (m === 'bus') return 'TSRTC Bus';
+            if (m === 'metro') return 'Metro';
+            if (m === 'mmts') return 'MMTS';
+            return m.toUpperCase();
+          }).join(' + ') || route.route_type;
+
+          const row = document.createElement('div');
+          row.className = `compact-route-row ${isRec ? 'best-route-row' : ''}`;
+          row.onclick = () => openRouteDetailsModal(originalIdx);
+
+          row.innerHTML = `
+            <div class="compact-mode-badge ${primaryModeClass}">
+              ${modeIcon}
             </div>
-          </div>
-
-          <div class="route-metrics">
-            <div class="metric-item">
-              <span class="metric-label">${t.timeLabel}</span>
-              <span class="metric-val">${formatDuration(route.total_time_minutes, currentLang)}</span>
+            <div class="compact-route-info">
+              <div class="compact-route-header">
+                <span class="compact-route-title">${modeNames}</span>
+                ${isRec ? '<span class="compact-best-badge">BEST</span>' : ''}
+                ${route.is_accessible ? '<span style="font-size: 0.75rem;" title="100% Accessible">♿</span>' : ''}
+              </div>
+              <div class="compact-route-meta">
+                <span>⏱️ ${formatDuration(route.total_time_minutes, currentLang)}</span>
+                <span>•</span>
+                <span>₹${route.total_fare_rupees}</span>
+                <span>•</span>
+                <span>🔄 ${route.num_transfers} transfer${route.num_transfers === 1 ? '' : 's'}</span>
+              </div>
             </div>
-            <div class="metric-item">
-              <span class="metric-label">${t.fareLabel}</span>
-              <span class="metric-val" id="route-fare-val-${idx}">₹${route.total_fare_rupees}</span>
+            <div class="compact-route-right">
+              <div class="compact-route-fare">₹${route.total_fare_rupees}</div>
+              <div class="compact-route-duration">${route.total_time_minutes} min</div>
             </div>
-            <div class="metric-item">
-              <span class="metric-label">${t.transfersLabel}</span>
-              <span class="metric-val">${route.num_transfers}</span>
-            </div>
-          </div>
+          `;
 
-          <div class="mode-flow">
-            ${flowBadges}
-          </div>
-
-          <div class="passenger-stepper-row">
-            <span class="passenger-stepper-label">👥 ${t.numPassengers || 'Number of Passengers'}</span>
-            <div class="passenger-stepper">
-              <button type="button" class="stepper-btn" onclick="event.stopPropagation(); updatePassengerCount(${idx}, -1)">-</button>
-              <span id="passenger-count-val-${idx}" class="stepper-val">1</span>
-              <button type="button" class="stepper-btn" onclick="event.stopPropagation(); updatePassengerCount(${idx}, 1)">+</button>
-            </div>
-          </div>
-
-          <div class="route-card-actions" style="display: flex; gap: 0.5rem; margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255, 255, 255, 0.1);">
-            <button class="btn-view-details" style="flex: 1; padding: 0.55rem 0.65rem; background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.35); border-radius: 0.5rem; color: #a5f3fc; font-weight: 600; font-size: 0.78rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.3rem;" onclick="event.stopPropagation(); openRouteDetailsModal(${idx})">
-              <span>🔍</span> <span>${t.viewItinerary}</span>
-            </button>
-            <button id="route-book-btn-${idx}" class="btn-book" style="flex: 1; padding: 0.55rem 0.65rem; border-radius: 0.5rem; font-size: 0.78rem; font-weight: 600; margin-top: 0;" onclick="event.stopPropagation(); openPaymentModal(${idx})">
-              ${t.bookRouteBtn} (₹${route.total_fare_rupees})
-            </button>
-          </div>
-        `;
-
-          card.onclick = (e) => {
-            openRouteDetailsModal(idx);
-          };
-
-          container.appendChild(card);
+          container.appendChild(row);
         });
 
-        // Display recommended/first route on Leaflet map automatically
+        // Automatically highlight top route on map
         if (routes.length > 0) {
-          displayRouteOnMap(0);
+          const topOriginalIdx = (data.routes || []).indexOf(routes[0]);
+          displayRouteOnMap(topOriginalIdx);
         }
       }
 
