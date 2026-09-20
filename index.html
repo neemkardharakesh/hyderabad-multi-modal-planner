@@ -117,56 +117,6 @@
   </div>
 
   <div class="app-container">
-    <!-- Header -->
-    <header>
-      <div class="header-emblem-wrap">
-        <img src="assets/telangana_logo.png" class="govt-logo" alt="Government of Telangana Emblem">
-      </div>
-      <div class="logo-badge">
-        <span class="badge-dot"></span> <span data-i18n="govtBadge">Telangana Transit Live</span>
-      </div>
-      <h1 data-i18n="appTitle">Go Hyderabad</h1>
-      <p class="subtitle" data-i18n="appSubtitle">Multi-Modal Journey Planner • Bus + Metro + MMTS</p>
-
-      <!-- User Nav Header Bar & Language Switcher -->
-      <div class="user-nav-bar" id="user-nav-bar">
-        <button class="btn-theme-toggle" id="btn-theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">☀️</button>
-
-        <button class="nav-btn btn-login-trigger" id="btn-login-trigger" onclick="openLoginModal()"
-          data-i18n="loginBtn">
-          🔑 Login / Register
-        </button>
-
-        <button class="nav-btn" onclick="openMetroMapModal()" data-i18n="metroMapBtn" style="background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #93c5fd;">
-          🚇 Metro Map
-        </button>
-
-        <button class="nav-btn" onclick="openAllBusStopsModal()" style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5;">
-          🚏 All Bus Stops (4,939)
-        </button>
-
-        <div class="user-identity-box hidden" id="user-identity-box">
-          <span class="user-phone-label" id="user-phone-display">📱 +91 98765 43210</span>
-          <button class="nav-btn" onclick="openProfileModal()">
-            👤 Profile
-          </button>
-          <button class="nav-btn" onclick="openHistoryModal()" data-i18n="myJourneysBtn">
-            📜 My Journeys
-          </button>
-          <button class="nav-btn btn-logout-trigger" onclick="logoutUser()" data-i18n="logoutBtn">
-            🚪 Logout
-          </button>
-        </div>
-
-        <!-- Language Switcher (EN | తె | हि) -->
-        <div class="lang-switch-group">
-          <button class="lang-btn active" id="lang-btn-en" data-lang="en" onclick="setLanguage('en')">EN</button>
-          <button class="lang-btn" id="lang-btn-te" data-lang="te" onclick="setLanguage('te')">తెలుగు</button>
-          <button class="lang-btn" id="lang-btn-hi" data-lang="hi" onclick="setLanguage('hi')">हिंदी</button>
-        </div>
-      </div>
-    </header>
-
     <!-- Main Side-by-Side Content Grid (Map on LEFT, Data Entry on RIGHT) -->
     <div class="main-layout">
       <!-- Left Column: Interactive Route Visualizer Map Section -->
@@ -196,17 +146,56 @@
       <!-- Right Column: Search Form & Route Results -->
       <div class="right-panel">
 
-        <!-- Header Greeting Card -->
+        <!-- Consolidated Dashboard Header -->
         <div class="header-greeting-card">
           <div class="greeting-left">
             <div class="greeting-title" id="greeting-title-el">Good Morning, Traveler</div>
-            <div class="greeting-subtitle">Plan your journey</div>
+            <div class="greeting-subtitle">Plan your journey • Telangana Transit Live</div>
           </div>
+
           <div class="header-right-actions">
-            <div class="app-brand-pill">
-              <span>⚡</span> <span>Go Hyderabad</span>
+            <button class="header-quick-action-btn" onclick="openMetroMapModal()" title="View Metro Map">
+              🚇 <span class="hide-mobile">Metro Map</span>
+            </button>
+            <button class="header-quick-action-btn bus-stops-btn" onclick="openAllBusStopsModal()" title="View All Bus Stops">
+              🚏 <span class="hide-mobile">Bus Stops</span>
+            </button>
+
+            <!-- Language Switcher (EN | తె | हि) -->
+            <div class="lang-switch-group">
+              <button class="lang-btn active" id="lang-btn-en" data-lang="en" onclick="setLanguage('en')">EN</button>
+              <button class="lang-btn" id="lang-btn-te" data-lang="te" onclick="setLanguage('te')">తె</button>
+              <button class="lang-btn" id="lang-btn-hi" data-lang="hi" onclick="setLanguage('hi')">हि</button>
             </div>
+
+            <!-- Theme Toggle -->
             <button class="btn-theme-toggle" id="btn-theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">☀️</button>
+
+            <!-- User Menu Dropdown Trigger -->
+            <div class="header-user-menu-wrapper" style="position: relative;">
+              <button class="user-menu-trigger-btn" id="user-menu-trigger-btn" onclick="toggleHeaderUserMenu(event)">
+                <span id="header-user-avatar-initial">👤</span>
+                <span style="font-size: 0.6rem;">▼</span>
+              </button>
+
+              <div class="header-user-dropdown hidden" id="header-user-dropdown">
+                <div class="dropdown-user-info">
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.85rem;" id="dropdown-user-name">Transit User</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);" id="dropdown-user-phone">+91 98765 39959</div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item-btn" onclick="closeHeaderUserMenu(); openProfileModal();">
+                  👤 My Profile
+                </button>
+                <button class="dropdown-item-btn" onclick="closeHeaderUserMenu(); openHistoryModal();">
+                  📜 My Journeys & Tickets
+                </button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item-btn logout" onclick="closeHeaderUserMenu(); logoutUser();">
+                  🚪 Logout
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -250,14 +239,14 @@
           </div>
           <div class="alerts-list">
             <div class="alert-item">
-              <span class="alert-icon">⚠️</span>
+              <span class="alert-severity-badge traffic">⚠️</span>
               <div class="alert-content">
                 <div class="alert-text">Heavy Traffic — Necklace Road, 5:00 PM</div>
                 <div class="alert-time">Expect +15 min transit delay • Updated 10m ago</div>
               </div>
             </div>
             <div class="alert-item">
-              <span class="alert-icon">🚨</span>
+              <span class="alert-severity-badge diversion">🚨</span>
               <div class="alert-content">
                 <div class="alert-text">Road Diversion — Tank Bund Junction</div>
                 <div class="alert-time">TSRTC buses rerouted via Lower Tank Bund</div>
@@ -2946,6 +2935,23 @@
 
       let activeModeFilterPill = 'all';
       let activeRouteSort = 'recommended';
+
+      function toggleHeaderUserMenu(e) {
+        if (e) e.stopPropagation();
+        const dropdown = document.getElementById('header-user-dropdown');
+        if (dropdown) dropdown.classList.toggle('hidden');
+      }
+
+      function closeHeaderUserMenu() {
+        const dropdown = document.getElementById('header-user-dropdown');
+        if (dropdown) dropdown.classList.add('hidden');
+      }
+
+      window.addEventListener('click', (e) => {
+        if (!e.target.closest('.header-user-menu-wrapper')) {
+          closeHeaderUserMenu();
+        }
+      });
 
       function updateHeaderGreeting() {
         const greetingEl = document.getElementById('greeting-title-el');
