@@ -3295,9 +3295,11 @@
         document.getElementById('payment-modal').classList.add('active');
       }
 
-      function closePaymentModal() {
+      function closePaymentModal(keepPendingState = false) {
         document.getElementById('payment-modal').classList.remove('active');
-        pendingBookingIndex = null;
+        if (!keepPendingState) {
+          pendingBookingIndex = null;
+        }
       }
 
       function closePaymentModalOnOverlay(event) {
@@ -3330,7 +3332,7 @@
           document.getElementById('payment-processing-state').classList.add('hidden');
           const txId = 'TXN_' + Math.floor(100000000 + Math.random() * 900000000);
           document.getElementById('pay-success-txid').innerText = `Txn ID: ${txId}`;
-          closePaymentModal();
+          closePaymentModal(true);
           
           // Show full-screen success confirmation overlay
           const successModal = document.getElementById('payment-success-fullmodal');
@@ -3423,6 +3425,9 @@
         currentActiveTicketIdx = 0;
 
         renderTicketModalView();
+
+        // Clear pending index after successfully showing ticket
+        pendingBookingIndex = null;
 
         // Show ticket modal
         document.getElementById('ticket-modal').classList.add('active');
@@ -3876,6 +3881,11 @@
       }
 
       // Save booked trip history to localStorage
+      function getSavedTripsFromHistory() {
+        const historyStr = localStorage.getItem('hyd_booked_trips') || '[]';
+        try { history = JSON.parse(historyStr); return history; } catch (e) { return []; }
+      }
+
       function saveTripToHistory(groupRecord) {
         const historyStr = localStorage.getItem('hyd_booked_trips') || '[]';
         let history = [];
