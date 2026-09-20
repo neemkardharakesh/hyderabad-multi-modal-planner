@@ -44,6 +44,30 @@
 
 <body>
 
+  <!-- Branded App Splash Screen (Charminar Silhouette) -->
+  <div id="app-splash-screen" class="app-splash-screen">
+    <div class="splash-content">
+      <div class="splash-icon">⚡</div>
+      <div class="splash-title">Go Hyderabad</div>
+      <div class="splash-tagline">One City, One App, Your Journey</div>
+    </div>
+    <div class="splash-charminar-wrap">
+      <svg class="splash-charminar-svg" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+        <rect x="160" y="100" width="180" height="200" rx="4" />
+        <rect x="130" y="20" width="35" height="280" rx="3" />
+        <rect x="335" y="20" width="35" height="280" rx="3" />
+        <path d="M 130 20 L 147.5 0 L 165 20 Z" />
+        <path d="M 335 20 L 352.5 0 L 370 20 Z" />
+        <path d="M 200 300 C 200 200, 300 200, 300 300 Z" fill="#090d16" />
+        <rect x="160" y="150" width="180" height="15" fill="#090d16" />
+        <rect x="160" y="220" width="180" height="12" fill="#090d16" />
+        <circle cx="250" cy="125" r="18" fill="#090d16" />
+        <rect x="140" y="90" width="15" height="120" fill="#090d16" />
+        <rect x="345" y="90" width="15" height="120" fill="#090d16" />
+      </svg>
+    </div>
+  </div>
+
   <!-- Photo-based Animated Background Slideshow (Ken Burns Effect - 8 Images) -->
   <div class="bg-slideshow-container" aria-hidden="true">
     <div class="bg-slide bg-slide-1"></div>
@@ -482,79 +506,86 @@
       </div>
     </div>
 
+    <!-- Payment Success Confirmation Screen Overlay -->
+    <div id="payment-success-fullmodal" class="payment-success-fullmodal">
+      <div class="success-card-content">
+        <div class="success-check-circle">✓</div>
+        <div class="success-title">Ticket Booked!</div>
+        <div class="success-sub">Your ticket has been successfully booked.<br>Have a safe and pleasant journey!</div>
+        <button class="btn-view-ticket-success" onclick="closePaymentSuccessAndShowTicket()">
+          🎫 View Ticket
+        </button>
+      </div>
+    </div>
+
     <!-- Mock Transit Ticket Modal -->
     <div class="modal-overlay" id="ticket-modal" onclick="closeTicketModalOnOverlay(event)">
-      <div class="ticket-card" onclick="event.stopPropagation()">
-        <div class="ticket-header">
-          <div class="ticket-header-title">
-            <img src="assets/telangana_logo.png"
-              style="width:22px; height:22px; border-radius:50%; background:#fff; padding:1px;" alt="Telangana Emblem">
-            <span id="ticket-modal-title" data-i18n="ticketTitle">Hyderabad Transit Pass</span>
+      <div class="ticket-card redesigned-ticket-card" onclick="event.stopPropagation()">
+        <!-- Mode Banner Header with Status Badge -->
+        <div class="ticket-top-banner metro" id="ticket-top-banner">
+          <div style="display: flex; align-items: center; gap: 0.45rem;">
+            <span style="font-size: 1.15rem;" id="ticket-mode-banner-icon">🚇</span>
+            <span id="ticket-mode-banner-title" style="font-size: 1rem; font-weight: 800;">Metro Ticket</span>
           </div>
-          <button class="ticket-close-btn" onclick="closeTicketModal()">✕</button>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="status-badge active-badge" id="ticket-status-badge">● Active</span>
+            <button class="ticket-close-btn" style="color: #fff; opacity: 0.8;" onclick="closeTicketModal()">✕</button>
+          </div>
         </div>
 
         <!-- Passenger Tabs Container (For Family / Group Bookings) -->
         <div id="ticket-passenger-tabs-container" class="passenger-tabs" style="display: none; padding: 0.65rem 1rem 0; margin-bottom: 0;"></div>
 
-        <div class="ticket-body">
-          <div style="text-align: center;">
-            <div class="unified-badge" id="ticket-unified-badge" data-i18n="singleTicketBadge">
-              ⚡ Single Ticket • All Modes
+        <div class="ticket-card-body">
+          <!-- Route Summary Box -->
+          <div class="ticket-route-summary">
+            <div class="ticket-stop-box">
+              <span class="ticket-stop-label" data-i18n="from">Origin</span>
+              <span class="ticket-stop-name" id="ticket-origin">Ameerpet</span>
+            </div>
+            <div class="ticket-route-arrow">➔</div>
+            <div class="ticket-stop-box" style="align-items: flex-end; text-align: right;">
+              <span class="ticket-stop-label" data-i18n="to">Destination</span>
+              <span class="ticket-stop-name" id="ticket-dest">HITEC City</span>
             </div>
           </div>
 
-          <div class="ticket-route">
-            <div class="ticket-stop">
-              <span class="ticket-stop-label" data-i18n="from">From</span>
-              <span class="ticket-stop-name" id="ticket-origin">Origin</span>
-            </div>
-            <div class="ticket-arrow">➔</div>
-            <div class="ticket-stop" style="align-items: flex-end;">
-              <span class="ticket-stop-label" data-i18n="to">To</span>
-              <span class="ticket-stop-name" id="ticket-dest">Destination</span>
-            </div>
+          <!-- Validity & Duration Bar -->
+          <div class="ticket-validity-bar">
+            <span>⏰ <span id="ticket-time">Duration: 25 min</span></span>
+            <span class="ticket-valid-until" id="ticket-validity">Valid until 11:45 PM</span>
           </div>
 
-          <!-- QR Code Box -->
-          <div class="qr-container-wrapper">
+          <!-- Centered QR Code Wrapper -->
+          <div class="ticket-qr-wrap">
             <div id="qrcode-container"></div>
-            <div class="scan-label" id="ticket-scan-label" data-i18n="scanLabel">SCAN AT GATE</div>
+            <div class="scan-label" id="ticket-scan-label" style="font-size: 0.72rem; font-weight: 800; color: #0f172a; margin-top: 0.45rem; letter-spacing: 0.05em;" data-i18n="scanLabel">SCAN AT GATE</div>
           </div>
 
-          <div class="validity-box">
-            ⏰ <span id="ticket-validity">Issued: -- • Valid until -- (+90m)</span>
+          <!-- Fare & Reference Ticket ID -->
+          <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              Fare: <strong id="ticket-fare" style="font-size: 1.1rem; color: var(--accent-cyan);">₹35</strong>
+            </div>
+            <div id="ticket-id" class="ticket-id-ref">TGSRTCTB12345</div>
           </div>
 
-          <div class="ticket-divider"></div>
-
-          <div class="ticket-info-grid">
-            <div class="ticket-info-item">
-              <span class="ticket-info-lbl" data-i18n="totalFare">Total Fare</span>
-              <span class="ticket-info-val" id="ticket-fare">₹0</span>
-            </div>
-            <div class="ticket-info-item">
-              <span class="ticket-info-lbl" data-i18n="estDuration">Est. Duration</span>
-              <span class="ticket-info-val" id="ticket-time">0 min</span>
-            </div>
-            <div class="ticket-info-item">
-              <span class="ticket-info-lbl" data-i18n="transitNetwork">Transit Network</span>
-              <div id="ticket-modes" style="display: flex; gap: 0.25rem; margin-top: 0.15rem;"></div>
-            </div>
-            <div class="ticket-info-item">
-              <span class="ticket-info-lbl" data-i18n="passStatusLabel">Status</span>
-              <span class="ticket-info-val" style="color: var(--accent-green);" data-i18n="activePass">ACTIVE
-                PASS</span>
-            </div>
+          <div style="display: flex; gap: 0.5rem; width: 100%;">
+            <button class="btn-download-ticket" id="btn-download-ticket" style="flex: 1; margin: 0;" onclick="downloadTicketImage()">
+              <span data-i18n="downloadTicketBtn">📥 Download Pass (.PNG)</span>
+            </button>
           </div>
 
-          <div class="ticket-footer-id" id="ticket-id">
-            TRIP ID: --
+          <!-- Expandable Pass History Drawer Section -->
+          <div class="pass-history-drawer" style="width: 100%;">
+            <div class="pass-history-header" onclick="togglePassHistoryDrawer()">
+              <span>📜 Pass & Ticket History</span>
+              <span id="pass-history-toggle-icon">▼</span>
+            </div>
+            <div id="pass-history-body-list" class="pass-history-body hidden">
+              <!-- Dynamically populated past tickets -->
+            </div>
           </div>
-
-          <button class="btn-download-ticket" id="btn-download-ticket" onclick="downloadTicketImage()">
-            <span data-i18n="downloadTicketBtn">📥 Download Ticket Pass (.PNG)</span>
-          </button>
         </div>
       </div>
     </div>
@@ -3293,17 +3324,27 @@
           document.getElementById('payment-processing-state').classList.add('hidden');
           const txId = 'TXN_' + Math.floor(100000000 + Math.random() * 900000000);
           document.getElementById('pay-success-txid').innerText = `Txn ID: ${txId}`;
-          document.getElementById('payment-success-state').classList.remove('hidden');
+          closePaymentModal();
+          
+          // Show full-screen success confirmation overlay
+          const successModal = document.getElementById('payment-success-fullmodal');
+          if (successModal) {
+            successModal.classList.add('active');
+          }
+        }, 1500);
+      }
 
-          setTimeout(() => {
-            const bookedIdx = pendingBookingIndex;
-            const pCount = pendingPassengerCount;
-            closePaymentModal();
-            if (bookedIdx !== null) {
-              openTicketModal(bookedIdx, pCount);
-            }
-          }, 1200);
-        }, 2000);
+      function closePaymentSuccessAndShowTicket() {
+        const successModal = document.getElementById('payment-success-fullmodal');
+        if (successModal) {
+          successModal.classList.remove('active');
+        }
+        
+        const bookedIdx = pendingBookingIndex;
+        const pCount = pendingPassengerCount;
+        if (bookedIdx !== null) {
+          openTicketModal(bookedIdx, pCount);
+        }
       }
 
       function generateUUID() {
@@ -3387,15 +3428,6 @@
         const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
         const count = currentActiveTickets.length;
 
-        const titleEl = document.getElementById('ticket-modal-title');
-        if (titleEl) {
-          if (count > 1) {
-            titleEl.innerText = `${t.familyBooking || 'Family Booking'} — ${count} ${t.tickets || 'Tickets'}`;
-          } else {
-            titleEl.innerText = t.ticketTitle || 'Hyderabad Transit Pass';
-          }
-        }
-
         // Render Passenger Tabs if group booking
         const tabsContainer = document.getElementById('ticket-passenger-tabs-container');
         if (tabsContainer) {
@@ -3409,6 +3441,47 @@
           } else {
             tabsContainer.style.display = 'none';
             tabsContainer.innerHTML = '';
+          }
+        }
+
+        // Determine Mode Banner & Title
+        const uniqueModes = Array.from(new Set((ticket.route_steps || []).map(s => (s.mode || '').toLowerCase())));
+        const bannerEl = document.getElementById('ticket-top-banner');
+        const iconEl = document.getElementById('ticket-mode-banner-icon');
+        const titleEl = document.getElementById('ticket-mode-banner-title');
+        const statusBadgeEl = document.getElementById('ticket-status-badge');
+
+        let modeClass = 'multi';
+        let modeTitle = 'Hyderabad Multi-Modal Pass';
+        let modeIcon = '⚡';
+
+        if (uniqueModes.length === 1) {
+          modeClass = uniqueModes[0];
+          if (modeClass === 'metro') {
+            modeTitle = 'Metro Ticket';
+            modeIcon = '🚇';
+          } else if (modeClass === 'bus') {
+            modeTitle = 'TSRTC Ticket';
+            modeIcon = '🚌';
+          } else if (modeClass === 'mmts') {
+            modeTitle = 'MMTS Pass';
+            modeIcon = '🚆';
+          }
+        }
+
+        if (bannerEl) {
+          bannerEl.className = `ticket-top-banner ${modeClass}`;
+        }
+        if (iconEl) iconEl.innerText = modeIcon;
+        if (titleEl) titleEl.innerText = modeTitle;
+
+        if (statusBadgeEl) {
+          if (modeClass === 'metro' || modeClass === 'bus') {
+            statusBadgeEl.className = 'status-badge active-badge';
+            statusBadgeEl.innerText = '● Active';
+          } else {
+            statusBadgeEl.className = 'status-badge valid-badge';
+            statusBadgeEl.innerText = '✓ Valid';
           }
         }
 
@@ -3430,15 +3503,6 @@
           qrContainer.innerText = "QR Code Generation Error";
         }
 
-        const badgeEl = document.getElementById('ticket-unified-badge');
-        if (badgeEl) {
-          if (count > 1) {
-            badgeEl.innerText = `👥 Family Pass • Passenger ${ticket.passenger_index} of ${count}`;
-          } else {
-            badgeEl.innerText = t.singleTicketBadge || '⚡ Single Ticket • All Modes';
-          }
-        }
-
         const scanLabelEl = document.getElementById('ticket-scan-label');
         if (scanLabelEl) {
           if (count > 1) {
@@ -3452,22 +3516,92 @@
         const validUntil = new Date(issuedDate.getTime() + 90 * 60 * 1000);
         const formatTime = (d) => d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-        document.getElementById('ticket-origin').innerText = ticket.origin;
-        document.getElementById('ticket-dest').innerText = ticket.destination;
-        document.getElementById('ticket-fare').innerText = count > 1 ? `₹${ticket.base_fare} (Total: ₹${ticket.total_fare})` : `₹${ticket.total_fare}`;
-        document.getElementById('ticket-time').innerText = formatDuration(ticket.total_time, currentLang);
-        document.getElementById('ticket-validity').innerText = `${t.issuedTime}: ${formatTime(issuedDate)} • ${t.validUntil} ${formatTime(validUntil)} (+90m)`;
-        document.getElementById('ticket-id').innerText = `PASSENGER PASS ID: ${ticket.passenger_id}`;
+        const originEl = document.getElementById('ticket-origin');
+        const destEl = document.getElementById('ticket-dest');
+        if (originEl) originEl.innerText = ticket.origin;
+        if (destEl) destEl.innerText = ticket.destination;
 
-        // Network Mode Icons
-        const modesContainer = document.getElementById('ticket-modes');
-        const uniqueModes = [...new Set((ticket.route_steps || []).map(s => s.mode))];
-        modesContainer.innerHTML = uniqueModes.map(m => `<span style="font-size:0.85rem;" title="${m}">${getModeIcon(m)}</span>`).join(' ');
+        const fareEl = document.getElementById('ticket-fare');
+        if (fareEl) fareEl.innerText = count > 1 ? `₹${ticket.base_fare} (Total: ₹${ticket.total_fare})` : `₹${ticket.total_fare}`;
+
+        const timeEl = document.getElementById('ticket-time');
+        if (timeEl) timeEl.innerText = `Duration: ${formatDuration(ticket.total_time, currentLang)}`;
+
+        const valEl = document.getElementById('ticket-validity');
+        if (valEl) valEl.innerText = `Valid until ${formatTime(validUntil)}`;
+
+        // Formatted short reference ticket ID (e.g. TGSRTCTB12345 or HYDMETRO8921)
+        const ticketRefEl = document.getElementById('ticket-id');
+        if (ticketRefEl) {
+          let refCode = 'TGSRTC' + (ticket.passenger_id || '').replace(/[^0-9A-Z]/gi, '').substring(0, 8);
+          if (modeClass === 'metro') refCode = 'HYDMETRO' + (ticket.passenger_id || '').replace(/[^0-9A-Z]/gi, '').substring(0, 6);
+          ticketRefEl.innerText = refCode;
+        }
       }
 
       function switchPassengerTicket(pIdx) {
         currentActiveTicketIdx = pIdx;
         renderTicketModalView();
+      }
+
+      function togglePassHistoryDrawer() {
+        const body = document.getElementById('pass-history-body-list');
+        const icon = document.getElementById('pass-history-toggle-icon');
+        if (!body) return;
+
+        const isHidden = body.classList.contains('hidden');
+        if (isHidden) {
+          body.classList.remove('hidden');
+          if (icon) icon.innerText = '▲';
+          renderPassHistoryList();
+        } else {
+          body.classList.add('hidden');
+          if (icon) icon.innerText = '▼';
+        }
+      }
+
+      function renderPassHistoryList() {
+        const body = document.getElementById('pass-history-body-list');
+        if (!body) return;
+
+        const trips = getSavedTripsFromHistory();
+        if (!trips || !trips.length) {
+          body.innerHTML = `<div style="font-size:0.78rem; color: var(--text-muted); text-align: center; padding: 0.5rem 0;">No past tickets found in history.</div>`;
+          return;
+        }
+
+        body.innerHTML = trips.slice(0, 5).map(trip => {
+          const dateStr = new Date(trip.issued_at).toLocaleDateString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+          const modesInTrip = Array.from(new Set((trip.route_steps || []).map(s => s.mode)));
+          let modeIcon = '⚡';
+          if (modesInTrip.length === 1) {
+            const m = modesInTrip[0].toLowerCase();
+            if (m === 'bus') modeIcon = '🚌';
+            else if (m === 'metro') modeIcon = '🚇';
+            else if (m === 'mmts') modeIcon = '🚆';
+          }
+
+          return `
+            <div class="history-item-row" onclick="viewTripFromHistory('${trip.trip_id}')" style="cursor: pointer;">
+              <div class="history-item-icon">${modeIcon}</div>
+              <div class="history-item-info">
+                <div class="history-item-title">${trip.origin} ➔ ${trip.destination}</div>
+                <div class="history-item-date">${dateStr} • ID: ${trip.trip_id}</div>
+              </div>
+              <div class="history-item-fare">₹${trip.total_fare}</div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function viewTripFromHistory(tripId) {
+        const trips = getSavedTripsFromHistory();
+        const found = trips.find(t => t.trip_id === tripId);
+        if (found && found.passengers && found.passengers.length) {
+          currentActiveTickets = found.passengers;
+          currentActiveTicketIdx = 0;
+          renderTicketModalView();
+        }
       }
 
       function closeTicketModal() {
@@ -3478,6 +3612,18 @@
         if (e.target.id === 'ticket-modal') {
           closeTicketModal();
         }
+      }
+
+      function initSplashScreen() {
+        const splash = document.getElementById('app-splash-screen');
+        if (!splash) return;
+
+        setTimeout(() => {
+          splash.style.opacity = '0';
+          setTimeout(() => {
+            splash.style.display = 'none';
+          }, 500);
+        }, 1800);
       }
 
       // User Identity Auth & localStorage state management
@@ -4677,6 +4823,7 @@
 
       // Auto-load stops & run initial query if inputs are populated
       window.addEventListener('DOMContentLoaded', async () => {
+        initSplashScreen();
         // Register Service Worker for offline asset caching
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('./sw.js')

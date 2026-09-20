@@ -200,6 +200,432 @@ h1 {
   margin: 0;
 }
 
+/* --- BRANDED SPLASH SCREEN --- */
+.app-splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top center, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  user-select: none;
+}
+
+[data-theme="light"] .app-splash-screen {
+  background: radial-gradient(circle at top center, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  margin-top: -6vh;
+  z-index: 2;
+}
+
+.splash-icon {
+  font-size: 3.2rem;
+  line-height: 1;
+  animation: splashPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes splashPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.splash-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="light"] .splash-title {
+  color: #0f172a;
+}
+
+.splash-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #06b6d4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+[data-theme="light"] .splash-tagline {
+  color: #0284c7;
+}
+
+.splash-charminar-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  max-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0.28;
+  z-index: 1;
+}
+
+[data-theme="light"] .splash-charminar-wrap {
+  opacity: 0.2;
+}
+
+.splash-charminar-svg {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  fill: currentColor;
+  color: #a5f3fc;
+}
+
+[data-theme="light"] .splash-charminar-svg {
+  color: #0f172a;
+}
+
+/* --- PAYMENT SUCCESS FULL SCREEN CONFIRMATION OVERLAY --- */
+.payment-success-fullmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: rgba(9, 13, 22, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+}
+
+.payment-success-fullmodal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.success-card-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.payment-success-fullmodal.active .success-card-content {
+  transform: scale(1);
+}
+
+.success-check-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+  margin-bottom: 1.25rem;
+  animation: checkPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes checkPop {
+  0% { transform: scale(0); }
+  80% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.success-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.success-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.45;
+}
+
+.btn-view-ticket-success {
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border: none;
+  border-radius: 0.85rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-view-ticket-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.5);
+}
+
+/* --- REDESIGNED TICKET CARD & MODAL --- */
+.redesigned-ticket-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.ticket-top-banner {
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ticket-top-banner.metro {
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+}
+
+.ticket-top-banner.bus {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.ticket-top-banner.mmts {
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+}
+
+.ticket-top-banner.multi {
+  background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 2rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge.active-badge {
+  background: #ffffff;
+  color: #059669;
+}
+
+.status-badge.valid-badge {
+  background: #ffffff;
+  color: #0284c7;
+}
+
+.ticket-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticket-route-summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 0.85rem 1rem;
+}
+
+[data-theme="light"] .ticket-route-summary {
+  background: rgba(241, 245, 249, 0.8);
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.ticket-stop-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ticket-stop-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.ticket-stop-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.ticket-route-arrow {
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+}
+
+.ticket-validity-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-bottom: 1px dashed var(--card-border);
+  padding-bottom: 0.75rem;
+}
+
+.ticket-valid-until {
+  font-weight: 700;
+  color: var(--accent-green);
+}
+
+.ticket-qr-wrap {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1.15rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-id-ref {
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px dashed rgba(6, 182, 212, 0.35);
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.08em;
+}
+
+/* --- PASS HISTORY / EXPANDABLE DRAWER --- */
+.pass-history-drawer {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.pass-history-header {
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  user-select: none;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.pass-history-body {
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.history-item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.85rem;
+}
+
+[data-theme="light"] .history-item-row {
+  background: rgba(241, 245, 249, 0.8);
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.history-item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--text-main);
+  flex-shrink: 0;
+}
+
+.history-item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.history-item-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-item-date {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.history-item-fare {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+}
+
 /* --- NEW HOME SCREEN RESTYLE COMPONENTS --- */
 
 /* Header Greeting Card */
