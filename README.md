@@ -1,5 +1,5 @@
 # 🚌🚇🚆 Go Hyderabad
-
+# © 2026 Team Navigators. All rights reserved. This code is shared for hackathon evaluation purposes only and may not be copied, modified, or redistributed without permission
 ### **One App. Every Mode. Smarter Commutes for Hyderabad.**
 
 A unified multi-modal journey planner for Hyderabad's public transport — combining **TSRTC Buses**, **Metro Rail**, and **MMTS suburban rail** into a single app with AI-recommended routes, live journey planning, and one-tap ticketing.
